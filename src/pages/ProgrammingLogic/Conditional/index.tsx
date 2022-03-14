@@ -292,7 +292,7 @@ export const Conditional = () => {
         <Lista>
           <ul>
             <li>[ ]</li>
-            <li>{ }</li>
+            <li>{}</li>
             <li>function()</li>
           </ul>
         </Lista>

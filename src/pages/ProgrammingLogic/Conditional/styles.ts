@@ -38,9 +38,19 @@ export const Section = styled.section`
     text-align: justify;
     line-height: 1.7rem;
   }
+
+  @media (max-width: 600px) {
+    width: 80%;
+    p {
+      transition: 1.8s all;
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const Table = styled.table`
+  width: 70%;
+  align-self: center;
   thead tr th:first-child,
   tbody tr td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
@@ -70,24 +80,50 @@ export const Table = styled.table`
     background: #26262a;
     padding: 1rem 2rem;
   }
+
+  @media (max-width: 560px) {
+    th {
+      transition: 1.8s all;
+      padding: 1rem 0.8rem;
+      font-size: 0.8rem;
+    }
+    tbody td {
+      padding: 1rem 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 export const Pre = styled.pre`
+  align-self: center;
+  width: 80%;
+  background: #26262a;
+  padding: 10px 50px 0 0;
+  font-size: 1rem;
+  border-radius: 10px;
+
+  code {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    width: 50%;
-    background: #26262a;
-    padding: 10px 50px 0 0;
-    font-size: 1rem;
-    border-radius: 10px;
+    padding: 10px;
+  }
 
+  @media (max-width: 955px) {
+    transition: 1.8s all;
+    width: 100%;
     code {
-      padding: 10px 50px 10px 0;
+      font-size: 0.8rem;
     }
+  }
+
+    @media (max-width: 455px) {
+    code {
+      font-size: 0.7rem;
+    }
+  }
 `;
 
 export const Lista = styled.div`
-    padding-left: 50px;
-`
+  padding-left: 50px;
+`;
