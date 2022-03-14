@@ -119,7 +119,7 @@ export const Pre = styled.pre`
 
     @media (max-width: 455px) {
     code {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
     }
   }
 `;
