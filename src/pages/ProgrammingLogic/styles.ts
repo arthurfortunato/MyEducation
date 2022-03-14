@@ -27,26 +27,23 @@ export const Container = styled.main`
       p {
         transition: 1.8s all;
         font-size: 1rem;
+        tex-align: left;
       }
     }
+    
     @media (max-width: 790px) {
       h1 {
         font-size: 2rem;
       }
+      p {
+        width: 80%;
+      }
     }
-    @media (max-width: 610px) {
+
+    @media (max-width: 500px) {
       h1 {
         font-size: 1.5rem;
       }
     }
-    @media (max-width: 465px) {
-      h1 {
-        font-size: 1rem;
-      }
-    }
-    @media (max-width: 310px) {
-      h1 {
-        font-size: 0.8rem;
-      }
-    }
+ 
 `;
