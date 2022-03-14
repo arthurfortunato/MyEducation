@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import { Home } from "../pages/Home";
 import { ProgrammingLogic } from "../pages/ProgrammingLogic";
+import { Variables } from "../pages/ProgrammingLogic/Variables";
 
 export const Router = () => {
   return (
@@ -11,6 +12,7 @@ export const Router = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/programminglogic" element={<ProgrammingLogic />} />
+        <Route path="programminglogic/variables" element={<Variables />} />
       </Routes>
     </BrowserRouter>
   );

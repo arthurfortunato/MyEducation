@@ -22,7 +22,7 @@ export const NavIconBars = styled(NavIcon)`
   margin-left: 2rem;
 `
 
-export const SidebarNav = styled.nav`
+export const SidebarNav = styled.nav<{sidebar: boolean}>`
   background: #15171c;
   width: 250px;
   height: 100vh;
