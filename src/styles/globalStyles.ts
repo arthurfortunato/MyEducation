@@ -32,4 +32,8 @@ export const GlobalStyled = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+ 
 `;
+
+

@@ -38,4 +38,12 @@ export const Section = styled.section`
     text-align: justify;
     line-height: 1.7rem;
   }
+
+  @media (max-width: 600px) {
+    width: 80%;
+    p {
+      transition: 1.8s all;
+      font-size: 1rem;
+    }
+  }
 `;
