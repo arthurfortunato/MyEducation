@@ -119,7 +119,7 @@ export const Conditional = () => {
             </tr>
           </tbody>
         </Table>
-
+        <br />
         <p>
           Os operadores de comparação retornam um booleano a depender do
           resultado da comparação. E os operados lógicos fazem operações sobre
@@ -252,6 +252,7 @@ export const Conditional = () => {
        `}
           </code>
         </Pre>
+        <br />
 
         <p>
           O comando new Date().getDay() retorna o dia atual como um inteiro,
@@ -292,7 +293,7 @@ export const Conditional = () => {
         <Lista>
           <ul>
             <li>[ ]</li>
-            <li>{}</li>
+            <li>{`{ }`}</li>
             <li>function()</li>
           </ul>
         </Lista>
