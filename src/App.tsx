@@ -1,10 +1,11 @@
 import { GlobalStyled } from "./styles/globalStyles";
+import { Router } from "./routes";
 
 function App() {
   return (
     <>
-    <h1>Iniciando o Projeto com React!</h1>
     <GlobalStyled />
+    <Router />
     </>
   );
 }
