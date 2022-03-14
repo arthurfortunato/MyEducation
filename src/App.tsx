@@ -4,8 +4,8 @@ import { Router } from "./routes";
 function App() {
   return (
     <>
-    <GlobalStyled />
-    <Router />
+      <GlobalStyled />
+      <Router />
     </>
   );
 }
