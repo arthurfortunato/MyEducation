@@ -27,6 +27,11 @@ export const SidebarData = [
         path: '/programminglogic/conditional',
         icon: <IoIcons.IoIosPaper />
       },
+      {
+        title: 'Laços',
+        path: '/programminglogic/loops',
+        icon: <IoIcons.IoIosPaper />
+      },
     ]
   }
 ] 
