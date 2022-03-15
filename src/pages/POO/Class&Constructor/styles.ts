@@ -84,7 +84,13 @@ export const Pre = styled.pre`
     transition: 1.8s all;
     width: 100%;
     code {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 570px) {
+    code {
+      font-size: 0.7rem;
     }
   }
 `;
