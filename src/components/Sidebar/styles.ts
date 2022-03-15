@@ -40,6 +40,7 @@ export const SidebarWrap = styled.div`
   ::-webkit-scrollbar {
     width: 5px;
   }
+  position: relative;
   width: 100%;
 `;
 
