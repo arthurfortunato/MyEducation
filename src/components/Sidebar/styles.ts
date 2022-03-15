@@ -33,14 +33,14 @@ export const SidebarNav = styled.nav<{ sidebar: boolean }>`
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 1s;
   z-index: 10;
-`;
-
-export const SidebarWrap = styled.div`
-  width: 100%;
   overflow: auto;
   ::-webkit-scrollbar {
     width: 5px;
   }
+`;
+
+export const SidebarWrap = styled.div`
+  width: 100%;
 `;
 
 /* SubMenu================================================================ */
