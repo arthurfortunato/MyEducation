@@ -21,6 +21,7 @@ import { Attributes } from "../pages/POO/Attributes";
 import { Methods } from "../pages/POO/Methods";
 import { Encapsulation } from "../pages/POO/Encapsulation";
 import { AccessMethods } from "../pages/POO/AccessMethods";
+import { InheritanceAndPolymorphism } from "../pages/POO/Inheritance&Polymorphism";
 
 export const Router = () => {
   return (
@@ -47,6 +48,7 @@ export const Router = () => {
         <Route path="/poo/methods" element={<Methods />} />
         <Route path="/poo/encapsulation" element={<Encapsulation />} />
         <Route path="/poo/accessmethods" element={<AccessMethods />} />
+        <Route path="/poo/inheritanceandpolymorphism" element={<InheritanceAndPolymorphism />} />
 
       </Routes>
     </BrowserRouter>

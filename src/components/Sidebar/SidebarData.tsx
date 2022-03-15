@@ -103,6 +103,11 @@ export const SidebarData = [
         path: "/poo/accessmethods",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Herança e Polimorfismo",
+        path: "/poo/inheritanceandpolymorphism",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
