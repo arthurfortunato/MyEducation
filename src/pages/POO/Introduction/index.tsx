@@ -167,7 +167,9 @@ export const IntroductionPOO = () => {
                         email : 'email4@teste.com'}
                   ],
 
-                  adicionar : function(contato){ this.contatos.push(contato) };
+                  adicionar : function(contato) { 
+                    this.contatos.push(contato) 
+                  };
               }
           `}
           </code>
