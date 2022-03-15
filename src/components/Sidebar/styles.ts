@@ -33,9 +33,10 @@ export const SidebarNav = styled.nav<{sidebar: boolean}>`
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 1s;
   z-index: 10;
-`;
-
-export const SidebarWrap = styled.div`
+  overflow: auto;
+  `;
+  
+  export const SidebarWrap = styled.div`
   width: 100%;
 `;
 
