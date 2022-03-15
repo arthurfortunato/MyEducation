@@ -42,6 +42,11 @@ export const SidebarData = [
         path: '/programminglogic/functions',
         icon: <IoIcons.IoIosPaper />
       },
+      {
+        title: 'Funções de Alta Ordem',
+        path: '/programminglogic/higherorderfunctions',
+        icon: <IoIcons.IoIosPaper />
+      },
     ]
   }
 ] 
