@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.div`
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #15171c;
-  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
 `;
 
 export const NavIcon = styled(Link)`

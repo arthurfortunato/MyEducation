@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  height: calc(100vh - 100px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #fff;
+  padding-top: 80px;
 
   h1 {
     font: 700 5rem "Lato", sans-serif;
