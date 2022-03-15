@@ -6,6 +6,7 @@ export const Container = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
   font: 700 3rem "Lato", sans-serif;
 
   strong {

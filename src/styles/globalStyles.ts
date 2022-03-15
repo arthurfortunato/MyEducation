@@ -7,6 +7,10 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body {
+    background: #37373c;
+  }
+
   /* Scrollbar ============================================================== */
 
   ::-webkit-scrollbar {

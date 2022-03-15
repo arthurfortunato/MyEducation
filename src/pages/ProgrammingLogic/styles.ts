@@ -6,6 +6,7 @@ export const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #fff;
 
   h1 {
     font: 700 5rem "Lato", sans-serif;
