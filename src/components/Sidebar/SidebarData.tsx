@@ -88,6 +88,11 @@ export const SidebarData = [
         path: "/poo/attributes",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Métodos",
+        path: "/poo/methods",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];

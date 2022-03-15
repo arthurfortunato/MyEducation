@@ -18,6 +18,7 @@ import { POO } from "../pages/POO";
 import { IntroductionPOO } from "../pages/POO/Introduction";
 import { ClassAndConstructor } from "../pages/POO/Class&Constructor";
 import { Attributes } from "../pages/POO/Attributes";
+import { Methods } from "../pages/POO/Methods";
 
 export const Router = () => {
   return (
@@ -41,6 +42,7 @@ export const Router = () => {
         <Route path="/poo/introduction" element={<IntroductionPOO />} />
         <Route path="/poo/classandconstructor" element={<ClassAndConstructor />} />
         <Route path="/poo/attributes" element={<Attributes />} />
+        <Route path="/poo/methods" element={<Methods />} />
 
       </Routes>
     </BrowserRouter>
