@@ -57,6 +57,11 @@ export const SidebarData = [
         path: '/programminglogic/filter',
         icon: <IoIcons.IoIosPaper />
       },
+      {
+        title: 'Reduce',
+        path: '/programminglogic/reduce',
+        icon: <IoIcons.IoIosPaper />
+      },
     ]
   }
 ] 
