@@ -10,7 +10,7 @@ export const SidebarData = [
     icon: <AiIcons.AiFillHome />,
   },
   {
-    title: 'Lógica P',
+    title: 'Lógica de Programação',
     path: '/programminglogic',
     icon: <GiIcons.GiLogicGateNxor/>,
     iconClosed: <RiIcons.RiArrowDownSFill />,
