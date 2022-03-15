@@ -37,6 +37,11 @@ export const SidebarData = [
         path: '/programminglogic/vectors',
         icon: <IoIcons.IoIosPaper />
       },
+      {
+        title: 'Funções',
+        path: '/programminglogic/functions',
+        icon: <IoIcons.IoIosPaper />
+      },
     ]
   }
 ] 

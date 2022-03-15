@@ -7,6 +7,7 @@ import { Variables } from "../pages/ProgrammingLogic/Variables";
 import { Conditional } from "../pages/ProgrammingLogic/Conditional";
 import { LoopRepetition } from "../pages/ProgrammingLogic/LoopsOfRepetition";
 import { Vectors } from "../pages/ProgrammingLogic/Vectors";
+import { Functions } from "../pages/ProgrammingLogic/Functions";
 
 export const Router = () => {
   return (
@@ -19,6 +20,8 @@ export const Router = () => {
         <Route path="programminglogic/conditional" element={<Conditional />} />
         <Route path="programminglogic/loops" element={<LoopRepetition />} />
         <Route path="programminglogic/vectors" element={<Vectors />} />
+        <Route path="programminglogic/vectors" element={<Vectors />} />
+        <Route path="programminglogic/functions" element={<Functions />} />
       </Routes>
     </BrowserRouter>
   );
