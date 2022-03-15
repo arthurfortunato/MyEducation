@@ -17,6 +17,7 @@ import { Reduce } from "../pages/ProgrammingLogic/Reduce";
 import { POO } from "../pages/POO";
 import { IntroductionPOO } from "../pages/POO/Introduction";
 import { ClassAndConstructor } from "../pages/POO/Class&Constructor";
+import { Attributes } from "../pages/POO/Attributes";
 
 export const Router = () => {
   return (
@@ -39,6 +40,7 @@ export const Router = () => {
         <Route path="/poo" element={<POO />} />
         <Route path="/poo/introduction" element={<IntroductionPOO />} />
         <Route path="/poo/classandconstructor" element={<ClassAndConstructor />} />
+        <Route path="/poo/attributes" element={<Attributes />} />
 
       </Routes>
     </BrowserRouter>
