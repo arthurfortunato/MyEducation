@@ -39,7 +39,6 @@ export const Header = styled.header`
 
 export const Section = styled.section`
   width: 60%;
-  padding: 15px 0;
   display: flex;
   flex-direction: column;
 
@@ -70,7 +69,7 @@ export const Pre = styled.pre`
   width: 80%;
   background: #26262a;
   padding: 10px 80px 0 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border-radius: 10px;
 
   code {
@@ -80,15 +79,15 @@ export const Pre = styled.pre`
     padding: 10px;
   }
 
-  @media (max-width: 955px) {
+  @media (max-width: 1070px) {
     transition: 1.8s all;
     width: 100%;
     code {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 
-  @media (max-width: 570px) {
+  @media (max-width: 815px) {
     code {
       font-size: 0.60rem;
     }
