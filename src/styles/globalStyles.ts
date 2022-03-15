@@ -7,8 +7,17 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background: #37373c;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
   }
   
   /* Scrollbar ============================================================== */
@@ -38,5 +47,3 @@ export const GlobalStyled = createGlobalStyle`
 
  
 `;
-
-
