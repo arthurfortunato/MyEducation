@@ -47,6 +47,11 @@ export const SidebarData = [
         path: '/programminglogic/higherorderfunctions',
         icon: <IoIcons.IoIosPaper />
       },
+      {
+        title: 'Map',
+        path: '/programminglogic/map',
+        icon: <IoIcons.IoIosPaper />
+      },
     ]
   }
 ] 

@@ -9,6 +9,7 @@ import { LoopRepetition } from "../pages/ProgrammingLogic/LoopsOfRepetition";
 import { Vectors } from "../pages/ProgrammingLogic/Vectors";
 import { Functions } from "../pages/ProgrammingLogic/Functions";
 import { HigherOrderFunctions } from "../pages/ProgrammingLogic/HigherOrderFunctions";
+import { Map } from "../pages/ProgrammingLogic/Map";
 
 export const Router = () => {
   return (
@@ -23,6 +24,7 @@ export const Router = () => {
         <Route path="programminglogic/vectors" element={<Vectors />} />
         <Route path="programminglogic/functions" element={<Functions />} />
         <Route path="programminglogic/higherorderfunctions" element={<HigherOrderFunctions />} />
+        <Route path="programminglogic/map" element={<Map />} />
       </Routes>
     </BrowserRouter>
   );
