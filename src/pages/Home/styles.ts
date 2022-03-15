@@ -8,6 +8,10 @@ export const Container = styled.main`
   justify-content: center;
   font: 700 3rem "Lato", sans-serif;
 
+  strong {
+    color: #33143f;
+  }
+
   @media(max-width: 920px) {
     transition: 1.8s all;
     font-size: 2.5rem;
