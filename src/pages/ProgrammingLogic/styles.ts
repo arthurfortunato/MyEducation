@@ -19,6 +19,10 @@ export const Container = styled.main`
     line-height: 1.7rem;
   }
 
+  strong {
+    color: #33143f;
+  }
+
     @media (max-width: 920px) {
       h1 {
         transition: 1.8s all;

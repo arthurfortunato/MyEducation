@@ -75,10 +75,10 @@ export const DropdownLink = styled(Link)`
   font: 400 1.2rem "Lato", sans-serif;
   text-decoration: none;
   color: #f5f5f5;
-  transition: 0.4s;
+  transition: 0.8s;
 
   &:hover {
-    background: #632ce4;
+    background: #252831;
     cursor: pointer;
   }
 `;
