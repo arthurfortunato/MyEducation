@@ -14,32 +14,39 @@ export const Vectors = () => {
           separados por vírgula. Exemplo:
         </p>
 
-        <br/>
+        <br />
 
         <Pre>
-          <code>{`let vetor = [1,2,3,4,5,6,7,8,9,10];`}</code>
+          <code>
+            {`
+              let vetor = [1,2,3,4,5,6,7,8,9,10];
+              
+            `}
+          </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>
           Também é possível declarar o vetor vazio e ir adicionando pela posição
           os elementos:
         </p>
 
-        <br/>
+        <br />
 
         <Pre>
           <code>
             {`
               let vetor = []; 
+
               vetor[0] = 'teste'; 
+
               vetor[1] = 'teste2';
             `}
           </code>
         </Pre>
-        
-        <br/>
+
+        <br />
 
         <p>
           Além de índice numérico é possível fazer índice associativo usando
@@ -50,12 +57,13 @@ export const Vectors = () => {
           <code>
             {`
               vetor['indice1'] = 'teste'; 
+
               vetor['indice2'] = 'teste2';
             `}
           </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>
           Vetores são heterogêneos, isto é, podem guardar valores de tipos
@@ -66,13 +74,15 @@ export const Vectors = () => {
           <code>
             {`
               let vetor = [1,2,3,'a','b','c',true,false]; 
+
               let primeiro_elemento = vetor[0]; 
+
               let quinto_elemento = vetor[4];
             `}
           </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>
           Porém, uma boa prática é construir vetores de um único tipo de dado.
@@ -89,22 +99,22 @@ export const Vectors = () => {
           Usando a estrutura de repetição for é possível percorrer todos os
           elementos de um vetor:
         </p>
-        <br/>
+        <br />
 
         <Pre>
           <code>
             {`
             let vetor = [1,2,3,4,5,6,7,8,9,10];
 
-            for(let i = 0; i < vetor.length; i++){
+            for (let i = 0; i < vetor.length; i++){
                 console.log(vetor[i]);
             }
           `}
           </code>
         </Pre>
-          
-        <br/>
-        
+
+        <br />
+
         <p>
           O i do for vai do valor 0 até o comprimento do vetor menos um. Note
           que vetor.length retorna o comprimento do mesmo.
@@ -119,13 +129,14 @@ export const Vectors = () => {
           <code>
             {`
             const vetor = [10,20,30,40,50];
-            for(let valor of vetor){
-                console.log(valor);
+
+            for (let valor of vetor){
+              console.log(valor);
             `}
           </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>
           O for-of recebe um vetor e a variável declarada vai possuir os valores
@@ -140,10 +151,10 @@ export const Vectors = () => {
         <Pre>
           <code>
             {`
-           const vetor = [10,20,30,40,50];
+            const vetor = [10,20,30,40,50];
 
-           for(let indice in vetor){
-               console.log(indice, vetor[indice]);
+            for (let indice in vetor){
+                console.log(indice, vetor[indice]);
            }
          `}
           </code>
@@ -170,14 +181,14 @@ export const Vectors = () => {
 
             for(let linha of matriz){
                 for (let dado of linha){
-                    console.log(dado);
+                      console.log(dado);
                 }
             }
          `}
           </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>
           Para percorrer os elementos de uma matriz é necessário aninhar laços
@@ -197,39 +208,57 @@ export const Vectors = () => {
         <Pre>
           <code>
             {`
-              let vetor = [10,20,30,40,50]; let novo_elemento = 60;
+              let vetor = [10,20,30,40,50]; 
+
+              let novo_elemento = 60;
+
               vetor.push(novo_elemento);
             `}
           </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>Para remover do final:</p>
 
         <Pre>
-          <code>{`let vetor = [10,20,30,40,50]; vetor.pop();`}</code>
+          <code>
+            {`
+            let vetor = [10,20,30,40,50]; 
+
+            vetor.pop();
+            `}
+          </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>Para adicionar ao começo:</p>
 
         <Pre>
           <code>
             {`
-              let vetor = [10,20,30,40,50]; let novo_elemento = 0;
+              let vetor = [10,20,30,40,50]; 
+
+              let novo_elemento = 0;
+
               vetor.unshift(novo_elemento);
             `}
           </code>
         </Pre>
 
-        <br/>
+        <br />
 
         <p>Para remover do começo:</p>
 
         <Pre>
-          <code>{`let vetor = [10,20,30,40,50]; vetor.shift();`}</code>
+          <code>
+            {`
+            let vetor = [10,20,30,40,50];
+
+            vetor.shift();
+            `}
+          </code>
         </Pre>
       </Section>
     </Container>
