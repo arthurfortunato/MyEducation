@@ -9,8 +9,6 @@ export const Container = styled.main`
   background: #37373c;
   font-family: Lato, Helvetica, sans-serif;
   color: #e1e1e1;
-
-
 `;
 
 export const Header = styled.header`

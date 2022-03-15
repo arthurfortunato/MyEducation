@@ -7,9 +7,9 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+  html, body {
     background: #37373c;
-    overflow: scroll;
+    height: 100%;
   }
   
   /* Scrollbar ============================================================== */
