@@ -93,6 +93,11 @@ export const SidebarData = [
         path: "/poo/methods",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Encapsulamento",
+        path: "/poo/encapsulation",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
