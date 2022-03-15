@@ -9,8 +9,9 @@ export const GlobalStyled = createGlobalStyle`
 
   body {
     background: #37373c;
+    overflow: scroll;
   }
-
+  
   /* Scrollbar ============================================================== */
 
   ::-webkit-scrollbar {

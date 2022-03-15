@@ -36,12 +36,11 @@ export const SidebarNav = styled.nav<{ sidebar: boolean }>`
 `;
 
 export const SidebarWrap = styled.div`
+  width: 100%;
   overflow: auto;
   ::-webkit-scrollbar {
     width: 5px;
   }
-  position: relative;
-  width: 100%;
 `;
 
 /* SubMenu================================================================ */
