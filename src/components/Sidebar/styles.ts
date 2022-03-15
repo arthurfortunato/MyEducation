@@ -20,9 +20,9 @@ export const NavIcon = styled(Link)`
 
 export const NavIconBars = styled(NavIcon)`
   margin-left: 2rem;
-`
+`;
 
-export const SidebarNav = styled.nav<{sidebar: boolean}>`
+export const SidebarNav = styled.nav<{ sidebar: boolean }>`
   background: #15171c;
   width: 250px;
   height: 100vh;
@@ -33,10 +33,13 @@ export const SidebarNav = styled.nav<{sidebar: boolean}>`
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 1s;
   z-index: 10;
+`;
+
+export const SidebarWrap = styled.div`
   overflow: auto;
-  `;
-  
-  export const SidebarWrap = styled.div`
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
   width: 100%;
 `;
 

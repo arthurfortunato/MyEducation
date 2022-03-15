@@ -15,7 +15,6 @@ export const GlobalStyled = createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 10px;
-    height: 50px;
   }
 
   ::-webkit-scrollbar-corner {
