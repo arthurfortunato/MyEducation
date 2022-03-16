@@ -10,9 +10,10 @@ export const Variables = () => {
 
       <Section className="section section__variables">
         <p>
-          Variáveis são o conceito mais básico da programação. De forma super
-          simplificada é atribuir um "apelido" a um valor. Isso permite que esse
-          valor seja lido e modificado durante o programa.
+          <strong>Variáveis</strong> são o conceito mais básico da programação.
+          De forma super simplificada{" "}
+          <strong>é atribuir um "apelido" a um valor</strong>. Isso permite que
+          esse valor seja lido e modificado durante o programa.
           <br />
           <br />
           No entanto, por baixo dos panos, seu programa está solicitando que o
@@ -26,16 +27,18 @@ export const Variables = () => {
           diferente:
           <br />
           <br />
-          Uma, a estática, obriga a variável ser de um tipo exclusivo de
-          informação. Isto é, uma variável numérica é sempre numérica. Você pode
-          alterar o número armazenado mas não pode mudar a informação para texto
-          por exemplo. Geralmente essas linguagens exigem declarar o tipo ao
-          criar a variável para reservar memória, mesmo que a variável ainda não
-          tenha valor.
+          <AiOutlineCaretRight color="#f5b324" />
+          <strong>Estática</strong>, obriga a variável ser de um tipo exclusivo
+          de informação. Isto é, uma variável numérica é sempre numérica. Você
+          pode alterar o número armazenado mas não pode mudar a informação para
+          texto por exemplo. Geralmente essas linguagens exigem declarar o tipo
+          ao criar a variável para reservar memória, mesmo que a variável ainda
+          não tenha valor.
           <br />
           <br />
-          A segunda, a dinâmica, em que o tipo é inferido implicitamente e este
-          pode ser mudado ao longo do código. A memória só é alocada se a
+          <AiOutlineCaretRight color="#f5b324" />
+          <strong>Dinâmica</strong>, em que o tipo é inferido implicitamente e
+          este pode ser mudado ao longo do código. A memória só é alocada se a
           variável tiver um valor. Este é o caso de JavaScript.
           <br />
           <br />
@@ -48,13 +51,13 @@ export const Variables = () => {
         <h2>Primitivos</h2>
 
         <p>
-          <AiOutlineCaretRight /> undefined: Não há tipo nem valor;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>undefined</strong>: Não há tipo nem valor;
           <br />
-          <AiOutlineCaretRight /> boolean: Verdadeiro ou Falso;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>boolean</strong>: Verdadeiro ou Falso;
           <br />
-          <AiOutlineCaretRight /> string: Textos;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>string</strong>: Textos;
           <br />
-          <AiOutlineCaretRight /> number: Números;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>number</strong>: Números;
           <br />
         </p>
       </Section>
@@ -63,11 +66,11 @@ export const Variables = () => {
         <h2>Complexos</h2>
 
         <p>
-          <AiOutlineCaretRight />
-          function: funções
+          <AiOutlineCaretRight color="#f5b324" />
+          <strong>function</strong>: funções
           <br />
-          <AiOutlineCaretRight />
-          object: objetos
+          <AiOutlineCaretRight color="#f5b324" />
+          <strong>object</strong>: objetos
           <br />
         </p>
 
@@ -80,25 +83,25 @@ export const Variables = () => {
           ou falso). O undefined representa uma variável sem valor atribuído.
           <br />
           <br />
-          O null representa uma informação vazia. Diferente de undefined, ele
-          mostra que a variável foi declarada mas com valor vazio.
+          <strong>O null representa uma informação vazia. Diferente de undefined, ele
+          mostra que a variável foi declarada mas com valor vazio.</strong>
           <br />
           <br />
           Em JavaScript, temos um comportamento estranho das variáveis. Elas
           podem ser declaradas depois de utilizadas, pois elas são levantadas
-          para o início do escopo. Isso se chama hoisting.
+          para o início do escopo. Isso se chama <strong>hoisting</strong>.
           <br />
           <br />
-          Usando var variáveis não respeitam seu escopo, uma variável declarada
+          Usando <strong>var</strong> variáveis não respeitam seu escopo, uma variável declarada
           em uma função estará disponível depois do escopo da função.
           <br />
           <br />
           Esses comportamentos são peculiares e diferentes de muitas linguagens,
-          por isso padronizamos usar let em vez de var, o que fará com que os
+          por isso padronizamos usar <strong>let</strong> em vez de var, o que fará com que os
           escopos sejam respeitados.
           <br />
           <br />
-          O const impede que o valor possa ser alterado após ser iniciado,
+          O <strong>const</strong> impede que o valor possa ser alterado após ser iniciado,
           gerando um erro ao ser tentado.
           <br />
         </p>

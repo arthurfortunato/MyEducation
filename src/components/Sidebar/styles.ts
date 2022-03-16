@@ -32,7 +32,7 @@ export const SidebarNav = styled.nav<{ sidebar: boolean }>`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 1s;
+  transition: 0.8s;
   z-index: 10;
   overflow: auto;
   ::-webkit-scrollbar {

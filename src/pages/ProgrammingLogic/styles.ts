@@ -22,7 +22,7 @@ export const Container = styled.main`
   }
 
   strong {
-    color: #33143f;
+    color: #f5b324;
   }
 
     @media (max-width: 920px) {
