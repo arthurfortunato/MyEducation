@@ -71,7 +71,7 @@ export const Section = styled.section`
 
 export const Pre = styled.pre`
   align-self: center;
-  width: 65%;
+  width: 80%;
   background: #26262a;
   padding: 10px 50px 0 0;
   font-size: 1rem;
@@ -86,6 +86,7 @@ export const Pre = styled.pre`
 
   @media (max-width: 955px) {
     transition: 1.8s all;
+    width: 100%;
     code {
       font-size: 0.8rem;
     }
