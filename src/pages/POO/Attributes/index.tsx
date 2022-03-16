@@ -11,10 +11,12 @@ export const Attributes = () => {
         <h2>Restringindo Tipo de Atributos</h2>
 
         <p>
-          Para criar um atributo, basta usar o prefixo this e dar um nome para o
-          atributo. Isso se dá porque a tipagem dinâmica do javascript também se
-          dá nos atributos. O quer dizer que o tipo do atributo será definido
-          pelo tipo do valor colocado nele.
+          <strong>
+            Para criar um atributo, basta usar o prefixo this e dar um nome para
+            o atributo. Isso se dá porque a tipagem dinâmica do javascript
+            também se dá nos atributos. O quer dizer que o tipo do atributo será
+            definido pelo tipo do valor colocado nele.
+          </strong>
           <br />
           <br />
           Quando fazemos estruturas de dados, algumas vezes esse é o
