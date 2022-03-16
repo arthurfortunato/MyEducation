@@ -25,7 +25,7 @@ export const Container = styled.main`
   strong {
     color: #f5b324;
   }
-  
+
   @media (max-width: 920px) {
     h1 {
       transition: 1.8s all;

@@ -10,24 +10,29 @@ export const Methods = () => {
 
       <Section className="section section__methods">
         <p>
-          Métodos dão aos nossos objetos o poder de executar códigos, o que
-          chamamos de comportamento há algumas aulas. Tudo o que você aprendeu
-          em lógica de programação até o momento pode ser utilizado dentro dos
-          métodos (e somente dentro dos métodos) quando estamos no contexto
-          orientado a objetos.
+          <strong>
+            Métodos dão aos nossos objetos o poder de executar códigos, ou seja,
+            um comportamento
+          </strong>
+          . Tudo o que você aprendeu em lógica de programação até o momento pode
+          ser utilizado dentro dos métodos (e somente dentro dos métodos) quando
+          estamos no contexto orientado a objetos.
           <br />
           <br />
-          Métodos são computacionalmente idênticos às funções. Chamamos de
-          métodos e não funções por dois motivos:
+          <strong>
+            {" "}
+            Métodos são computacionalmente idênticos às funções. Chamamos de
+            métodos e não funções por dois motivos:
+          </strong>
           <br />
         </p>
 
         <p>
-          <AiOutlineCaretRight />
+          <AiOutlineCaretRight color={"#f5b324"} />
           Por estar no contexto POO e no interior de uma classe.
         </p>
         <p>
-          <AiOutlineCaretRight />
+          <AiOutlineCaretRight color={"#f5b324"} />
           Por ele poder manipular o estado interno de um objeto.
         </p>
 
@@ -35,12 +40,12 @@ export const Methods = () => {
           Leia "estado" acima como o conjunto de valores dos atributos.
           <br />
           <br />
-          Para declarar um método em uma classe basta fazer, após o construtor,
-          uma função sem usar a palavra function usamos apenas o nome. Também
-          não podemos usar arrow functions nesse contexto por conta do mesmo
-          problema com
-          <br />
-          this. que tivemos nos objetos.
+          <strong>
+            Para declarar um método em uma classe basta fazer, após o
+            construtor, uma função sem usar a palavra function usamos apenas o
+            nome. Também não podemos usar arrow functions nesse contexto por
+            conta do mesmo problema com (this.) que tivemos nos objetos.
+          </strong>
         </p>
 
         <Pre>
@@ -70,9 +75,11 @@ export const Methods = () => {
         </Pre>
 
         <p>
-          Métodos podem ler ou alterar o estado interno do objeto, assim como
-          podem fazer qualquer computação com os valores dos atributos e até
-          mesmo chamar outros métodos do mesmo objeto.
+          <strong>
+            Métodos podem ler ou alterar o estado interno do objeto, assim como
+            podem fazer qualquer computação com os valores dos atributos e até
+            mesmo chamar outros métodos do mesmo objeto.
+          </strong>
           <br />
           <br />
           Alguns métodos podem até criar outros objetos ou funções, dependendo
