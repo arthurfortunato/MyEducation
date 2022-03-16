@@ -14,9 +14,13 @@ export const Conditional = () => {
           Em programação, condicionais são estruturas de decisões. O código
           executa de uma maneira ou de outra a depender de uma condição, que por
           sua vez será interpretada como verdadeiro ou falso. Esse tipo de dado
-          é chamado de booleano e possui valor true or false. Uma condição é uma
-          operação lógica que te como resultado um valor booleano. Os operados
-          de comparação em Javascript são:
+          é chamado de booleano e possui valor true or false.{" "}
+          <strong>
+            {" "}
+            Uma condição é uma operação lógica que tem como resultado um valor
+            booleano
+          </strong>
+          . Os operados de comparação em Javascript são:
         </p>
         <br />
 
@@ -124,13 +128,13 @@ export const Conditional = () => {
           Os operadores de comparação retornam um booleano a depender do
           resultado da comparação. E os operados lógicos fazem operações sobre
           valores booleano.
-          <br />O operador {"&&"} só retorna verdadeiro se as duas condições
-          forem verdadeira.
+          <br />O operador <strong>{"&&"}</strong> só retorna verdadeiro se as
+          duas condições forem verdadeira.
           <br />
-          Enquanto para o operador || basta uma das condições ser para o
-          resultado ser verdadeiro.
-          <br />O operador ! inverte o valor lógico, ou seja, verdadeiro vira
-          falso e vice-versa.
+          Enquanto para o operador <strong>||</strong> basta uma das condições
+          ser para o resultado ser verdadeiro.
+          <br />O operador <strong>!</strong> inverte o valor lógico, ou seja,
+          verdadeiro vira falso e vice-versa.
         </p>
       </Section>
 
@@ -141,7 +145,8 @@ export const Conditional = () => {
         <Pre>
           <code>
             {`
-          let condicao = x {">"} 0; 
+          let condicao = x > 0; 
+
           if(condicao) {
             console.log("X é maior do que zero")
           }
@@ -155,7 +160,7 @@ export const Conditional = () => {
         <p>
           A condição deve estar entre parêntesis. Para fim de ilustração o
           resultado condição foi guardada em uma variável (linha 1), porém é
-          prática escrever diretamente dentro dos parêntesis. Caso a condição
+          prática escrever diretamente dentro dos parênteses. Caso a condição
           seja true o código dentro do if é executado, senão o do else é
           executado.
           <br />
@@ -169,12 +174,19 @@ export const Conditional = () => {
         <Pre>
           <code>
             {`
-             if(x {">"} 0){console.log("X é positivo")}
-             else if(x == 0){console.log("X é zero")}
-             else{console.log("X é negativo")}
+              if(x > 0){
+                console.log("X é positivo")
+              }
+              else if(x == 0){
+                console.log("X é zero")
+              }
+              else{
+                console.log("X é negativo")
+              }
           `}
           </code>
         </Pre>
+
         <br />
         <br />
         <p>
@@ -190,7 +202,7 @@ export const Conditional = () => {
         <p>
           Para atribuição condicional de valor o JavaScript possui um operador
           que permite fazer uma if else inline, isto é, em uma única linha.
-          Operador tenário é representado por ?:
+          Operador ternário é representado por <strong>? :</strong>
         </p>
 
         <Pre>
@@ -206,7 +218,7 @@ export const Conditional = () => {
           onde % é o operador que retorna o resto da divisão. Ou seja, a
           condição é se o resto da divisão é igual a zero. Se sim, guardamos a
           string 'par' na variável, se não, 'ímpar'. Note que os valores são
-          separados por : (dois pontos).
+          separados por <strong>: (dois pontos)</strong>.
         </p>
       </Section>
 
@@ -269,10 +281,13 @@ export const Conditional = () => {
         <h2>Truthy e Falsy</h2>
 
         <p>
-          Além do true e do false, o JavaScript aceita outras informações que
-          não são booleanos e os interpreta como se fosse true ou false. Esses
-          casos chamamos de truthy e falsy. Por exemplo, o JavaScript interpreta
-          os seguintes valores como falso:
+          Além do true e do false,{" "}
+          <strong>
+            o JavaScript aceita outras informações que não são booleanos e os
+            interpreta como se fosse true ou false
+          </strong>
+          . Esses casos chamamos de truthy e falsy. Por exemplo, o JavaScript
+          interpreta os seguintes valores como <strong>falso</strong>:
         </p>
 
         <Lista>
@@ -286,7 +301,7 @@ export const Conditional = () => {
         </Lista>
 
         <p>
-          Todos os demais são interpretados como verdadeiro. Alguns exemplos de
+          Todos os demais são interpretados como <strong>verdadeiro</strong>. Alguns exemplos de
           truthy:
         </p>
 

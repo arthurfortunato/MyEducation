@@ -10,6 +10,10 @@ export const Container = styled.main`
   font-family: Lato, Helvetica, sans-serif;
   color: #e1e1e1;
   padding-top: 80px;
+
+  strong {
+    color: #f5b324;
+  }
 `;
 
 export const Header = styled.header`
@@ -118,7 +122,7 @@ export const Pre = styled.pre`
     }
   }
 
-    @media (max-width: 455px) {
+  @media (max-width: 455px) {
     code {
       font-size: 0.65rem;
     }
