@@ -9,9 +9,9 @@ export const Vectors = () => {
 
       <Section className="section section__vectors">
         <p>
-          Vetor é uma sequência ordenada de valores. Também é chamado pelo nome
-          em inglês, array. É denotado pelo uso de colchetes, com os valores
-          separados por vírgula. Exemplo:
+          <strong>Vetor é uma sequência ordenada de valores</strong>. Também é
+          chamado pelo nome em inglês, array. É denotado pelo uso de colchetes,
+          com os valores separados por vírgula. Exemplo:
         </p>
 
         <br />
@@ -66,8 +66,8 @@ export const Vectors = () => {
         <br />
 
         <p>
-          Vetores são heterogêneos, isto é, podem guardar valores de tipos
-          diferentes:
+          <strong>Vetores são heterogêneos</strong>, isto é, podem guardar
+          valores de tipos diferentes:
         </p>
 
         <Pre>
@@ -139,13 +139,14 @@ export const Vectors = () => {
         <br />
 
         <p>
-          O for-of recebe um vetor e a variável declarada vai possuir os valores
-          dos elementos do vetor. Assim percorrendo diretamente o array inteiro.
+          O <strong>for-of</strong> recebe um vetor e a variável declarada vai
+          possuir os valores dos elementos do vetor. Assim percorrendo
+          diretamente o array inteiro.
         </p>
 
         <p>
-          A alternativa é o for-in, onde a variável declarada assume o valor dos
-          índices do vetor passado:
+          A alternativa é o <strong>for-in</strong>, onde a variável declarada
+          assume o valor dos índices do vetor passado:
         </p>
 
         <Pre>
@@ -165,8 +166,10 @@ export const Vectors = () => {
         <h2>Matrizes</h2>
 
         <p>
-          Matrizes são vetores multidimensional, isto é, é um vetor de vetores.
-          Portanto tudo que se aplica a vetor também vale para matrizes. A
+          <strong>
+            Matrizes são vetores multidimensional, isto é, é um vetor de vetores
+          </strong>
+          . Portanto tudo que se aplica a vetor também vale para matrizes. A
           declaração de uma matriz segue o padrão
         </p>
 
@@ -177,7 +180,7 @@ export const Vectors = () => {
                 [1,2,3],
                 [4,5,6],
                 [7,8,9]
-              ];
+            ];
 
             for(let linha of matriz){
                 for (let dado of linha){
@@ -219,7 +222,7 @@ export const Vectors = () => {
 
         <br />
 
-        <p>Para remover do final:</p>
+        <p>Para remover do final <strong>(POP)</strong>:</p>
 
         <Pre>
           <code>
@@ -233,7 +236,7 @@ export const Vectors = () => {
 
         <br />
 
-        <p>Para adicionar ao começo:</p>
+        <p>Para adicionar ao começo <strong>(UNSHIFT)</strong>:</p>
 
         <Pre>
           <code>
@@ -249,7 +252,7 @@ export const Vectors = () => {
 
         <br />
 
-        <p>Para remover do começo:</p>
+        <p>Para remover do começo <strong>(SHIFT)</strong>:</p>
 
         <Pre>
           <code>
