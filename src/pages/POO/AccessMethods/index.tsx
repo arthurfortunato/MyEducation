@@ -9,10 +9,11 @@ export const AccessMethods = () => {
 
       <Section className="section section__access-methods">
         <p>
-          Métodos de Acesso em linguagens como o Java são métodos que permitem a
-          leitura e/ou escrita (a critério do programador) de atributos
-          privados. Podemos criar métodos de acesso ao molde do que fizemos na
-          aula passada:
+          <strong>
+            Métodos de Acesso em linguagens como o Java são métodos que permitem
+            a leitura e/ou escrita (a critério do programador) de atributos
+            privados.
+          </strong>
         </p>
 
         <Pre>
@@ -35,8 +36,7 @@ export const AccessMethods = () => {
         <p>
           Nesse exemplo, getCor retorna o valor da cor enquanto o setCor altera
           o valor da cor. No entanto, não podemos impedir que alguém por engano
-          crie um atributo cor no objeto e passe um valor para ele, como vimos
-          anteriormente.
+          crie um atributo cor no objeto e passe um valor para ele.
           <br />
           <br />
           Podemos usar o conceito de propriedades para nos auxiliar nesse caso.
