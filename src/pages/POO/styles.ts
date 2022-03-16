@@ -8,7 +8,7 @@ export const Container = styled.main`
   justify-content: center;
   background: #fff;
   padding-top: 80px;
-  
+
   h1 {
     text-align: center;
     font: 700 4rem "Lato", sans-serif;
@@ -23,34 +23,33 @@ export const Container = styled.main`
   }
 
   strong {
-    color: #33143f;
+    color: #f5b324;
+  }
+  
+  @media (max-width: 920px) {
+    h1 {
+      transition: 1.8s all;
+      font-size: 2.5rem;
+    }
+    p {
+      transition: 1.8s all;
+      font-size: 1rem;
+      tex-align: left;
+    }
   }
 
-    @media (max-width: 920px) {
-      h1 {
-        transition: 1.8s all;
-        font-size: 2.5rem;
-      }
-      p {
-        transition: 1.8s all;
-        font-size: 1rem;
-        tex-align: left;
-      }
+  @media (max-width: 790px) {
+    h1 {
+      font-size: 2rem;
     }
-    
-    @media (max-width: 790px) {
-      h1 {
-        font-size: 2rem;
-      }
-      p {
-        width: 80%;
-      }
+    p {
+      width: 80%;
     }
+  }
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 1.5rem;
-      }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.5rem;
     }
- 
+  }
 `;
