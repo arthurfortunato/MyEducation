@@ -16,14 +16,19 @@ export const LoopRepetition = () => {
         <h2>While</h2>
 
         <p>
-          O while é a estrutura que executa um código enquanto uma condição for
-          verdadeira. Exemplo:
+          <strong>
+            {" "}
+            O while é a estrutura que executa um código enquanto uma condição
+            for verdadeira
+          </strong>
+          . Exemplo:
         </p>
 
         <Pre>
           <code>
             {`
               let count = 0; 
+
               while(count < 100){
                   console.log(count);
                   count++;
@@ -55,20 +60,24 @@ export const LoopRepetition = () => {
 
         <p>
           Há casos em que é necessário executar o while pelo menos uma vez. Para
-          isso temos a estrutura do-while, onde primeiro se executa o código e
-          depois é verificado a condição para continuar executando ou não. O
-          mesmo exemplo:
+          isso temos a estrutura do-while, onde{" "}
+          <strong>
+            primeiro se executa o código e depois é verificado a condição para
+            continuar executando ou não
+          </strong>
+          . O mesmo exemplo:
         </p>
 
         <Pre>
           <code>
             {`
            let count = 0; 
-            do{
+
+            do {
                 console.log(count);
                 count++;
             }
-           while(count < 100);
+            while(count < 100);
           `}
           </code>
         </Pre>
@@ -78,18 +87,21 @@ export const LoopRepetition = () => {
         <h2>For</h2>
 
         <p>
-          O for é uma estrutura de repetição que é executado um número
-          específico de vezes. Nele é declarado um variável com um valor
-          inicial, depois é determinado a condição de parada e por fim a passo
-          dado entre o valor inicial e o final. Exemplo:
+          O for é uma{" "}
+          <strong>
+            estrutura de repetição que é executado um número específico de vezes
+          </strong>
+          . Nele é declarado um variável com um valor inicial, depois é
+          determinado a condição de parada e por fim a passo dado entre o valor
+          inicial e o final. Exemplo:
         </p>
 
         <Pre>
           <code>
             {`
-           for(let i = 0; i < 10; i++){
-            console.log(i+1);
-          }
+           for(let i = 0; i < 10; i++) {
+            console.log(i + 1);
+           }
          `}
           </code>
         </Pre>

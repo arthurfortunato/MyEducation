@@ -10,6 +10,10 @@ export const Container = styled.main`
   font-family: Lato, Helvetica, sans-serif;
   color: #e1e1e1;
   padding-top: 80px;
+
+  strong {
+    color: #f5b324;
+  }
 `;
 
 export const Header = styled.header`
@@ -67,7 +71,7 @@ export const Section = styled.section`
 
 export const Pre = styled.pre`
   align-self: center;
-  width: 80%;
+  width: 65%;
   background: #26262a;
   padding: 10px 50px 0 0;
   font-size: 1rem;
@@ -82,7 +86,6 @@ export const Pre = styled.pre`
 
   @media (max-width: 955px) {
     transition: 1.8s all;
-    width: 100%;
     code {
       font-size: 0.8rem;
     }
