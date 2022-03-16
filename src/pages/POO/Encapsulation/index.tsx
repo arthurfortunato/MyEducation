@@ -9,10 +9,12 @@ export const Encapsulation = () => {
 
       <Section className="section section__encapsulation">
         <p>
-          Encapsulamento é o conceito de negar o acesso aos atributos de uma
-          classe diretamente, seja para leitura ou escrita. A maioria das
-          linguagens orientadas a objetos utilizam algum comando como private
-          por exemplo para restringir esse acesso.
+          <strong>
+            Encapsulamento é o conceito de negar o acesso aos atributos de uma
+            classe diretamente, seja para leitura ou escrita
+          </strong>
+          . A maioria das linguagens orientadas a objetos utilizam algum comando
+          como private por exemplo para restringir esse acesso.
           <br />
           <br />
           O JavaScript não é uma linguagem orientada a objetos de nascença, o
@@ -59,8 +61,12 @@ export const Encapsulation = () => {
           acessível para leitura ou alteração de fora dessa classe.
           <br />
           <br />
-          Também podemos usar um factory function, uma função que cria um
-          objeto, para encapsular informações seria assim:
+          Também podemos usar um{" "}
+          <strong>
+            factory function, uma função que cria um objeto, para encapsular
+            informações
+          </strong>
+          , seria assim:
           <br />
         </p>
 
@@ -113,17 +119,13 @@ export const Encapsulation = () => {
           nossa função que lê a cor encapsulada ainda retorna 'blue'.
           <br />
           <br />
-          Muito cuidado com isso! Linguagens dinâmicas como JavaScript ou
-          Python, permitem a inserção de novos atributos ou métodos em objetos
-          pré-existentes. Isso torna erros de digitação particularmente
-          problemáticos, porque em vez de trocar o valor de um atributo
-          existente, criamos um novo com o nome incorreto.
-          <br />
-          <br />
-          Quanto a sintaxe de classe, estima-se que terá em um futuro próximo
-          uma sintaxe usando # na frente de variáveis privadas. Hoje isso é
-          suportado em alguns navegadores maiores, mas ainda não está
-          oficializado.
+          <strong>
+            Muito cuidado com isso! Linguagens dinâmicas como JavaScript ou
+            Python, permitem a inserção de novos atributos ou métodos em objetos
+            pré-existentes. Isso torna erros de digitação particularmente
+            problemáticos, porque em vez de trocar o valor de um atributo
+            existente, criamos um novo com o nome incorreto.
+          </strong>
           <br />
           <br />
           O que podemos fazer é no método construtor declarar uma variável como
