@@ -9,8 +9,10 @@ export const Reduce = () => {
 
       <Section>
         <p>
-          O objetivo do reduce é reduzir um vetor a um valor ou objeto. Por
-          exemplo, somar todos os elementos de um vetor é reduzir ele a um
+          <strong>
+            O objetivo do reduce é reduzir um vetor a um valor ou objeto
+          </strong>
+          . Por exemplo, somar todos os elementos de um vetor é reduzir ele a um
           valor. O reduce é um pouco mais complexo que o map e o filter porque
           deve ser passado um parâmetro a mais. Vejamos o exemplo da soma:
         </p>
@@ -25,23 +27,28 @@ export const Reduce = () => {
             `}
           </code>
         </Pre>
-
+        <br />
         <p>
-          Além do elemento do vetor, é necessário passar a variável que vai
-          armazenar a evolução do estado ao longo da aplicação da função no
-          vetor. 
-          <br/>
-          <br/>
-          No caso podemos pensar nessa variável estado como um acumulador
-          que guarda a soma parcial até o presente elemento da iteração. Assim,
-          a função recebe a soma acumulada e o novo item, retornando o estado
+          <strong>
+            Além do elemento do vetor, é necessário passar a variável que vai
+            armazenar a evolução do estado ao longo da aplicação da função no
+            vetor.{" "}
+          </strong>
+          <br />
+          <br />
+          No caso podemos pensar nessa variável estado como um acumulador que
+          guarda a soma parcial até o presente elemento da iteração. Assim, a
+          função recebe a soma acumulada e o novo item, retornando o estado
           somado ao item. Esse valor então é passado como estado para o elemento
           seguinte. Ao percorrer todo o vetor, o valor dessa variável estado é
-          retornado. O primeiro elemento não recebe um estado por ser o
-          primeiro, então o segundo elemento recebe o primero como estado.
-          Porém, é possível declarar explicitamente qual seria o estado inicial
-          a ser passado para o primeiro elemento, basta passar como parâmetro
-          para o reduce:
+          retornado.{" "}
+          <strong>
+            O primeiro elemento não recebe um estado por ser o primeiro, então o
+            segundo elemento recebe o primero como estado. Porém, é possível
+            declarar explicitamente qual seria o estado inicial a ser passado
+            para o primeiro elemento, basta passar como parâmetro para o reduce
+          </strong>
+          :
         </p>
 
         <Pre>
@@ -54,16 +61,11 @@ export const Reduce = () => {
           `}
           </code>
         </Pre>
-
+        <br />
         <p>
           Na linha 3 adicionamos o zero como estado inicial. Em casos simples
           como esse não será necessário declarar explicitamente, mas ao
           trabalhar com objetos é necessário.
-          <br />
-          <br />
-          Vamos fazer um exemplo com objetos, caso ainda não tenha
-          familiaridade, retorne para reler esse trecho após o módulo de
-          introdução a orientação a objeto.
           <br />
           <br />
           Suponha que tenha um vetor de objetos aluno que possuem três
@@ -83,7 +85,7 @@ export const Reduce = () => {
           `}
           </code>
         </Pre>
-
+        <br />
         <p>
           Vamos usar o reduce para somar todas a notas 1 e 2 dos alunos. Para
           isso, declaramos primeiro o objeto a ser recebido como estado inicial:
@@ -101,7 +103,7 @@ export const Reduce = () => {
           `}
           </code>
         </Pre>
-
+        <br />
         <p>Em seguida passamos como parâmetro para o reduce:</p>
 
         <Pre>
@@ -118,7 +120,7 @@ export const Reduce = () => {
               `}
           </code>
         </Pre>
-
+        <br/>
         <p>
           Note que podemos escrever em linhas separadas para facilitar a escrita
           e leitura. Esse reduce, a cada rodada, cria um novo objeto que contém

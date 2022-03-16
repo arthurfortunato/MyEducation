@@ -10,9 +10,9 @@ export const Filter = () => {
       <Section className="section section__filter">
         <p>
           Filter é uma função de alta ordem semelhante ao map, a diferença é que
-          o objetivo do filter é filtrar elementos do vetor. Portanto a função
+          <strong> o objetivo do filter é filtrar elementos do vetor. Portanto a função
           passada deve receber o elemento e retornar um booleano. Se retorna
-          true o elemento será mantido, senão retirado.
+          true o elemento será mantido, senão retirado.</strong>
           <br />
           <br />
           Como exemplo, suponha que temos um vetor numérico e queremos somente
