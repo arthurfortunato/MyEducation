@@ -9,8 +9,11 @@ export const ClassAndConstructor = () => {
 
       <Section className="section section__class-constructor">
         <p>
-          Classes são a forma de definir as entidades no nosso sistema. Elas são
-          estruturas capazes de dar origem a infinitos objetos de mesmo tipo.
+          <strong>
+            Classes são a forma de definir as entidades no nosso sistema. Elas
+            são estruturas capazes de dar origem a infinitos objetos de mesmo
+            tipo.
+          </strong>
           <br />
           <br />
           Para criar uma classe usamos o comando class no JavaScript.
@@ -27,10 +30,12 @@ export const ClassAndConstructor = () => {
         </Pre>
 
         <p>
-          O aspecto mais relevante de uma classe é o método construtor, onde
-          indicaremos quais são os atributos que a classe possui e quais são os
-          valores necessários que precisam ser definidos no momento da criação
-          do objeto.
+          <strong>
+            O aspecto mais relevante de uma classe é o método construtor, onde
+            indicaremos quais são os atributos que a classe possui e quais são
+            os valores necessários que precisam ser definidos no momento da
+            criação do objeto.
+          </strong>
           <br />
           <br />
           A classe é semelhante a uma "planta baixa" que determina a estrutura e
@@ -73,9 +78,12 @@ export const ClassAndConstructor = () => {
         </Pre>
 
         <p>
-          É muito recomendado sempre iniciar nomes de classes com letra
-          maiúscula. Além de manter o código mais organizado, facilita a leitura
-          e entendimento uma vez que cria uma distinção clara entre as classes e
+          <strong>
+            É muito recomendado sempre iniciar nomes de classes com letra
+            maiúscula
+          </strong>
+          . Além de manter o código mais organizado, facilita a leitura e
+          entendimento uma vez que cria uma distinção clara entre as classes e
           variáveis.
         </p>
       </Section>
