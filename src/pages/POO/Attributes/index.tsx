@@ -71,13 +71,15 @@ export const Attributes = () => {
         <Pre>
           <code>
             {`
-             class Quadrado{
-                constructor(base, altura){
-                    if(isNaN(base) || isNaN(altura)) throw "Base e altura precisam ser números!";
-                    this.base = base;
-                    this.altura = altura;
-                }
-             }
+              class Quadrado{
+                  constructor(base, altura){
+                      if(isNaN(base) || isNaN(altura)) {
+                        throw "Base e altura precisam ser números!";
+                      }
+                      this.base = base;
+                      this.altura = altura;
+                  }
+              }
          `}
           </code>
         </Pre>
