@@ -1,4 +1,4 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Header, Section } from "./styles";
 import introduction01 from "../../../assets/introduction-node01.png";
 import introduction02 from "../../../assets/introduction-node02.webp";
 
