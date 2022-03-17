@@ -24,6 +24,7 @@ import { AccessMethods } from "../pages/POO/AccessMethods";
 import { InheritanceAndPolymorphism } from "../pages/POO/Inheritance&Polymorphism";
 
 import { Node } from "../pages/Node";
+import { IntroductionNode } from "../pages/Node/Introduction";
 
 export const Router = () => {
   return (
@@ -53,6 +54,7 @@ export const Router = () => {
         <Route path="/poo/inheritanceandpolymorphism" element={<InheritanceAndPolymorphism />} />
 
         <Route path="/node" element={<Node />} />
+        <Route path="/node/introduction" element={<IntroductionNode />} />
       </Routes>
     </BrowserRouter>
   );
