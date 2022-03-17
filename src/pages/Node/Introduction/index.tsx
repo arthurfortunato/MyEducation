@@ -14,7 +14,7 @@ export const IntroductionNode = () => {
 
         <p>
           <strong>
-            O Node.js é um ambiente de execução na porta 80 padrão,baseado na
+            O Node.js é um ambiente de execução na porta 80 padrão, baseado na
             pilha da web aberta (HTML, CSS e JS). Ou seja, é uma plataforma em
             que é possível criar aplicações Javascript sem depender de um
             browser para a execução.
