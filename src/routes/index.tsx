@@ -23,6 +23,8 @@ import { Encapsulation } from "../pages/POO/Encapsulation";
 import { AccessMethods } from "../pages/POO/AccessMethods";
 import { InheritanceAndPolymorphism } from "../pages/POO/Inheritance&Polymorphism";
 
+import { Node } from "../pages/Node";
+
 export const Router = () => {
   return (
     <BrowserRouter>
@@ -50,6 +52,7 @@ export const Router = () => {
         <Route path="/poo/accessmethods" element={<AccessMethods />} />
         <Route path="/poo/inheritanceandpolymorphism" element={<InheritanceAndPolymorphism />} />
 
+        <Route path="/node" element={<Node />} />
       </Routes>
     </BrowserRouter>
   );

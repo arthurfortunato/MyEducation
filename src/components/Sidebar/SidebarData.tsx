@@ -110,4 +110,18 @@ export const SidebarData = [
       },
     ],
   },
+  {
+    title: "Node.Js",
+    path: "/node",
+    icon: <MdIcons.MdOutlineEmojiObjects />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "Introdução",
+        path: "/node/introduction",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ]
+  }
 ];
