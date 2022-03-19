@@ -132,6 +132,11 @@ export const SidebarData = [
         path: "/node/orm",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Microservice",
+        path: "/node/microservice",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ]
   }
 ];
