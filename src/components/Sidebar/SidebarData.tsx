@@ -127,6 +127,11 @@ export const SidebarData = [
         path: "/node/express",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "ORM",
+        path: "/node/orm",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ]
   }
 ];

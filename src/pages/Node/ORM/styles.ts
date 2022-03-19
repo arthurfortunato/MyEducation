@@ -14,13 +14,6 @@ export const Container = styled.main`
   strong {
     color: #f5b324;
   }
-
-  ul {
-    padding-left: 30px;
-  }
-  ul li {
-    padding: 10px;
-  }
 `;
 
 export const Header = styled.header`
@@ -30,14 +23,6 @@ export const Header = styled.header`
     font: 700 2.6rem "Lato", sans-serif;
     padding-top: 20px;
     padding-bottom: 10px;
-  }
-
-  @media (max-width: 600px) {
-    width: 80%;
-    h1 {
-      transition: 1.8s all;
-      font-size: 2rem;
-    }
   }
 `;
 
@@ -53,6 +38,10 @@ export const Section = styled.section`
     padding-bottom: 20px;
   }
 
+  h3 {
+    padding-left: 15px
+  }
+
   p {
     font: 400 1.3rem "Lato", sans-serif;
     margin: 10px;
@@ -60,11 +49,23 @@ export const Section = styled.section`
     line-height: 1.7rem;
   }
 
+  ul {
+    padding-left: 30px;
+  }
+
+  img {
+    align-self: center;
+    width: 50%;
+  }
+
   @media (max-width: 600px) {
     width: 80%;
     p {
       transition: 1.8s all;
       font-size: 1rem;
+    }
+    img {
+      width: 70%;
     }
   }
 `;
