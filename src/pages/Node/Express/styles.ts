@@ -14,6 +14,13 @@ export const Container = styled.main`
   strong {
     color: #f5b324;
   }
+
+  ul {
+    padding-left: 30px;
+  }
+  ul li {
+    padding: 10px;
+  }
 `;
 
 export const Header = styled.header`
