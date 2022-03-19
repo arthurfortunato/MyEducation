@@ -10,9 +10,9 @@ export const Container = styled.main`
   font: 700 3rem "Lato", sans-serif;
 
   strong {
-    color: #33143f;
+    color: #f5b324;
   }
-
+  
   @media(max-width: 920px) {
     transition: 1.8s all;
     font-size: 2.5rem;

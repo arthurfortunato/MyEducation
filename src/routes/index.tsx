@@ -25,6 +25,7 @@ import { InheritanceAndPolymorphism } from "../pages/POO/Inheritance&Polymorphis
 
 import { Node } from "../pages/Node";
 import { IntroductionNode } from "../pages/Node/Introduction";
+import { Express } from "../pages/Node/Express";
 
 export const Router = () => {
   return (
@@ -39,22 +40,32 @@ export const Router = () => {
         <Route path="programminglogic/loops" element={<LoopRepetition />} />
         <Route path="programminglogic/vectors" element={<Vectors />} />
         <Route path="programminglogic/functions" element={<Functions />} />
-        <Route path="programminglogic/higherorderfunctions" element={<HigherOrderFunctions />} />
+        <Route
+          path="programminglogic/higherorderfunctions"
+          element={<HigherOrderFunctions />}
+        />
         <Route path="programminglogic/map" element={<Map />} />
         <Route path="programminglogic/filter" element={<Filter />} />
         <Route path="programminglogic/reduce" element={<Reduce />} />
-        
+
         <Route path="/poo" element={<POO />} />
         <Route path="/poo/introduction" element={<IntroductionPOO />} />
-        <Route path="/poo/classandconstructor" element={<ClassAndConstructor />} />
+        <Route
+          path="/poo/classandconstructor"
+          element={<ClassAndConstructor />}
+        />
         <Route path="/poo/attributes" element={<Attributes />} />
         <Route path="/poo/methods" element={<Methods />} />
         <Route path="/poo/encapsulation" element={<Encapsulation />} />
         <Route path="/poo/accessmethods" element={<AccessMethods />} />
-        <Route path="/poo/inheritanceandpolymorphism" element={<InheritanceAndPolymorphism />} />
+        <Route
+          path="/poo/inheritanceandpolymorphism"
+          element={<InheritanceAndPolymorphism />}
+        />
 
         <Route path="/node" element={<Node />} />
         <Route path="/node/introduction" element={<IntroductionNode />} />
+        <Route path="/node/express" element={<Express />} />
       </Routes>
     </BrowserRouter>
   );
