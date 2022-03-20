@@ -30,6 +30,7 @@ import { ORM } from "../pages/Node/ORM";
 import { Microservice } from "../pages/Node/Microservice";
 
 import { React } from "../pages/React";
+import { IntroductionReact } from "../pages/React/Introduction";
 
 export const Router = () => {
   return (
@@ -74,6 +75,7 @@ export const Router = () => {
         <Route path="/node/microservice" element={<Microservice />} />
 
         <Route path="/react" element={<React />} />
+        <Route path="/react/introduction" element={<IntroductionReact />} />
       </Routes>
     </BrowserRouter>
   );
