@@ -151,6 +151,11 @@ export const SidebarData = [
         path: "/react/introduction",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Hooks",
+        path: "/react/hooks",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
