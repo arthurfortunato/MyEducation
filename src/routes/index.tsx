@@ -29,6 +29,8 @@ import { Express } from "../pages/Node/Express";
 import { ORM } from "../pages/Node/ORM";
 import { Microservice } from "../pages/Node/Microservice";
 
+import { React } from "../pages/React";
+
 export const Router = () => {
   return (
     <BrowserRouter>
@@ -70,6 +72,8 @@ export const Router = () => {
         <Route path="/node/express" element={<Express />} />
         <Route path="/node/orm" element={<ORM />} />
         <Route path="/node/microservice" element={<Microservice />} />
+
+        <Route path="/react" element={<React />} />
       </Routes>
     </BrowserRouter>
   );

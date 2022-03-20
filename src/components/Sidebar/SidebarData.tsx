@@ -137,6 +137,20 @@ export const SidebarData = [
         path: "/node/microservice",
         icon: <IoIcons.IoIosPaper />,
       },
-    ]
-  }
+    ],
+  },
+  {
+    title: "React.Js",
+    path: "/react",
+    icon: <MdIcons.MdOutlineEmojiObjects />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "Introdução",
+        path: "/react/introduction",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
 ];
