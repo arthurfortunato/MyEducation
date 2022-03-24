@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import { Home } from "../pages/Home";
+import { Concepts } from "../pages/Home/Concepts";
 
 import { ProgrammingLogic } from "../pages/ProgrammingLogic";
 import { Variables } from "../pages/ProgrammingLogic/Variables";
@@ -39,6 +40,7 @@ export const Router = () => {
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/concepts" element={<Concepts />} />
 
         <Route path="/programminglogic" element={<ProgrammingLogic />} />
         <Route path="programminglogic/variables" element={<Variables />} />

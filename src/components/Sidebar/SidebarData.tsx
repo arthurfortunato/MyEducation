@@ -3,12 +3,23 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 import * as GiIcons from "react-icons/gi";
 import * as MdIcons from "react-icons/md";
+import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
   {
     title: "Home",
     path: "/",
     icon: <AiIcons.AiFillHome />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Conceitos",
+        path: "/concepts",
+        icon: <BsIcons.BsGearFill />,
+      },
+    ],
   },
   {
     //ProgrammingLogic
