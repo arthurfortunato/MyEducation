@@ -106,11 +106,28 @@ export const Concepts = () => {
           </strong>
           : Dá a possibilidade da nossa aplicação pegar códigos, como o
           javascript, por exemplo, e executar no cliente;
+          <br />
+          <br />
+          <strong>RESTFUL, é a aplicação dos padrões REST</strong>
         </p>
-        <strong>RESTFUL, é a aplicação dos padrões REST</strong>
       </Section>
 
-      
+      <Section className="section section__status-http">
+        <h2>
+          Códigos de status de respostas <strong>HTTP</strong>
+        </h2>
+        <p>
+          <strong>1. </strong>Respostas de informação <strong>(100-199)</strong>,
+          <br/>
+          <strong>2. </strong>Respostas de sucesso <strong>(200-299)</strong>,
+          <br/>
+          <strong>3. </strong>Redirecionamentos <strong>(300-399)</strong>,
+          <br/>
+          <strong>4. </strong>Erros do cliente <strong>(400-499)</strong>,
+          <br/>
+          <strong>5. </strong>Erros do servidor <strong>(500-599)</strong>.
+        </p>
+      </Section>
     </Container>
   );
 };
