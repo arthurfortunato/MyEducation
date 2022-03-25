@@ -1,4 +1,4 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Header, Section } from "./styles";
 
 export const Hooks = () => {
   return (
