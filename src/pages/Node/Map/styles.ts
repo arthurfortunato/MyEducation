@@ -9,6 +9,5 @@ export const ContainerStyled = styled.main`
 
   img {
     width: 100%;
-    height: 80%;
   }
 `
