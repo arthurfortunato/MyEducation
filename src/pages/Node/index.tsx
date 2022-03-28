@@ -1,5 +1,4 @@
 import { Container } from "./styles";
-import node from "../../assets/NODEJS.png";
 
 export const Node = () => {
   return (
@@ -15,7 +14,6 @@ export const Node = () => {
           Além disso, pode ser usado na transmissão e visualização de dados,
           assim como no acompanhamento das interações da audiência no seu site.
         </p>
-        <img src={node} alt="Mapa mental node" />
       </main>
     </Container>
   );
