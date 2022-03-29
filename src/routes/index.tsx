@@ -33,6 +33,7 @@ import { Microservice } from "../pages/Node/Microservice";
 
 import { Docker } from "../pages/Docker";
 import { IntroductionDocker } from "../pages/Docker/Introduction";
+import { AdvantagesAndDisadvantages } from "../pages/Docker/AdvantagesAndDisadvantages";
 
 import { React } from "../pages/React";
 import { IntroductionReact } from "../pages/React/Introduction";
@@ -84,6 +85,7 @@ export const Router = () => {
 
         <Route path="/docker" element={<Docker />} />
         <Route path="/docker/introduction" element={<IntroductionDocker />} />
+        <Route path="/docker/advantagesanddisadvantages" element={<AdvantagesAndDisadvantages />} />
 
         <Route path="/react" element={<React />} />
         <Route path="/react/introduction" element={<IntroductionReact />} />

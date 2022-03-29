@@ -10,7 +10,7 @@ export const IntroductionDocker = () => {
       </Header>
 
       <Section className="section section__introduction">
-        <h2>O que é Docker</h2>
+        <h2>O que é Docker?</h2>
         <p>
           Ele permite que os usuários{" "}
           <strong>
