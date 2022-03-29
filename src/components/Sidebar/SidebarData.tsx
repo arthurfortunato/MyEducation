@@ -172,6 +172,11 @@ export const SidebarData = [
         path: "/docker/advantagesanddisadvantages",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Architecture",
+        path: "/docker/architecture",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
   { //React
