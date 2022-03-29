@@ -1,10 +1,15 @@
 import { Container } from "./styles";
 
+import { FaDocker } from "react-icons/fa";
+
 export const Docker = () => {
   return (
     <Container>
       <main>
-        <h1>Docker</h1>
+        <div>
+          <h1>Docker</h1>
+          <FaDocker color="#2496ed" size={"50px"}/>
+        </div>
 
         <p>
           <strong>

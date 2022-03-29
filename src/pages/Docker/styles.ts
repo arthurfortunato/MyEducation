@@ -12,8 +12,15 @@ export const Container = styled.main`
   main {
     width: 70%;
 
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     h1 {
       text-align: center;
+      padding-right: 40px;
       font: 700 4rem "Lato", sans-serif;
     }
 
@@ -25,7 +32,7 @@ export const Container = styled.main`
     }
 
     strong {
-      color: #f5b324;
+      color: #2496ed;
     }
 
     img {
@@ -41,7 +48,7 @@ export const Container = styled.main`
       p {
         transition: 1.8s all;
         font-size: 1rem;
-        tex-align: left;
+        text-align: left;
       }
     }
 
