@@ -31,6 +31,8 @@ import { Express } from "../pages/Node/Express";
 import { ORM } from "../pages/Node/ORM";
 import { Microservice } from "../pages/Node/Microservice";
 
+import { Docker } from "../pages/Docker";
+
 import { React } from "../pages/React";
 import { IntroductionReact } from "../pages/React/Introduction";
 import { Hooks } from "../pages/React/Hooks";
@@ -78,6 +80,8 @@ export const Router = () => {
         <Route path="/node/express" element={<Express />} />
         <Route path="/node/orm" element={<ORM />} />
         <Route path="/node/microservice" element={<Microservice />} />
+
+        <Route path="/docker" element={<Docker />} />
 
         <Route path="/react" element={<React />} />
         <Route path="/react/introduction" element={<IntroductionReact />} />

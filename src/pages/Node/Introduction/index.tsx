@@ -88,7 +88,7 @@ export const IntroductionNode = () => {
             Dessa forma, o loop de eventos, chamado assim justamente porque cada
             solicitação é classificada como um evento único, executa todas as
             requisições (inclusive as concorrentes) na pilha de eventos de forma
-            assíncrona,. Ou seja, sem que elas bloqueiem a thread.
+            assíncrona. Ou seja, sem que elas bloqueiem a thread.
           </strong>{" "}
           Veja essa explicação, na imagem a seguir.
         </p>

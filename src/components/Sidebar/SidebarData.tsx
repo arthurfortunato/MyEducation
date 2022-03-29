@@ -1,12 +1,13 @@
 import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-import * as RiIcons from "react-icons/ri";
-import * as GiIcons from "react-icons/gi";
-import * as MdIcons from "react-icons/md";
 import * as BsIcons from "react-icons/bs";
+import * as FaIcons from "react-icons/fa";
+import * as GiIcons from "react-icons/gi";
+import * as IoIcons from "react-icons/io";
+import * as MdIcons from "react-icons/md";
+import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
-  {
+  { //Home
     title: "Home",
     path: "/",
     icon: <AiIcons.AiFillHome />,
@@ -21,8 +22,7 @@ export const SidebarData = [
       },
     ],
   },
-  {
-    //ProgrammingLogic
+  { //ProgrammingLogic
     title: "Lógica de Programação",
     path: "/programminglogic",
     icon: <GiIcons.GiLogicGateNxor />,
@@ -77,7 +77,7 @@ export const SidebarData = [
       },
     ],
   },
-  {
+  { //POO
     title: "POO",
     path: "/poo",
     icon: <MdIcons.MdOutlineEmojiObjects />,
@@ -121,10 +121,10 @@ export const SidebarData = [
       },
     ],
   },
-  {//Node
+  { //Node  
     title: "Node.Js",
     path: "/node",
-    icon: <MdIcons.MdOutlineEmojiObjects />,
+    icon: <FaIcons.FaNode />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
@@ -155,10 +155,24 @@ export const SidebarData = [
       },
     ],
   },
-  {
+  { //Docker
+    title: "Docker",
+    path: "/docker",
+    icon: <FaIcons.FaDocker />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "Introduction",
+        path: "/docker/introduction",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  { //React
     title: "React.Js",
     path: "/react",
-    icon: <MdIcons.MdOutlineEmojiObjects />,
+    icon: <FaIcons.FaReact />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
