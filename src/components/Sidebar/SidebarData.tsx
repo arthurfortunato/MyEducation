@@ -90,8 +90,8 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Classe e Construtor",
-        path: "/poo/classandconstructor",
+        title: "Classe",
+        path: "/poo/class",
         icon: <IoIcons.IoIosPaper />,
       },
       {

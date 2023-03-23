@@ -33,6 +33,8 @@ export const Encapsulation = () => {
           Veja esse exemplo que usa uma função em vez de class:
           <br />
         </p>
+        <br />
+        <br />
 
         <Pre>
           <code>
