@@ -78,9 +78,9 @@ export const Pre = styled.pre`
 
   code {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0  10px 20px;
   }
 
   @media (max-width: 1070px) {

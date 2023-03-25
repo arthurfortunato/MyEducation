@@ -71,7 +71,7 @@ export const Section = styled.section`
 
 export const Pre = styled.pre`
   align-self: center;
-  width: 55%;
+  width: 75%;
   background: #26262a;
   padding: 10px 80px 0 0;
   font-size: 1rem;
@@ -81,7 +81,7 @@ export const Pre = styled.pre`
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0  10px 20px;
   }
 
   @media (max-width: 955px) {

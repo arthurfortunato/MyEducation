@@ -74,6 +74,7 @@ export const Pre = styled.pre`
   align-self: center;
   width: 80%;
   background: #26262a;
+  padding: 10px 80px 0 0;
   font-size: 1rem;
   border-radius: 10px;
 

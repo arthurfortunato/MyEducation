@@ -25,50 +25,58 @@ export const Polymorphism = () => {
         <br />
         <Pre>
           <code>
-            {`class Animal {
-              public void fazerBarulho() {
-                System.out.println("Barulho genérico");
-              }
-            }`}
-          </code>
-        </Pre>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {`class Cachorro extends Animal {
-              public void fazerBarulho() {
-                System.out.println("Au Au");
-              }
-            }`}
-          </code>
-        </Pre>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {`class Gato extends Animal {
-              public void fazerBarulho() {
-                System.out.println("Miau");
-              }
-            }`}
-          </code>
-        </Pre>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {`public class Main {
-              public static void main(String[] args) {
-                Animal[] animais = new Animal[2];
-                animais[0] = new Cachorro();
-                animais[1] = new Gato();
-
-                for (Animal animal : animais) {
-                  animal.fazerBarulho();
+            {
+              `class Animal {
+                public void fazerBarulho() {
+                  System.out.println("Barulho genérico");
                 }
               }
-            }`}
+            `}
+          </code>
+        </Pre>
+        <br />
+        <br />
+        <Pre>
+          <code>
+            {
+              `class Cachorro extends Animal {
+                public void fazerBarulho() {
+                  System.out.println("Au Au");
+                }
+              }
+            `}
+          </code>
+        </Pre>
+        <br />
+        <br />
+        <Pre>
+          <code>
+            {
+              `class Gato extends Animal {
+                public void fazerBarulho() {
+                  System.out.println("Miau");
+                }
+              }
+            `}
+          </code>
+        </Pre>
+        <br />
+        <br />
+        <Pre>
+          <code>
+            {
+              `public class Main {
+                public static void main(String[] args) {
+                  Animal[] animais = new Animal[2];
+                  animais[0] = new Cachorro();
+                  animais[1] = new Gato();
+
+                  for (Animal animal : animais) {
+                    animal.fazerBarulho();
+                  }
+                }
+              }
+            `}
           </code>
         </Pre>
       </Section>
