@@ -64,7 +64,7 @@ export const Section = styled.section`
 
 export const Pre = styled.pre`
   align-self: center;
-  width: 80%;
+  width: 50%;
   background: #26262a;
   padding: 10px 80px 0 0;
   font-size: 1rem;

@@ -9,11 +9,11 @@ export const IntroductionPOO = () => {
 
       <Section className="section section__poo">
         <p>
-          A <strong>Orientação a Objetos</strong> é uma abordagem para a
+        <strong>A Orientação a Objetos é uma abordagem para a
           programação que se baseia em conceitos como classes, objetos, herança,
           polimorfismo e encapsulamento. Esses conceitos são utilizados para
           modelar o mundo real em uma forma computacional, tornando a
-          programação mais clara, organizada e reutilizável.
+          programação mais clara, organizada e reutilizável.</strong>
           <br />
           <br />A orientação a objetos é um paradigma de programação que se
           baseia no conceito de "objetos".{" "}
