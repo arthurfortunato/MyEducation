@@ -61,7 +61,7 @@ export const Section = styled.section`
   }
 
   @media (max-width: 600px) {
-    width: 80%;
+    width: 90%;
     p {
       transition: 1.8s all;
       font-size: 1rem;
