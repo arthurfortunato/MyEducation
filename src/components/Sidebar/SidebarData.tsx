@@ -213,6 +213,11 @@ export const SidebarData = [
         path: "/java/jvm",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "JDK",
+        path: "/java/jdk",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
