@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: #fff;
   display: flex;
@@ -9,9 +9,11 @@ export const Container = styled.main`
   align-items: center;
   justify-content: center;
 
-  main {
-    width: 90%;
+  @media (max-width: 920px) {
+    height: 100%;
+  }
 
+  main {
     h1 {
       text-align: center;
       padding-top: 20px;
@@ -20,7 +22,7 @@ export const Container = styled.main`
 
     p {
       font: 400 1.3rem "Lato", sans-serif;
-      margin: 10px;
+      padding: 10px 20px 0 20px;
       text-align: justify;
       line-height: 1.7rem;
     }
@@ -35,6 +37,7 @@ export const Container = styled.main`
     }
 
     @media (max-width: 920px) {
+      height: 100%;
       h1 {
         transition: 1.8s all;
         font-size: 2.5rem;
