@@ -14,6 +14,7 @@ export const Container = styled.main`
   }
 
   main {
+    width: 90%;
     h1 {
       text-align: center;
       padding-top: 20px;
