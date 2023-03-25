@@ -223,6 +223,11 @@ export const SidebarData = [
         path: "/java/jdbc",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Maven",
+        path: "/java/maven",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
