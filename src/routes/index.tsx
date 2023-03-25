@@ -42,6 +42,7 @@ import { Java } from "../pages/Java";
 import { SpringFramework } from "../pages/Java/SpringFramework";
 import { JVM } from "../pages/Java/JVM";
 import { JDK } from "../pages/Java/JDK";
+import { JDBC } from "../pages/Java/JDBC";
 
 export const Router = () => {
   return (
@@ -90,12 +91,13 @@ export const Router = () => {
         <Route path="/react" element={<React />} />
         <Route path="/react/introduction" element={<IntroductionReact />} />
         <Route path="/react/hooks" element={<Hooks />} />
-        
+
         {/* JAVA */}
         <Route path="/java" element={<Java />} />
         <Route path="/java/spring" element={<SpringFramework />} />
         <Route path="/java/jvm" element={<JVM />} />
         <Route path="/java/jdk" element={<JDK />} />
+        <Route path="/java/jdbc" element={<JDBC />} />
       </Routes>
     </BrowserRouter>
   );

@@ -218,6 +218,11 @@ export const SidebarData = [
         path: "/java/jdk",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "JDBC",
+        path: "/java/jdbc",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
