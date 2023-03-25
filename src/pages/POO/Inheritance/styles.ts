@@ -73,7 +73,6 @@ export const Pre = styled.pre`
   align-self: center;
   width: 80%;
   background: #26262a;
-  padding: 10px 80px 0 0;
   font-size: 1rem;
   border-radius: 10px;
 
@@ -93,8 +92,10 @@ export const Pre = styled.pre`
   }
 
   @media (max-width: 570px) {
+    padding: 10px 55px 0 0;
+    transition: 1.8s all;
     code {
-      font-size: 0.57rem;
+      font-size: 0.5rem;
     }
   }
 `;

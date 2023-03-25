@@ -63,7 +63,9 @@ export const ClassAndConstructor = () => {
         <br />
         <Pre>
           <code>
-            {`Pessoa arthur = new Pessoa("Arthur", 30);`}
+            {`
+              Pessoa arthur = new Pessoa("Arthur", 30);
+            `}
           </code>
         </Pre>
       </Section>
