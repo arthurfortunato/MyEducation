@@ -18,7 +18,7 @@ import { Reduce } from "../pages/ProgrammingLogic/Reduce";
 import { POO } from "../pages/POO";
 import { IntroductionPOO } from "../pages/POO/Introduction";
 import { ClassAndConstructor } from "../pages/POO/Classe";
-import { Attributes } from "../pages/POO/Attributes";
+import { Polymorphism } from "../pages/POO/Polymorphism";
 import { Methods } from "../pages/POO/Methods";
 import { Encapsulation } from "../pages/POO/Encapsulation";
 import { AccessMethods } from "../pages/POO/AccessMethods";
@@ -68,7 +68,7 @@ export const Router = () => {
           path="/poo/class"
           element={<ClassAndConstructor />}
         />
-        <Route path="/poo/attributes" element={<Attributes />} />
+        <Route path="/poo/polymorphism" element={<Polymorphism />} />
         <Route path="/poo/methods" element={<Methods />} />
         <Route path="/poo/encapsulation" element={<Encapsulation />} />
         <Route path="/poo/accessmethods" element={<AccessMethods />} />

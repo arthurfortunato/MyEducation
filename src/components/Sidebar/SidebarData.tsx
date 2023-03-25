@@ -95,8 +95,8 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Atributos",
-        path: "/poo/attributes",
+        title: "Polimorfismo",
+        path: "/poo/polymorphism",
         icon: <IoIcons.IoIosPaper />,
       },
       {

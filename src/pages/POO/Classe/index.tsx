@@ -44,6 +44,29 @@ export const ClassAndConstructor = () => {
           </code>
         </Pre>
       </Section>
+      <Section className="section section__object">
+        <h2>Objeto</h2>
+        <p>
+          A classe é como um molde ou modelo para criar objetos. É uma definição
+          que descreve as características (atributos) e comportamentos (métodos)
+          de um tipo de objeto.
+          <br />
+          <br />
+          <strong>
+            Um objeto, por outro lado, é uma instância da classe. É uma
+            representação concreta de um objeto descrito pela classe.
+          </strong>{" "}
+          Cada objeto tem sua própria cópia dos atributos da classe, bem como
+          seus próprios valores para esses atributos.
+        </p>
+        <br />
+        <br />
+        <Pre>
+          <code>
+            {`Pessoa arthur = new Pessoa("Arthur", 30);`}
+          </code>
+        </Pre>
+      </Section>
     </Container>
   );
 };
