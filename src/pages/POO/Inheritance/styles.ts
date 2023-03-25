@@ -61,9 +61,10 @@ export const Section = styled.section`
   }
 
   @media (max-width: 600px) {
-    width: 80%;
+    transition: 1.8s all;
+    width: 100%;
     p {
-      transition: 1.8s all;
+      padding: 0 20px 0 20px;
       font-size: 1rem;
     }
   }
@@ -87,15 +88,17 @@ export const Pre = styled.pre`
     transition: 1.8s all;
     width: 100%;
     code {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 
   @media (max-width: 570px) {
-    padding: 10px 55px 0 0;
-    transition: 1.8s all;
+    border-radius: 0;
     code {
-      font-size: 0.5rem;
+      padding: 10 10 10 0;
+      align-items: right;
+      justify-content: right;
+      font-size: 0.6rem;
     }
   }
 `;
