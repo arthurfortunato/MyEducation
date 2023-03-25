@@ -38,6 +38,9 @@ import { React } from "../pages/React";
 import { IntroductionReact } from "../pages/React/Introduction";
 import { Hooks } from "../pages/React/Hooks";
 
+import { Java } from "../pages/Java";
+import { SpringFramework } from "../pages/Java/SpringFramework";
+
 export const Router = () => {
   return (
     <BrowserRouter>
@@ -62,10 +65,7 @@ export const Router = () => {
 
         <Route path="/poo" element={<POO />} />
         <Route path="/poo/introduction" element={<IntroductionPOO />} />
-        <Route
-          path="/poo/class"
-          element={<ClassAndConstructor />}
-        />
+        <Route path="/poo/class" element={<ClassAndConstructor />} />
         <Route path="/poo/polymorphism" element={<Polymorphism />} />
         <Route path="/poo/inheritance" element={<Inheritance />} />
         <Route path="/poo/encapsulation" element={<Encapsulation />} />
@@ -79,12 +79,19 @@ export const Router = () => {
 
         <Route path="/docker" element={<Docker />} />
         <Route path="/docker/introduction" element={<IntroductionDocker />} />
-        <Route path="/docker/advantagesanddisadvantages" element={<AdvantagesAndDisadvantages />} />
+        <Route
+          path="/docker/advantagesanddisadvantages"
+          element={<AdvantagesAndDisadvantages />}
+        />
         <Route path="/docker/architecture" element={<Architecture />} />
 
         <Route path="/react" element={<React />} />
         <Route path="/react/introduction" element={<IntroductionReact />} />
         <Route path="/react/hooks" element={<Hooks />} />
+        
+        {/* JAVA */}
+        <Route path="/java" element={<Java />} />
+        <Route path="/java/spring" element={<SpringFramework />} />
       </Routes>
     </BrowserRouter>
   );

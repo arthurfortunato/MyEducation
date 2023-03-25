@@ -5,6 +5,7 @@ import * as GiIcons from "react-icons/gi";
 import * as IoIcons from "react-icons/io";
 import * as MdIcons from "react-icons/md";
 import * as RiIcons from "react-icons/ri";
+import * as DiIcons from "react-icons/di";
 
 export const SidebarData = [
   {
@@ -190,6 +191,21 @@ export const SidebarData = [
       {
         title: "Hooks",
         path: "/react/hooks",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
+    //Java
+    title: "Java",
+    path: "/java",
+    icon: <DiIcons.DiJava />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "Spring Framework",
+        path: "/java/spring",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
