@@ -40,6 +40,7 @@ import { Hooks } from "../pages/React/Hooks";
 
 import { Java } from "../pages/Java";
 import { SpringFramework } from "../pages/Java/SpringFramework";
+import { JVM } from "../pages/Java/JVM";
 
 export const Router = () => {
   return (
@@ -92,6 +93,7 @@ export const Router = () => {
         {/* JAVA */}
         <Route path="/java" element={<Java />} />
         <Route path="/java/spring" element={<SpringFramework />} />
+        <Route path="/java/jvm" element={<JVM />} />
       </Routes>
     </BrowserRouter>
   );

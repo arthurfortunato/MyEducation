@@ -208,6 +208,11 @@ export const SidebarData = [
         path: "/java/spring",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "JVM",
+        path: "/java/jvm",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
