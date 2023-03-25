@@ -233,6 +233,11 @@ export const SidebarData = [
         path: "/java/springboot",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Interface",
+        path: "/java/interface",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
