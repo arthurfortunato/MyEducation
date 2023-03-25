@@ -115,7 +115,6 @@ export const SpringFramework = () => {
             <li>@Repository</li>
           </ul>
           <br />
-          <br />
           Assim, ao anotar determinada classe com algum desses estereótipos, o
           Spring entende que tal classe é um Bean e será gerenciada por ele.
           <br />

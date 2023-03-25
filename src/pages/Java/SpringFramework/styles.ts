@@ -58,6 +58,10 @@ export const Section = styled.section`
     margin: 10px;
     text-align: justify;
     line-height: 1.7rem;
+
+    ul {
+      padding-left: 20px;
+    }
   }
 
   @media (max-width: 600px) {

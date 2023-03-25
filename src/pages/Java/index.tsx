@@ -7,15 +7,15 @@ export const Java = () => {
         <h1>JAVA</h1>
 
         <p>
-          Java é uma linguagem de programação orientada a objetos, criada pela
+          <strong>Java é uma linguagem de programação orientada a objetos</strong>, criada pela
           Sun Microsystems em 1995 e atualmente mantida pela Oracle Corporation.
           Ela é uma das linguagens mais populares e utilizadas no mundo da
           programação devido a sua portabilidade, segurança e facilidade de uso.
           <br />
           <br />
-          Uma das principais características da linguagem Java é que ela é
+          <strong>Uma das principais características da linguagem Java é que ela é
           compilada em bytecode, que é executado pela Java Virtual Machine
-          (JVM). Isso significa que programas Java podem ser executados em
+          (JVM)</strong>. Isso significa que programas Java podem ser executados em
           qualquer plataforma que possua a JVM instalada, sem a necessidade de
           recompilação do código.
           <br />

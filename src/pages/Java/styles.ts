@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #fff;
   display: flex;
@@ -10,10 +10,11 @@ export const Container = styled.main`
   justify-content: center;
 
   main {
-    width: 70%;
+    width: 90%;
 
     h1 {
       text-align: center;
+      padding-top: 20px;
       font: 700 4rem "Lato", sans-serif;
     }
 
@@ -41,7 +42,6 @@ export const Container = styled.main`
       p {
         transition: 1.8s all;
         font-size: 1rem;
-        tex-align: left;
       }
     }
 
