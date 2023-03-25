@@ -19,10 +19,9 @@ import { POO } from "../pages/POO";
 import { IntroductionPOO } from "../pages/POO/Introduction";
 import { ClassAndConstructor } from "../pages/POO/Classe";
 import { Polymorphism } from "../pages/POO/Polymorphism";
-import { Methods } from "../pages/POO/Methods";
+import { Inheritance } from "../pages/POO/Inheritance";
 import { Encapsulation } from "../pages/POO/Encapsulation";
 import { AccessMethods } from "../pages/POO/AccessMethods";
-import { InheritanceAndPolymorphism } from "../pages/POO/Inheritance&Polymorphism";
 
 import { Node } from "../pages/Node";
 import { NodeMap } from "../pages/Node/Map";
@@ -69,13 +68,9 @@ export const Router = () => {
           element={<ClassAndConstructor />}
         />
         <Route path="/poo/polymorphism" element={<Polymorphism />} />
-        <Route path="/poo/methods" element={<Methods />} />
+        <Route path="/poo/inheritance" element={<Inheritance />} />
         <Route path="/poo/encapsulation" element={<Encapsulation />} />
         <Route path="/poo/accessmethods" element={<AccessMethods />} />
-        <Route
-          path="/poo/inheritanceandpolymorphism"
-          element={<InheritanceAndPolymorphism />}
-        />
 
         <Route path="/node" element={<Node />} />
         <Route path="/node/map" element={<NodeMap />} />

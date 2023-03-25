@@ -7,7 +7,8 @@ import * as MdIcons from "react-icons/md";
 import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
-  { //Home
+  {
+    //Home
     title: "Home",
     path: "/",
     icon: <AiIcons.AiFillHome />,
@@ -22,7 +23,8 @@ export const SidebarData = [
       },
     ],
   },
-  { //ProgrammingLogic
+  {
+    //ProgrammingLogic
     title: "Lógica de Programação",
     path: "/programminglogic",
     icon: <GiIcons.GiLogicGateNxor />,
@@ -77,7 +79,8 @@ export const SidebarData = [
       },
     ],
   },
-  { //POO
+  {
+    //POO
     title: "POO",
     path: "/poo",
     icon: <MdIcons.MdOutlineEmojiObjects />,
@@ -100,8 +103,8 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Métodos",
-        path: "/poo/methods",
+        title: "Herança",
+        path: "/poo/inheritance",
         icon: <IoIcons.IoIosPaper />,
       },
       {
@@ -114,14 +117,10 @@ export const SidebarData = [
         path: "/poo/accessmethods",
         icon: <IoIcons.IoIosPaper />,
       },
-      {
-        title: "Herança e Polimorfismo",
-        path: "/poo/inheritanceandpolymorphism",
-        icon: <IoIcons.IoIosPaper />,
-      },
     ],
   },
-  { //Node  
+  {
+    //Node
     title: "Node.Js",
     path: "/node",
     icon: <FaIcons.FaNode />,
@@ -155,7 +154,8 @@ export const SidebarData = [
       },
     ],
   },
-  { //Docker
+  {
+    //Docker
     title: "Docker",
     path: "/docker",
     icon: <FaIcons.FaDocker />,
@@ -179,7 +179,8 @@ export const SidebarData = [
       },
     ],
   },
-  { //React
+  {
+    //React
     title: "React.Js",
     path: "/react",
     icon: <FaIcons.FaReact />,
