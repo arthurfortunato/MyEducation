@@ -228,6 +228,11 @@ export const SidebarData = [
         path: "/java/maven",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "SpringBoot",
+        path: "/java/springboot",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];

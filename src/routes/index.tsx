@@ -44,6 +44,7 @@ import { JVM } from "../pages/Java/JVM";
 import { JDK } from "../pages/Java/JDK";
 import { JDBC } from "../pages/Java/JDBC";
 import { Maven } from "../pages/Java/Maven";
+import { SpringBoot } from "../pages/Java/SpringBoot";
 
 export const Router = () => {
   return (
@@ -100,6 +101,7 @@ export const Router = () => {
         <Route path="/java/jdk" element={<JDK />} />
         <Route path="/java/jdbc" element={<JDBC />} />
         <Route path="/java/maven" element={<Maven />} />
+        <Route path="/java/springboot" element={<SpringBoot />} />
       </Routes>
     </BrowserRouter>
   );
