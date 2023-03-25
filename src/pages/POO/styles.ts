@@ -10,8 +10,8 @@ export const Container = styled.main`
   padding-top: 80px;
 
   h1 {
+    font: 700 3rem "Lato", sans-serif;
     text-align: center;
-    font: 700 4rem "Lato", sans-serif;
   }
 
   p {
@@ -29,7 +29,7 @@ export const Container = styled.main`
   @media (max-width: 920px) {
     h1 {
       transition: 1.8s all;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     p {
       transition: 1.8s all;
@@ -39,7 +39,7 @@ export const Container = styled.main`
 
   @media (max-width: 790px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     p {
       width: 80%;

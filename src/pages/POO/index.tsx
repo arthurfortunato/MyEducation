@@ -4,7 +4,8 @@ export const POO = () => {
   return (
     <Container>
       <h1>Programação Orientada a Objetos</h1>
-
+      <br />
+      <br />
       <p>
         <strong>Programação orientada a objetos</strong>, é um paradigma de
         programação baseado no conceito de "objetos", que podem conter dados na

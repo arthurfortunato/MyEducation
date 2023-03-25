@@ -62,9 +62,8 @@ export const Section = styled.section`
 
   @media (max-width: 600px) {
     transition: 1.8s all;
-    width: 100%;
+    width: 90%;
     p {
-      padding: 0 20px 0 20px;
       font-size: 1rem;
     }
   }
@@ -94,11 +93,8 @@ export const Pre = styled.pre`
   }
 
   @media (max-width: 570px) {
-    border-radius: 0;
     code {
       padding: 10 10 10 0;
-      align-items: right;
-      justify-content: right;
       font-size: 0.6rem;
     }
   }
