@@ -46,6 +46,7 @@ import { JDBC } from "../pages/Java/JDBC";
 import { Maven } from "../pages/Java/Maven";
 import { SpringBoot } from "../pages/Java/SpringBoot";
 import { Interface } from "../pages/Java/Interface";
+import { AbstractClass } from "../pages/Java/AbstractClass";
 
 export const Router = () => {
   return (
@@ -104,6 +105,7 @@ export const Router = () => {
         <Route path="/java/maven" element={<Maven />} />
         <Route path="/java/springboot" element={<SpringBoot />} />
         <Route path="/java/interface" element={<Interface />} />
+        <Route path="/java/abstract-class" element={<AbstractClass />} />
       </Routes>
     </BrowserRouter>
   );

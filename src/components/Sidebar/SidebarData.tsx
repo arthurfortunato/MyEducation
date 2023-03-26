@@ -238,6 +238,11 @@ export const SidebarData = [
         path: "/java/interface",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Classe Abstrata",
+        path: "/java/abstract-class",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
 ];
