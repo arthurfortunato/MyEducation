@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const SpringBoot = () => {
   return (
     <Container>
-      <Header>
-        <h1>Spring Boot</h1>
-      </Header>
+      <Header title="Spring Boot"/>
 
       <Section className="section section__springboot">
         <p>

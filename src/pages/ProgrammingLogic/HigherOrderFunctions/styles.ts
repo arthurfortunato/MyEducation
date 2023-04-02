@@ -16,31 +16,6 @@ export const Container = styled.main`
   }
 `;
 
-export const Header = styled.header`
-  width: 60%;
-  h1 {
-    text-align: center;
-    font: 700 2.6rem "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
-  p {
-    font: 400 1.3rem "Lato", sans-serif;
-    margin: 10px;
-    text-align: justify;
-    line-height: 1.7rem;
-  }
-
-  @media (max-width: 600px) {
-    width: 80%;
-    p {
-      transition: 1.8s all;
-      font-size: 1rem;
-    }
-  }
-`;
-
 export const Section = styled.section`
   width: 60%;
   padding: 15px 0;

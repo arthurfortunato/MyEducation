@@ -1,13 +1,12 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
 import introduction01 from "../../../assets/introduction-node01.png";
 import introduction02 from "../../../assets/introduction-node02.webp";
+import { Header } from "../../../components/Header";
 
 export const IntroductionNode = () => {
   return (
     <Container>
-      <Header>
-        <h1>Node.Js</h1>
-      </Header>
+      <Header title="Node.Js"/>
 
       <Section className="section section__what-is">
         <h2>O que é Node.js?</h2>

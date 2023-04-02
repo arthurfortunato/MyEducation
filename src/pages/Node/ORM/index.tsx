@@ -1,14 +1,12 @@
-import { Container, Header, Section } from "./styles";
-
+import { Container, Section } from "./styles";
 import orm01 from "../../../assets/orm01.png";
 import orm02 from "../../../assets/orm02.png";
+import { Header } from "../../../components/Header";
 
 export const ORM = () => {
   return (
     <Container>
-      <Header>
-        <h1>ORM</h1>
-      </Header>
+      <Header title="ORM" />
 
       <Section>
         <p>

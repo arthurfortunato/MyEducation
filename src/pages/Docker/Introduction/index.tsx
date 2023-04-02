@@ -1,13 +1,11 @@
-import { Container, Header, Section } from "./styles";
-
+import { Container, Section } from "./styles";
 import docker01 from "../../../assets/docker01.png";
+import { Header } from "../../../components/Header";
 
 export const IntroductionDocker = () => {
   return (
     <Container>
-      <Header>
-        <h1>Introdução</h1>
-      </Header>
+      <Header title="Introdução"/>
 
       <Section className="section section__introduction">
         <h2>O que é Docker?</h2>

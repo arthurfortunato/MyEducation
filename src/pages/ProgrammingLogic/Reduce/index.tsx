@@ -1,11 +1,11 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
+
 
 export const Reduce = () => {
   return (
     <Container>
-      <Header>
-        <h1>Reduce</h1>
-      </Header>
+      <Header title="Reduce"/>
 
       <Section>
         <p>

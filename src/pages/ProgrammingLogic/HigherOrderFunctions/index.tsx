@@ -1,21 +1,23 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const HigherOrderFunctions = () => {
   return (
     <Container>
-      <Header>
-        <h1>Funções de Alta Ordem</h1>
+      <Header title="Funções de Alta Ordem" />
 
+      <Section className="section section__receiving-function-parameter">
         <p>
           Em JavaScript, funções são cidadãos de primeira classe. O que
           significa que podem ser tratados como valores e salvo em variável.
           Portanto, naturalmente funções também podem ser passadas como
-          parâmetro para uma função. Em resumo, uma <strong>função de alta ordem é uma
-          função que recebe ou retorna uma função</strong>.
+          parâmetro para uma função. Em resumo, uma{" "}
+          <strong>
+            função de alta ordem é uma função que recebe ou retorna uma função
+          </strong>
+          .
         </p>
-      </Header>
-
-      <Section className="section section__receiving-function-parameter">
+        
         <h2>Recebendo uma Função como Parâmetro</h2>
 
         <Pre>
@@ -38,7 +40,7 @@ export const HigherOrderFunctions = () => {
           No código acima declaramos três funções, somar, subtrair e
           aplicarOperacao. As duas primeiras recebem dois parâmetros e devolvem
           um valor. A aplicarOperacao recebe três parâmetros, sendo o terceiro
-          uma função a ser aplicada passando os dois primeiros parâmetros. 
+          uma função a ser aplicada passando os dois primeiros parâmetros.
         </p>
       </Section>
 

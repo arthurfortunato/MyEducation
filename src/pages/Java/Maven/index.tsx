@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Maven = () => {
   return (
     <Container>
-      <Header>
-        <h1>Maven</h1>
-      </Header>
+      <Header title="Maven" />
 
       <Section className="section section__maven">
         <p>

@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Map = () => {
   return (
     <Container>
-      <Header>
-        <h1>Map</h1>
-      </Header>
+      <Header title="Map"/>
 
       <Section className="section section__map">
         <p>
