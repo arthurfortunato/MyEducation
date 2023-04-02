@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Inheritance = () => {
   return (
     <Container>
-      <Header>
-        <h1>Herança</h1>
-      </Header>
+      <Header title="Herança"/>
 
       <Section className="section section__inheritance">
         <p>

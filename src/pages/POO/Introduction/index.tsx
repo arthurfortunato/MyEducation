@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const IntroductionPOO = () => {
   return (
     <Container>
-      <Header>
-        <h1>Introdução POO</h1>
-      </Header>
+      <Header title="Introdução POO"/>
 
       <Section className="section section__poo">
         <p>

@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const IntroductionReact = () => {
   return (
     <Container>
-      <Header>
-        <h1>Introdução ao React</h1>
-      </Header>
+      <Header title="Introdução ao React"/>
 
       <Section className="section section__introduction">
         <p>

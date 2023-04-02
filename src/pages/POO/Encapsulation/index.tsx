@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Encapsulation = () => {
   return (
     <Container>
-      <Header>
-        <h1>Encapsulamento</h1>
-      </Header>
+      <Header title="Encapsulamento"/>
 
       <Section className="section section__encapsulation">
         <p>
