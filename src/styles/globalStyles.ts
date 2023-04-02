@@ -1,5 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
+declare module "styled-components" {
+  export interface DefaultTheme {
+    [key: string]: any;
+  }
+
+  export interface IntrinsicElements {
+    [key: string]: any;
+  }
+}
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [key: string]: any;
+    }
+  }
+}
+
 export const GlobalStyled = createGlobalStyle`
   * {
     padding: 0px;
@@ -43,7 +61,5 @@ export const GlobalStyled = createGlobalStyle`
 
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
-
- 
+  } 
 `;
