@@ -1,13 +1,12 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 import { BiRightArrow } from "react-icons/bi";
 
 export const Concepts = () => {
   return (
     <Container>
-      <Header>
-        <h1>Conceitos</h1>
-      </Header>
-
+      <Header title="Conceitos"/>
+      
       <Section className="section section__api">
         <h2>API</h2>
         <p>
@@ -117,14 +116,15 @@ export const Concepts = () => {
           Códigos de status de respostas <strong>HTTP</strong>
         </h2>
         <p>
-          <strong>1. </strong>Respostas de informação <strong>(100-199)</strong>,
-          <br/>
+          <strong>1. </strong>Respostas de informação <strong>(100-199)</strong>
+          ,
+          <br />
           <strong>2. </strong>Respostas de sucesso <strong>(200-299)</strong>,
-          <br/>
+          <br />
           <strong>3. </strong>Redirecionamentos <strong>(300-399)</strong>,
-          <br/>
+          <br />
           <strong>4. </strong>Erros do cliente <strong>(400-499)</strong>,
-          <br/>
+          <br />
           <strong>5. </strong>Erros do servidor <strong>(500-599)</strong>.
         </p>
       </Section>

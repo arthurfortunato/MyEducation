@@ -1,11 +1,10 @@
-import { Container, Header, Section, Table, Pre, Lista } from "./styles";
+import { Container, Section, Table, Pre, Lista } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Conditional = () => {
   return (
     <Container>
-      <Header>
-        <h1>Condicionais</h1>
-      </Header>
+      <Header title="Concidionais"/>
 
       <Section className="section section__logical-operators">
         <h2>Operadores Lógicos</h2>

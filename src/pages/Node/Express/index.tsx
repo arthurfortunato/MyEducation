@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Express = () => {
   return (
     <Container>
-      <Header>
-        <h1>Express</h1>
-      </Header>
+      <Header title="Express"/>
 
       <Section className="section section__introduction">
         <h2>Introdução</h2>

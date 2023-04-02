@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header"; 
 
 export const Interface = () => {
   return (
     <Container>
-      <Header>
-        <h1>Interface</h1>
-      </Header>
+      <Header title="Interface"/>
 
       <Section className="section section__interface">
         <p>

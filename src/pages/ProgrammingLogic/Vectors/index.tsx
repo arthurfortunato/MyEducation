@@ -1,12 +1,11 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Vectors = () => {
   return (
     <Container>
-      <Header>
-        <h1>Vetores</h1>
-      </Header>
-
+      <Header title="Vetores"/>
+      
       <Section className="section section__vectors">
         <p>
           <strong>Vetor é uma sequência ordenada de valores</strong>. Também é

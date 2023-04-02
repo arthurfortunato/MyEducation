@@ -6,13 +6,34 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #37373c;
   font-family: Lato, Helvetica, sans-serif;
   color: #e1e1e1;
   padding-top: 80px;
 
   strong {
-    color: #f5b324;
+    color: ${({ theme }) => theme.colors.yellow};
+  }
+
+  .link {
+    height: 46px;
+    width: 200px;
+    color: ${({ theme }) => theme.colors.background_white};
+    background: ${({ theme }) => theme.colors.yellow};
+    border: 1px solid ${({ theme }) => theme.colors.yellow};
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover {
+      filter: opacity(0.8);
+    }
+    &:disabled {
+      filter: opacity(0.4);
+    }
   }
 `;
 
@@ -23,13 +44,6 @@ export const Header = styled.header`
     font: 700 2.6rem "Lato", sans-serif;
     padding-top: 20px;
     padding-bottom: 10px;
-  }
-
-  p {
-    font: 400 1.3rem "Lato", sans-serif;
-    margin: 10px;
-    text-align: justify;
-    line-height: 1.7rem;
   }
 
   @media (max-width: 600px) {

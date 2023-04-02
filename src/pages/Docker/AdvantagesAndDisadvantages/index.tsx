@@ -1,13 +1,11 @@
-import { Container, Header, Section } from "./styles";
-
+import { Container, Section } from "./styles";
 import { FaDocker } from "react-icons/fa";
+import { Header } from "../../../components/Header";
 
 export const AdvantagesAndDisadvantages = () => {
   return (
     <Container>
-      <Header>
-        <h1>Vantagens e Desvantagens</h1>
-      </Header>
+      <Header title="Vantagens e Desvantagens"/>
 
       <Section className="section section__advantages">
         <h2>Vantagens</h2>

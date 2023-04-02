@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Filter = () => {
   return (
     <Container>
-      <Header>
-        <h1>Filter</h1>
-      </Header>
+      <Header title="Filter"/>
 
       <Section className="section section__filter">
         <p>

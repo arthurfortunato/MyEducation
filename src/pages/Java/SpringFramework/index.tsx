@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const SpringFramework = () => {
   return (
     <Container>
-      <Header>
-        <h1>Spring Framework</h1>
-      </Header>
+      <Header title="Spring Framework"/>
 
       <Section className="section section__sprign">
         <p>

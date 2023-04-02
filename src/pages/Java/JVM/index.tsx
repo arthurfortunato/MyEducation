@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const JVM = () => {
   return (
     <Container>
-      <Header>
-        <h1>JVM</h1>
-      </Header>
+      <Header title="JVM"/>
 
       <Section className="section section__jvm">
         <p>

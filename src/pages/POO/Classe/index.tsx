@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
-
+import { Container, Pre, Section } from "./styles";
+import { Link } from "react-router-dom";
+import { Header } from "../../../components/Header";
 export const ClassAndConstructor = () => {
   return (
     <Container>
-      <Header>
-        <h1>Classe</h1>
-      </Header>
+      <Header title="Classe"/>
 
       <Section className="section section__class">
         <p>
@@ -69,6 +68,9 @@ export const ClassAndConstructor = () => {
           </code>
         </Pre>
       </Section>
+      <Link className="link" to="/poo/polymorphism">
+        Go to Polymorphism
+      </Link>
     </Container>
   );
 };

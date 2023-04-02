@@ -25,13 +25,6 @@ export const Header = styled.header`
     padding-bottom: 10px;
   }
 
-  p {
-    font: 400 1.3rem "Lato", sans-serif;
-    margin: 10px;
-    text-align: justify;
-    line-height: 1.7rem;
-  }
-
   @media (max-width: 600px) {
     width: 80%;
     p {

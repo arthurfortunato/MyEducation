@@ -10,7 +10,7 @@ export const Container = styled.main`
   font: 700 3rem "Lato", sans-serif;
 
   strong {
-    color: #f5b324;
+    color: ${({ theme }) => theme.colors.yellow};
   }
   
   @media(max-width: 920px) {

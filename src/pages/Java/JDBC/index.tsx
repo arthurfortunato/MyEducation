@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const JDBC = () => {
   return (
     <Container>
-      <Header>
-        <h1>JDBC</h1>
-      </Header>
+      <Header title="JDBC"/>
 
       <Section className="section section__jdbc">
         <p>

@@ -6,31 +6,13 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #37373c;
+  background:  ${({ theme }) => theme.colors.background_gray};
   font-family: Lato, Helvetica, sans-serif;
   color: #e1e1e1;
   padding-top: 80px;
 
   strong {
-    color: #2496ed;
-  }
-`;
-
-export const Header = styled.header`
-  width: 60%;
-  h1 {
-    text-align: center;
-    font: 700 2.6rem "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
-  @media (max-width: 600px) {
-    width: 80%;
-    h1 {
-      transition: 1.8s all;
-      font-size: 2rem;
-    }
+    color: ${({ theme }) => theme.colors.blue};;
   }
 `;
 

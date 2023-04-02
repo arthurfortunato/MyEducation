@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   height: 100vh;
   width: 100%;
-  background: #fff;
+  background:  ${({ theme }) => theme.colors.background_white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ export const Container = styled.main`
     }
 
     strong {
-      color: #2496ed;
+      color:  ${({ theme }) => theme.colors.blue};
     }
 
     img {
