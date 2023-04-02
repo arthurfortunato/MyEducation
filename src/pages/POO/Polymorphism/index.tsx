@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Polymorphism = () => {
   return (
     <Container>
-      <Header>
-        <h1>Polimorfismo</h1>
-      </Header>
+      <Header title="Polimorfismo"/>
 
       <Section className="section section__polymorphism">
         <p>
