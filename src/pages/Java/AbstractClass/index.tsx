@@ -1,11 +1,10 @@
-import { Container, Header, Pre, Section } from "./styles";
+import { Container, Pre, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const AbstractClass = () => {
   return (
     <Container>
-      <Header>
-        <h1>Abstract Class</h1>
-      </Header>
+      <Header title="Abstract Class" />
 
       <Section className="section section__abstract_class">
         <p>

@@ -1,12 +1,11 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
 import { AiOutlineCaretRight } from "react-icons/ai";
+import { Header } from "../../../components/Header";
 
 export const Variables = () => {
   return (
     <Container>
-      <Header>
-        <h1>Variáveis</h1>
-      </Header>
+      <Header title="Variáveis" />
 
       <Section className="section section__variables">
         <p>
@@ -51,13 +50,17 @@ export const Variables = () => {
         <h2>Primitivos</h2>
 
         <p>
-          <AiOutlineCaretRight color="#f5b324" /> <strong>undefined</strong>: Não há tipo nem valor;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>undefined</strong>:
+          Não há tipo nem valor;
           <br />
-          <AiOutlineCaretRight color="#f5b324" /> <strong>boolean</strong>: Verdadeiro ou Falso;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>boolean</strong>:
+          Verdadeiro ou Falso;
           <br />
-          <AiOutlineCaretRight color="#f5b324" /> <strong>string</strong>: Textos;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>string</strong>:
+          Textos;
           <br />
-          <AiOutlineCaretRight color="#f5b324" /> <strong>number</strong>: Números;
+          <AiOutlineCaretRight color="#f5b324" /> <strong>number</strong>:
+          Números;
           <br />
         </p>
       </Section>
@@ -83,8 +86,10 @@ export const Variables = () => {
           ou falso). O undefined representa uma variável sem valor atribuído.
           <br />
           <br />
-          <strong>O null representa uma informação vazia. Diferente de undefined, ele
-          mostra que a variável foi declarada mas com valor vazio.</strong>
+          <strong>
+            O null representa uma informação vazia. Diferente de undefined, ele
+            mostra que a variável foi declarada mas com valor vazio.
+          </strong>
           <br />
           <br />
           Em JavaScript, temos um comportamento estranho das variáveis. Elas
@@ -92,17 +97,17 @@ export const Variables = () => {
           para o início do escopo. Isso se chama <strong>hoisting</strong>.
           <br />
           <br />
-          Usando <strong>var</strong> variáveis não respeitam seu escopo, uma variável declarada
-          em uma função estará disponível depois do escopo da função.
+          Usando <strong>var</strong> variáveis não respeitam seu escopo, uma
+          variável declarada em uma função estará disponível depois do escopo da
+          função.
           <br />
           <br />
           Esses comportamentos são peculiares e diferentes de muitas linguagens,
-          por isso padronizamos usar <strong>let</strong> em vez de var, o que fará com que os
-          escopos sejam respeitados.
+          por isso padronizamos usar <strong>let</strong> em vez de var, o que
+          fará com que os escopos sejam respeitados.
           <br />
-          <br />
-          O <strong>const</strong> impede que o valor possa ser alterado após ser iniciado,
-          gerando um erro ao ser tentado.
+          <br />O <strong>const</strong> impede que o valor possa ser alterado
+          após ser iniciado, gerando um erro ao ser tentado.
           <br />
         </p>
       </Section>

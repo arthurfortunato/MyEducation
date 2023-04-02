@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-
 declare module "styled-components" {
   export interface DefaultTheme {
     [key: string]: any;

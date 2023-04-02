@@ -1,11 +1,10 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
+import { Header } from "../../../components/Header";
 
 export const Microservice = () => {
   return (
     <Container>
-      <Header>
-        <h1>Microservice</h1>
-      </Header>
+      <Header title="Microservice" />
 
       <Section className="section section__microservice">
         <h2>O que são Microsserviços?</h2>

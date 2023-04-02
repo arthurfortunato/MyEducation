@@ -1,13 +1,12 @@
-import { Container, Header, Section } from "./styles";
+import { Container, Section } from "./styles";
 import { FaDocker } from "react-icons/fa";
+import { Header } from "../../../components/Header";
 
 export const Architecture = () => {
   return (
     <Container>
-      <Header>
-        <h1>Arquitetura do Docker</h1>
-      </Header>
-
+      <Header title="Arquitetura do Docker"/>
+      
       <Section>
         <h2>Principais Componentes</h2>
         <p>
