@@ -34,7 +34,7 @@ export const Container = styled.main`
     p {
       transition: 1.8s all;
       font-size: 1rem;
-      tex-align: left;
+      text-align: left;
     }
   }
 

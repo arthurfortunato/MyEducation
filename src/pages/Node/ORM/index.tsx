@@ -1,7 +1,8 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import orm01 from "../../../assets/orm01.png";
 import orm02 from "../../../assets/orm02.png";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const ORM = () => {
   return (

@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const SpringBoot = () => {
   return (
     <Container>
       <Header title="Spring Boot"/>
 
-      <Section className="section section__springboot">
+      <Section>
         <p>
           Spring Boot é um framework da plataforma Spring que permite a criação
           de aplicativos Java prontos para produção com rapidez e facilidade.
@@ -24,7 +25,7 @@ export const SpringBoot = () => {
         </p>
       </Section>
 
-      <Section className="section section__pom">
+      <Section>
         <h2>POM</h2>
         <p>
           <strong>
@@ -47,7 +48,7 @@ export const SpringBoot = () => {
         </p>
       </Section>
 
-      <Section className="section section__properties">
+      <Section>
         <h2>Application Properties</h2>
         <p>
           <strong>
@@ -86,7 +87,7 @@ export const SpringBoot = () => {
         </p>
       </Section>
 
-      <Section className="section section__jpa">
+      <Section>
         <h2>Spring Data JPA</h2>
         <p>
           <strong>
@@ -118,7 +119,7 @@ export const SpringBoot = () => {
         </p>
       </Section>
 
-      <Section className="section section__hibernate">
+      <Section>
         <h2>Hibernate</h2>
         <p>
           <strong>

@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const IntroductionReact = () => {
   return (
     <Container>
       <Header title="Introdução ao React"/>
 
-      <Section className="section section__introduction">
+      <Section>
         <p>
           O React é uma biblioteca JavaScript declarativa, eficiente e flexível
           para criar interfaces com o usuário. Ele permite compor UIs complexas
@@ -29,7 +30,7 @@ export const IntroductionReact = () => {
         </p>
       </Section>
 
-      <Section className="section section__inicialize">
+      <Section>
         <h2>Inicializando o React</h2>
         <p>
           O create-react-app leva apenas um argumento: o nome que você quer dar

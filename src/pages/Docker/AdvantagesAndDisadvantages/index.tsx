@@ -1,13 +1,14 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { FaDocker } from "react-icons/fa";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const AdvantagesAndDisadvantages = () => {
   return (
     <Container>
       <Header title="Vantagens e Desvantagens"/>
 
-      <Section className="section section__advantages">
+      <Section>
         <h2>Vantagens</h2>
         <p>
           O Docker não é um sistema operacional completo numa máquina
@@ -60,7 +61,7 @@ export const AdvantagesAndDisadvantages = () => {
         </p>
       </Section>
 
-      <Section className="section section__disadvantages">
+      <Section>
         <h2>Desvantagens</h2>
         <p>
           Bom, nenhum software é perfeito e sempre apresenta alguma limitação,

@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const JDK = () => {
   return (
     <Container>
       <Header title="JDK"/>
 
-      <Section className="section section__jdk">
+      <Section>
         <p>
           <strong>
             O Java Development Kit (JDK) é um conjunto de ferramentas de
@@ -35,7 +36,7 @@ export const JDK = () => {
         </p>
       </Section>
 
-      <Section className="section section__jvm_jdk">
+      <Section>
         <h2>JVM x JDK</h2>
         <p>
           A JVM (Java Virtual Machine) e o JDK (Java Development Kit) são duas

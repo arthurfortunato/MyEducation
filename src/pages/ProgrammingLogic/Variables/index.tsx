@@ -1,13 +1,14 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { AiOutlineCaretRight } from "react-icons/ai";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Variables = () => {
   return (
     <Container>
       <Header title="Variáveis" />
 
-      <Section className="section section__variables">
+      <Section>
         <p>
           <strong>Variáveis</strong> são o conceito mais básico da programação.
           De forma super simplificada{" "}
@@ -46,7 +47,7 @@ export const Variables = () => {
         </p>
       </Section>
 
-      <Section className="section section__primitives">
+      <Section>
         <h2>Primitivos</h2>
 
         <p>
@@ -65,7 +66,7 @@ export const Variables = () => {
         </p>
       </Section>
 
-      <Section className="section section__complexes">
+      <Section>
         <h2>Complexos</h2>
 
         <p>

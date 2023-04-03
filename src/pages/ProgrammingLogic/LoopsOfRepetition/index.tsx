@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const LoopRepetition = () => {
   return (
     <Container>
       <Header title="Laços de Repetição" />
 
-      <Section className="section section__while">
+      <Section>
         <p>
           Afim de fazer operações repetitivas, o JavaScript oferece algumas
           opções de estruturas de repetições. Também chamados de laços ou loops.
@@ -53,7 +54,7 @@ export const LoopRepetition = () => {
         </p>
       </Section>
 
-      <Section className="section section__dowhile">
+      <Section>
         <h2>Do-While</h2>
 
         <p>
@@ -81,7 +82,7 @@ export const LoopRepetition = () => {
         </Pre>
       </Section>
 
-      <Section className="section section__for">
+      <Section>
         <h2>For</h2>
 
         <p>

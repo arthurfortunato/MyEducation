@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const AbstractClass = () => {
   return (
     <Container>
       <Header title="Abstract Class" />
 
-      <Section className="section section__abstract_class">
+      <Section>
         <p>
           <strong>
             Em Java, uma classe abstrata é uma classe que não pode ser
@@ -52,7 +53,7 @@ export const AbstractClass = () => {
         <br />
       </Section>
 
-      <Section className="section section__abstract_class">
+      <Section>
         <h2>Classe Abstrata x Interface</h2>
         <p>
           Em Java, tanto as classes abstratas quanto as interfaces são usadas
