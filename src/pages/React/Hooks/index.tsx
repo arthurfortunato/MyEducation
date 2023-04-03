@@ -1,11 +1,11 @@
-import { Container, Header, Section } from "./styles";
+import { Container } from "./styles";
+import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Hooks = () => {
   return (
     <Container>
-      <Header>
-        <h1>React Hooks</h1>
-      </Header>
+      <Header title="React Hooks"/>
 
       <Section>
         <p>

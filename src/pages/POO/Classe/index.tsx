@@ -1,12 +1,14 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Link } from "react-router-dom";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
+
 export const ClassAndConstructor = () => {
   return (
     <Container>
-      <Header title="Classe"/>
+      <Header title="Classe" />
 
-      <Section className="section section__class">
+      <Section>
         <p>
           <strong>
             Uma classe em Java é uma estrutura que define atributos e métodos
@@ -43,7 +45,8 @@ export const ClassAndConstructor = () => {
           </code>
         </Pre>
       </Section>
-      <Section className="section section__object">
+
+      <Section>
         <h2>Objeto</h2>
         <p>
           A classe é como um molde ou modelo para criar objetos. É uma definição

@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Filter = () => {
   return (
     <Container>
       <Header title="Filter"/>
 
-      <Section className="section section__filter">
+      <Section>
         <p>
           Filter é uma função de alta ordem semelhante ao map, a diferença é que
           <strong> o objetivo do filter é filtrar elementos do vetor. Portanto a função

@@ -1,13 +1,14 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
 import { BiRightArrow } from "react-icons/bi";
+import { Section } from "../../../components/Section";
 
 export const Concepts = () => {
   return (
     <Container>
       <Header title="Conceitos"/>
       
-      <Section className="section section__api">
+      <Section >
         <h2>API</h2>
         <p>
           A sigla API deriva da expressão inglesa Application Programming
@@ -37,7 +38,7 @@ export const Concepts = () => {
         </p>
       </Section>
 
-      <Section className="section section__rest">
+      <Section>
         <h2>REST</h2>
         <p>
           É um acrônimo para Representational State Transfer (transferência de
@@ -58,7 +59,7 @@ export const Concepts = () => {
         </p>
       </Section>
 
-      <Section className="section section__restful">
+      <Section >
         <h2>Necessidades para ser RESTFUL</h2>
         <p>
           <strong>
@@ -111,7 +112,7 @@ export const Concepts = () => {
         </p>
       </Section>
 
-      <Section className="section section__status-http">
+      <Section >
         <h2>
           Códigos de status de respostas <strong>HTTP</strong>
         </h2>

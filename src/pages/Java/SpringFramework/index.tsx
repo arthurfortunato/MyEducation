@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const SpringFramework = () => {
   return (
     <Container>
       <Header title="Spring Framework"/>
 
-      <Section className="section section__sprign">
+      <Section>
         <p>
           O <strong>Spring Framework</strong> é o projeto base para todo
           ecossistema Spring e é dividido em sete grupos:
@@ -53,7 +54,7 @@ export const SpringFramework = () => {
         <br />
       </Section>
 
-      <Section className="section section__ioc">
+      <Section>
         <h2>Inversão de Controle (IoC – Inversion of Control)</h2>
         <p>
           <strong>Inversão de controle</strong> é um padrão de projeto, em que
@@ -63,7 +64,7 @@ export const SpringFramework = () => {
         </p>
       </Section>
 
-      <Section className="section section__di">
+      <Section>
         <h2>Injeção de Dependência</h2>
         <p>
           <strong>Injeção de dependência</strong> é a implementação utilizada
@@ -72,7 +73,7 @@ export const SpringFramework = () => {
         </p>
       </Section>
 
-      <Section className="section section__core_container">
+      <Section>
         <h2>Core Container</h2>
         <p>
           <strong>
@@ -93,7 +94,7 @@ export const SpringFramework = () => {
         </p>
       </Section>
 
-      <Section className="section section__bean">
+      <Section>
         <h2>Beans</h2>
         <p>
           <strong>

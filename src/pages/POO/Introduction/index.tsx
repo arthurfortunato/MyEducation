@@ -1,13 +1,13 @@
-import { Container, Header, Section } from "./styles";
+import { Container } from "./styles";
+import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const IntroductionPOO = () => {
   return (
     <Container>
-      <Header>
-        <h1>Introdução POO</h1>
-      </Header>
+      <Header title="Introdução POO"/>
 
-      <Section className="section section__poo">
+      <Section>
         <p>
         <strong>A Orientação a Objetos é uma abordagem para a
           programação que se baseia em conceitos como classes, objetos, herança,

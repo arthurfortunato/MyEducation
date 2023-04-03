@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Map = () => {
   return (
     <Container>
-      <Header title="Map"/>
+      <Header title="Map" />
 
-      <Section className="section section__map">
+      <Section>
         <p>
           A função <strong>Map</strong> é o primeiro caso de aplicação de função
           de alta ordem que vamos ver.{" "}
@@ -74,8 +75,10 @@ export const Map = () => {
         </Pre>
         <br />
         <p>
-          <strong>O map exige que seja passado pelo menos um parâmetro para a função</strong>.
-          Então para usar métodos de um tipo específico de dado também é
+          <strong>
+            O map exige que seja passado pelo menos um parâmetro para a função
+          </strong>
+          . Então para usar métodos de um tipo específico de dado também é
           necessário fazer a declaração de uma função. Exemplo:
         </p>
 

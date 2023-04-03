@@ -1,12 +1,13 @@
-import { Container, Section, Table, Pre, Lista } from "./styles";
+import { Container, Table, Pre, Lista } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Conditional = () => {
   return (
     <Container>
       <Header title="Concidionais"/>
 
-      <Section className="section section__logical-operators">
+      <Section>
         <h2>Operadores Lógicos</h2>
 
         <p>
@@ -137,7 +138,7 @@ export const Conditional = () => {
         </p>
       </Section>
 
-      <Section className="section section__if-else">
+      <Section>
         <h2>If/Else</h2>
         <p>A estrutura condicional em JavaScript é da seguinte maneira:</p>
 
@@ -195,7 +196,7 @@ export const Conditional = () => {
         </p>
       </Section>
 
-      <Section className="section section__ternary-operator">
+      <Section>
         <h2>Operador Ternário</h2>
 
         <p>
@@ -221,7 +222,7 @@ export const Conditional = () => {
         </p>
       </Section>
 
-      <Section className="section section__switch">
+      <Section>
         <h2>Switch</h2>
 
         <p>
@@ -276,7 +277,7 @@ export const Conditional = () => {
         </p>
       </Section>
 
-      <Section className="section section__truthy-falsy">
+      <Section>
         <h2>Truthy e Falsy</h2>
 
         <p>

@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Express = () => {
   return (
     <Container>
       <Header title="Express"/>
 
-      <Section className="section section__introduction">
+      <Section>
         <h2>Introdução</h2>
 
         <p>
@@ -36,7 +37,7 @@ export const Express = () => {
         </ul>
       </Section>
 
-      <Section className="section section__express-code">
+      <Section>
         <h2>Como é o código Express?</h2>
         <p>
           Em um site tradicional orientado por dados, um aplicativo da Web

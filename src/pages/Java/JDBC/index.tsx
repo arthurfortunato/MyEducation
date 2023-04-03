@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const JDBC = () => {
   return (
     <Container>
       <Header title="JDBC"/>
 
-      <Section className="section section__jdbc">
+      <Section>
         <p>
           <strong>
             O JDBC é uma API — Application Programming Interface — do Java que
