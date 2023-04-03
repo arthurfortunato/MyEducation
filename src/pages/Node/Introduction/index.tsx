@@ -1,14 +1,15 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import introduction01 from "../../../assets/introduction-node01.png";
 import introduction02 from "../../../assets/introduction-node02.webp";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const IntroductionNode = () => {
   return (
     <Container>
-      <Header title="Node.Js"/>
+      <Header title="Node.Js" />
 
-      <Section className="section section__what-is">
+      <Section>
         <h2>O que é Node.js?</h2>
 
         <p>
@@ -32,7 +33,7 @@ export const IntroductionNode = () => {
         </p>
       </Section>
 
-      <Section className="section section__characteristics">
+      <Section>
         <h2>Quais as características do Node.js?</h2>
 
         <p>
@@ -70,7 +71,7 @@ export const IntroductionNode = () => {
         </p>
       </Section>
 
-      <Section className="section section__operation">
+      <Section>
         <h2>Como o Node.js funciona?</h2>
 
         <p>
@@ -95,7 +96,7 @@ export const IntroductionNode = () => {
         <img src={introduction01} alt="" />
       </Section>
 
-      <Section className="section section__ways-to-use">
+      <Section>
         <h2>Maneiras de usá-lo</h2>
 
         <h3>

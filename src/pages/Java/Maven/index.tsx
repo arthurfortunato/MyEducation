@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Maven = () => {
   return (
     <Container>
       <Header title="Maven" />
 
-      <Section className="section section__maven">
+      <Section>
         <p>
           <strong>
             O Maven é um gerenciador de build e dependências baseado no conceito

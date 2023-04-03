@@ -1,6 +1,6 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
-
+import { Section } from "../../../components/Section";
 
 export const Reduce = () => {
   return (

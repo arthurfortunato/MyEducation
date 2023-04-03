@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header"; 
+import { Section } from "../../../components/Section";
 
 export const Interface = () => {
   return (
     <Container>
       <Header title="Interface"/>
 
-      <Section className="section section__interface">
+      <Section>
         <p>
           Em Java, uma{" "}
           <strong>

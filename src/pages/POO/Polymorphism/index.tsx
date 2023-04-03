@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Polymorphism = () => {
   return (
     <Container>
       <Header title="Polimorfismo"/>
 
-      <Section className="section section__polymorphism">
+      <Section>
         <p>
           O <strong>Polimorfismo</strong> é uma técnica da Orientação a Objetos
           que permite tratar objetos de diferentes tipos de forma genérica, como

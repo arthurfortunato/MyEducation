@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Encapsulation = () => {
   return (
     <Container>
-      <Header title="Encapsulamento"/>
+      <Header title="Encapsulamento" />
 
-      <Section className="section section__encapsulation">
+      <Section>
         <p>
           O encapsulamento é um conceito fundamental da programação orientada a
           objetos e é amplamente utilizado em Java.{" "}

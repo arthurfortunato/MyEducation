@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const HigherOrderFunctions = () => {
   return (
     <Container>
       <Header title="Funções de Alta Ordem" />
 
-      <Section className="section section__receiving-function-parameter">
+      <Section>
         <p>
           Em JavaScript, funções são cidadãos de primeira classe. O que
           significa que podem ser tratados como valores e salvo em variável.
@@ -44,7 +45,7 @@ export const HigherOrderFunctions = () => {
         </p>
       </Section>
 
-      <Section className="section section__returning-functions">
+      <Section>
         <h2>Retornando Funções</h2>
 
         <p>

@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Vectors = () => {
   return (
     <Container>
       <Header title="Vetores"/>
       
-      <Section className="section section__vectors">
+      <Section>
         <p>
           <strong>Vetor é uma sequência ordenada de valores</strong>. Também é
           chamado pelo nome em inglês, array. É denotado pelo uso de colchetes,
@@ -91,7 +92,7 @@ export const Vectors = () => {
         </p>
       </Section>
 
-      <Section className="section section__traversing-vector">
+      <Section>
         <h2>Percorrendo o Vetor</h2>
 
         <p>
@@ -161,7 +162,7 @@ export const Vectors = () => {
         </Pre>
       </Section>
 
-      <Section className="section section__matrices">
+      <Section>
         <h2>Matrizes</h2>
 
         <p>
@@ -199,7 +200,7 @@ export const Vectors = () => {
         </p>
       </Section>
 
-      <Section className="section section__dynamic-vectors">
+      <Section >
         <h2>Vetores Dinâmicos</h2>
 
         <p>

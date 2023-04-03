@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const JVM = () => {
   return (
     <Container>
       <Header title="JVM"/>
 
-      <Section className="section section__jvm">
+      <Section>
         <p>
           <strong>
             A JVM (Java Virtual Machine) é uma máquina virtual que permite a

@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Inheritance = () => {
   return (
     <Container>
       <Header title="Herança"/>
 
-      <Section className="section section__inheritance">
+      <Section>
         <p>
           <strong>
             A Herança é um mecanismo da Orientação a Objetos que permite que uma

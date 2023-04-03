@@ -1,12 +1,13 @@
-import { Container, Pre, Section } from "./styles";
+import { Container, Pre } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Functions = () => {
   return (
     <Container>
-      <Header title="Funções"/>
+      <Header title="Funções" />
 
-      <Section className="section section__functions">
+      <Section>
         <p>
           Podemos ter duas interpretações do que são <strong>funções</strong>. A
           primeira de que uma função é{" "}
@@ -98,7 +99,7 @@ export const Functions = () => {
         </p>
       </Section>
 
-      <Section className="section section__ways-declare">
+      <Section>
         <h2>Formas de Declarar</h2>
 
         <p>

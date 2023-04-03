@@ -1,12 +1,13 @@
-import { Container, Section } from "./styles";
+import { Container } from "./styles";
 import { Header } from "../../../components/Header";
+import { Section } from "../../../components/Section";
 
 export const Microservice = () => {
   return (
     <Container>
       <Header title="Microservice" />
 
-      <Section className="section section__microservice">
+      <Section>
         <h2>O que são Microsserviços?</h2>
         <p>
           <strong>
@@ -33,7 +34,7 @@ export const Microservice = () => {
         </p>
       </Section>
 
-      <Section className="section section__monolithic-architecture">
+      <Section>
         <h2>O que é arquitetura monolítica?</h2>
         <p>
           Na arquitetura monolítica há uma dependência entre os serviços de uma
@@ -52,7 +53,7 @@ export const Microservice = () => {
         </p>
       </Section>
 
-      <Section className="section section__api-microservice">
+      <Section>
         <h2>A diferença entre API e microsserviços</h2>
         <p>
           <strong>
@@ -77,7 +78,7 @@ export const Microservice = () => {
         </p>
       </Section>
 
-      <Section className="section section__why-microservice">
+      <Section>
         <h2>Quando e por que usar microsserviços?</h2>
 
         <h3>
