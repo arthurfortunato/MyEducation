@@ -1,21 +1,34 @@
-import { Container } from "./styles";
+import { Container, BodyContainerStyled } from "./styles";
+
+import { Card } from "../../components/Card";
+import { HeaderCards } from "../../components/HeaderCards";
+import { Link } from "react-router-dom";
+
+import introducao from "../../assets/ProgrammingLogicImages/Introducao.jpg";
 
 export const ProgrammingLogic = () => {
   return (
     <Container>
-      <h1>Lógica de Programação</h1>
-
-      <p>
-        <strong>Lógica de programação</strong> é a técnica de encadear
-        pensamentos para atingir determinado objetivo. Estes pensamentos, podem
-        ser descritos como uma sequência de instruções, que devem ser seguidas
-        para se cumprir uma determinada tarefa.<br/> 
-         <strong>
-           Sequência Lógica são passos executados até atingir um objetivo ou
-          solução de um problema
-        </strong>
-        .
-      </p>
+      <HeaderCards title="Lógica da Programação" />
+      <BodyContainerStyled>
+        <div>
+          <Link to="programminglogic/introduction" className="link" >
+            <Card width="350px" height="100px" backgroundImage={introducao}>
+              <p>1. Introdução</p>
+            </Card>
+          </Link>
+          <Link to="/programminglogic/logical-operators" className="link" >
+            <Card width="350px" height="100px" backgroundImage={introducao}>
+              <p>1. Operadores Lógicos</p>
+            </Card>
+          </Link>
+          <Link to="/programminglogic/conditional" className="link" >
+            <Card width="350px" height="100px" backgroundImage={introducao}>
+              <p>2. Condicionais</p>
+            </Card>
+          </Link>
+        </div>
+      </BodyContainerStyled>
     </Container>
   );
 };

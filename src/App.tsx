@@ -6,7 +6,7 @@ import { Routers } from "./routes";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme.light || theme.dark}>
       <GlobalStyled />
       <Routers />
     </ThemeProvider>

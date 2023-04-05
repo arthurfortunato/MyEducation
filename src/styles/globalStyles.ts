@@ -19,9 +19,14 @@ declare global {
 
 export const GlobalStyled = createGlobalStyle`
   * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100vh;
   }
 
   html {
@@ -29,7 +34,7 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   body {
-    background: #37373c;
+    background: ${({theme}) => theme.colors.backgroundHeaderContentCards};
   }
 
   html,
@@ -40,7 +45,8 @@ export const GlobalStyled = createGlobalStyle`
   /* Scrollbar ============================================================== */
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
+    height: 0px;
   }
 
   ::-webkit-scrollbar-corner {
@@ -50,7 +56,8 @@ export const GlobalStyled = createGlobalStyle`
   ::-webkit-scrollbar-track {
     box-shadow: none;
     background-color: rgb(64, 64, 68);
-    border-radius: 10px;
+    border-radius: 0px;
+    height: 0px;
   }
 
   ::-webkit-scrollbar-thumb {
