@@ -2,17 +2,29 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: #37373c;
+  background: ${({ theme }) => theme.colors.background_white};
   font-family: Lato, Helvetica, sans-serif;
-  color: #e1e1e1;
-  padding-top: 80px;
 
   strong {
     color: #f5b324;
+  }
+`;
+
+export const BodyContainerStyled = styled.body`
+  max-width: 1050px;
+  background: ${({ theme }) => theme.colors.background_white};
+  align-self: center;
+
+  div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -32,7 +44,8 @@ export const Table = styled.table`
   th {
     background: #26262a;
     font-weight: normal;
-    padding: 1rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   tbody tr {
@@ -46,7 +59,9 @@ export const Table = styled.table`
 
   tbody td {
     background: #26262a;
-    padding: 1rem 2rem;
+    padding: 0.5rem 3rem;
+    color: #fff;
+    font-size: 0.8rem;
   }
 
   @media (max-width: 560px) {
@@ -65,7 +80,7 @@ export const Table = styled.table`
 export const Pre = styled.pre`
   align-self: center;
   width: 80%;
-  background: #26262a;
+  background: #a2a2a2;
   padding: 10px 50px 0 0;
   font-size: 1rem;
   border-radius: 10px;
