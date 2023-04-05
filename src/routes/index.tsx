@@ -8,12 +8,6 @@ export const Routers: any = () => {
     <BrowserRouter>
       <HomeRoutes />
       <ConceptsRoutes />
-{/*       <ProgrammingLogicRoutes />
-      <PooRoutes />
-      <NodeRoutes />
-      <JavaRoutes />
-      <ReactRoutes />
-      <DockerRoutes /> */}
     </BrowserRouter>
   );
 };
