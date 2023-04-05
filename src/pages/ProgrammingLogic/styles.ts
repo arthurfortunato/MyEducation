@@ -1,54 +1,68 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #fff;
-  padding-top: 80px;
-
-  h1 {
-    font: 700 5rem "Lato", sans-serif;
-  }
-
-  p {
-    width: 60%;
-    font: 400 1.3rem "Lato", sans-serif;
-    margin: 10px;
-    text-align: justify;
-    line-height: 1.7rem;
-  }
+  background: ${({ theme }) => theme.colors.background_white};
+  font-family: Lato, Helvetica, sans-serif;
 
   strong {
     color: #f5b324;
   }
+`;
 
-    @media (max-width: 920px) {
-      h1 {
-        transition: 1.8s all;
-        font-size: 2.5rem;
-      }
-      p {
-        transition: 1.8s all;
-        font-size: 1rem;
-      }
-    }
-    
-    @media (max-width: 790px) {
-      h1 {
-        font-size: 2rem;
-      }
-      p {
-        width: 80%;
-      }
-    }
+export const BodyContainerStyled = styled.body`
+  max-width: 1050px;
+  margin: 40px;
+  background: ${({ theme }) => theme.colors.background_white};
+  align-self: center;
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 1.5rem;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .link {
+      text-decoration: none;
+      p {
+        color: #fff;
+        font: 700 1rem "Lato", sans-serif;
+        align-self: flex-start;
       }
     }
- 
+  }
+`;
+
+export const Pre = styled.pre`
+  align-self: center;
+  width: 80%;
+  background: #26262a;
+  padding: 10px 80px 0 0;
+  font-size: 1rem;
+  border-radius: 10px;
+
+  code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  @media (max-width: 955px) {
+    transition: 1.8s all;
+    width: 100%;
+    code {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 570px) {
+    code {
+      font-size: 0.57rem;
+    }
+  }
 `;

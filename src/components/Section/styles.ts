@@ -8,15 +8,18 @@ export const StyledSection = styled.section`
 
   h2 {
     text-align: center;
+    color: ${(props) => props.theme.colors.textSection};
     font: 500 2rem "Lato", sans-serif;
     padding-bottom: 20px;
   }
 
   p {
-    font: 400 1.3rem "Lato", sans-serif;
+    color: ${(props) => props.theme.colors.textSection};
+    font: 500 1.3rem "Roboto", sans-serif;
     margin: 10px;
     text-align: justify;
     line-height: 1.7rem;
+    overflow: hidden;
   }
 
   @media (max-width: 600px) {
