@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   width: 100%;
+
   padding: 15px 0;
   display: flex;
   flex-direction: column;
@@ -21,7 +22,6 @@ export const StyledSection = styled.section`
     margin: 10px;
     text-align: center;
     line-height: 1.7rem;
-    overflow: hidden;
   }
 
   @media (max-width: 600px) {

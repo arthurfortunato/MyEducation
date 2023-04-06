@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const CardWrapper = styled.div`
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-left: 100px;
   height: 60%;
 

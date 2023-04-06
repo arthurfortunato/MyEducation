@@ -1,27 +1,15 @@
 export const paragraphs = [
-  `Client-server: Separação do cliente e do armazenamento de dados(servidor), dessa
-  forma, poderemos ter uma portabilidade do nosso sistema, usando o
-  REACT para WEB e REACT Native para o smartphone, por exemplo.`,
+  `RESTful é um estilo arquitetural que descreve como as APIs devem ser projetadas para serem eficientes, escaláveis e fáceis de manter. RESTful é uma abordagem que utiliza os princípios do estilo arquitetural REST para a criação de APIs.`,
 
-  `Stateless: Cada requisição que o cliente faz para o servidor, deverá conter
-  todas as informações necessárias para o servidor entender e responder
-  <strong> (RESPONSE)</strong> a requisição <strong> (REQUEST)</strong>.`,
+  `Uma API RESTful é considerada "RESTful" quando segue completamente os princípios do estilo arquitetural REST. Isso significa que ela utiliza as operações HTTP (GET, POST, PUT, DELETE) de forma adequada, utiliza URIs (Uniform Resource Identifier) para identificar os recursos, utiliza os códigos HTTP de forma correta e também utiliza um modelo cliente-servidor com uma separação clara das responsabilidades entre as partes.`,
 
-  `Exemplo: A sessão do usuário deverá ser enviada em todas as
-  requisições, para saber se aquele usuário está autenticado e apto a
-  usar os serviços, e o servidor não pode lembrar que o cliente foi
-  autenticado na requisição anterior.`,
+  `Algumas das características de uma API RESTful incluem:`,
 
-  `Cacheable: As respostas para uma requisição, deverão ser explicitadas ao dizer
-  se aquela requisição, pode ou não ser cacheada pelo cliente.`,
-
-  `Layered System: O cliente acessa a um endpoint, sem precisar saber da complexidade,
-  de quais passos estão sendo necessários para o servidor responser a
-  requisição, ou quais outras camadas o servidor estará lidando, para
-  que a requisição seja respondida.`,
-
-  `Code on demand (optional): Dá a possibilidade da nossa aplicação pegar códigos, como o
-  javascript, por exemplo, e executar no cliente.`,
-
-  `RESTFUL, é a aplicação dos padrões REST`,
+  `Uso consistente de URIs para identificar recursos;`,
+  `Uso de verbos HTTP para indicar ações sobre os recursos;`,
+  `Uso de respostas HTTP padronizadas para indicar o resultado da operação;`,
+  `Separação clara entre o cliente (quem acessa a API) e o servidor (onde os recursos são armazenados);`,
+  `Utilização de caching para otimizar o desempenho da API;`,
+  `Uso de formatos de representação de dados padronizados, como JSON ou XML.`,
+  `Em resumo, uma API RESTful segue completamente os princípios do estilo arquitetural REST, permitindo uma interação eficiente e escalável entre os clientes e os servidores que a utilizam.`,
 ];
