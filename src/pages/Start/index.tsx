@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Container, ButtonStart } from "./styles";
 
 export const Start = () => {
@@ -17,14 +17,12 @@ export const Start = () => {
       document.documentElement.requestFullscreen();
     }
 
-    navigate("/home")
+    navigate("/home");
   };
-  
+
   return (
     <Container>
-      <Link to="/home" className="link-start">
-        <ButtonStart>Start</ButtonStart>
-      </Link>
+      <ButtonStart onClick={getStarted}>Start</ButtonStart>
     </Container>
   );
 };
