@@ -48,7 +48,7 @@ export const ConceptsStatusCode = () => {
         backRoute="/concepts"
       />
       <BodyContainerStyled>
-        <div>
+        <div ref={paragraphsContainer}>
           <Section title="RESTFULL">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
