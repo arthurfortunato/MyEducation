@@ -10,12 +10,30 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Nunito+Sans:wght@200;300;400;700&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Nunito+Sans:wght@200;300;400;700&family=Roboto:wght@100;400;900&display=swap"
+    rel="stylesheet">
   <title>My Education</title>
 </head>
 
 <body>
   <div id="root"></div>
 </body>
+
+<script>
+  window.onload = function () {
+    const root = document.getElementById('root');
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const fullScreenEnabled =
+      document.fullscreenEnabled ||
+      document.webkitFullscreenEnabled ||
+      document.mozFullScreenEnabled ||
+      document.msFullscreenEnabled ||
+      false;
+    if (isMobile && fullScreenEnabled && root) {
+      root.requestFullscreen();
+    }
+  }
+</script>
 
 </html>
