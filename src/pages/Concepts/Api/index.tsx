@@ -31,6 +31,10 @@ export const ConceptsApi = () => {
     navigate("/concepts/rest");
   };
 
+  if (!!handleNextParagraph) {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
   return (
     <Container>
       <HeaderContentCards
