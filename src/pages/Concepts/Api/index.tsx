@@ -25,7 +25,6 @@ export const ConceptsApi = () => {
     );
     setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
     setCurrentParagraph(nextParagraph);
-    window.scrollTo(0, document.body.scrollHeight);
   };
 
   const handleNextContent = () => {
