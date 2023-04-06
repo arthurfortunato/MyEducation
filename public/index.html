@@ -18,22 +18,21 @@
 
 <body>
   <div id="root"></div>
-</body>
-
-<script>
-  window.onload = function () {
-    const root = document.getElementById('root');
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const fullScreenEnabled =
-      document.fullscreenEnabled ||
-      document.webkitFullscreenEnabled ||
-      document.mozFullScreenEnabled ||
-      document.msFullscreenEnabled ||
-      false;
-    if (isMobile && fullScreenEnabled && root) {
-      root.requestFullscreen();
+  <script>
+    window.onload = function () {
+      const root = document.getElementById('root');
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const fullScreenEnabled =
+        document.fullscreenEnabled ||
+        document.webkitFullscreenEnabled ||
+        document.mozFullScreenEnabled ||
+        document.msFullscreenEnabled ||
+        false;
+      if (isMobile && fullScreenEnabled && root) {
+        root.requestFullscreen();
+      }
     }
-  }
-</script>
+  </script>
+</body>
 
 </html>
