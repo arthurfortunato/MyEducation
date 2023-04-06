@@ -12,19 +12,19 @@ export const ProgrammingLogic = () => {
       <HeaderCards title="Lógica da Programação" />
       <BodyContainerStyled>
         <div>
-          <Link to="programminglogic/introduction" className="link" >
+          <Link to="/programminglogic/introduction" className="link">
             <Card width="350px" height="100px" backgroundImage={introducao}>
               <p>1. Introdução</p>
             </Card>
           </Link>
-          <Link to="/programminglogic/logical-operators" className="link" >
+          <Link to="/programminglogic/logical-operators" className="link">
             <Card width="350px" height="100px" backgroundImage={introducao}>
-              <p>1. Operadores Lógicos</p>
+              <p>2. Operadores Lógicos</p>
             </Card>
           </Link>
-          <Link to="/programminglogic/conditional" className="link" >
+          <Link to="/programminglogic/conditional" className="link">
             <Card width="350px" height="100px" backgroundImage={introducao}>
-              <p>2. Condicionais</p>
+              <p>3. Condicionais</p>
             </Card>
           </Link>
         </div>

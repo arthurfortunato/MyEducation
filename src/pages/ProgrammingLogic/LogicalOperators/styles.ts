@@ -6,17 +6,13 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: ${({ theme }) => theme.colors.background_white};
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
   font-family: Lato, Helvetica, sans-serif;
-
-  strong {
-    color: #f5b324;
-  }
 `;
 
 export const BodyContainerStyled = styled.body`
   max-width: 1050px;
-  background: ${({ theme }) => theme.colors.background_white};
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
   align-self: center;
 
   div {
@@ -30,7 +26,6 @@ export const BodyContainerStyled = styled.body`
 
 export const Table = styled.table`
   width: 70%;
-  align-self: center;
   thead tr th:first-child,
   tbody tr td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
