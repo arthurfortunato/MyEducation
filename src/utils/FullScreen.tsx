@@ -13,18 +13,6 @@ export const FullScreen = () => {
     if (isMobile && fullScreenEnabled) {
       document.documentElement.requestFullscreen();
     }
-
-    const handleResize = () => {
-      if (isMobile && fullScreenEnabled && !document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   return null;
