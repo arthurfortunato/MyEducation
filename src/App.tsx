@@ -6,7 +6,6 @@ import { Routers } from "./routes";
 import { useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { ThemeMode } from "./styles/theme/styles";
-import { FullScreen } from "./utils/FullScreen";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -14,10 +13,9 @@ function App() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-
+  
   return (
     <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
-      <FullScreen />
       <ThemeMode onClick={toggleDarkMode}>
         {isDarkMode ? (
           <MdDarkMode size={32} />
