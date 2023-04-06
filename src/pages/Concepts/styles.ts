@@ -6,18 +6,14 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: ${({ theme }) => theme.colors.background_white};
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
   font-family: Lato, Helvetica, sans-serif;
-
-  strong {
-    color: #f5b324;
-  }
 `;
 
 export const BodyContainerStyled = styled.body`
   max-width: 1050px;
   margin: 40px;
-  background: ${({ theme }) => theme.colors.background_white};
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
   align-self: center;
 
   div {

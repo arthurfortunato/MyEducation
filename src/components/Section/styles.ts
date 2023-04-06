@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  width: 60%;
+  width: 100%;
   padding: 15px 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h2 {
     text-align: center;
@@ -17,7 +19,7 @@ export const StyledSection = styled.section`
     color: ${(props) => props.theme.colors.textSection};
     font: 500 1.3rem "Roboto", sans-serif;
     margin: 10px;
-    text-align: justify;
+    text-align: center;
     line-height: 1.7rem;
     overflow: hidden;
   }

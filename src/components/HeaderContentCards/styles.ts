@@ -30,10 +30,9 @@ export const ButtonHeaderStyled = styled.button`
   align-items: center;
 
   @media (max-width: 900px) {
-    transition: 1.8s all;
     padding-right: 0px;
   }
-`;
+`; 
 
 export const LoadingContainer = styled.div`
   flex: 1;
