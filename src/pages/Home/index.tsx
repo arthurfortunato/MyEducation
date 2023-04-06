@@ -75,9 +75,12 @@ export const Home = () => {
             </Link>
           </TopCard>
           <RightCard>
-            <Card>
-              <ImageCard src={oop} />
-            </Card>
+            <Link to="/">
+              <Card>
+                <ImageCard src={oop} />
+              </Card>
+              <p>3. Orientação a Objetos</p>
+            </Link>
           </RightCard>
 
           <TopCard>

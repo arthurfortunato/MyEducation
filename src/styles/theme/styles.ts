@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ThemeMode = styled.button`
   width: 50px;
   height: 70px;
+  color: yellow;
   background: transparent;
   cursor: pointer;
   border: 0;
