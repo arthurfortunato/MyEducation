@@ -49,7 +49,7 @@ export const ConceptsStatusCode = () => {
       />
       <BodyContainerStyled>
         <div ref={paragraphsContainer}>
-          <Section title="RESTFULL">
+          <Section title="Status Code">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index}>{paragraph}</p>;
