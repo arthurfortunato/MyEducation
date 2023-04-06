@@ -67,7 +67,7 @@ export const Home = () => {
               </Card>
               <p>1. Conceitos</p>
             </Link>
-            <Link to="/programminglogic" className="top-bottom">
+            <Link to="/home" className="top-bottom">
               <Card>
                 <ImageCard src={logica} />
               </Card>
@@ -75,7 +75,7 @@ export const Home = () => {
             </Link>
           </TopCard>
           <RightCard>
-            <Link to="/">
+            <Link to="/home" className="middle">
               <Card>
                 <ImageCard src={oop} />
               </Card>

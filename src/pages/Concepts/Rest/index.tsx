@@ -48,7 +48,7 @@ export const ConceptsRest = () => {
         backRoute="/concepts"
       />
       <BodyContainerStyled>
-        <div>
+        <div ref={paragraphsContainer}>
           <Section title="REST">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
