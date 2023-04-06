@@ -6,7 +6,7 @@ import { ButtonContinue } from "../../../components/ButtonContinue";
 import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { Section } from "../../../components/Section";
 import { HeaderContentCards } from "../../../components/HeaderContentCards";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const ConceptsApi = () => {
@@ -18,6 +18,8 @@ export const ConceptsApi = () => {
 
   const navigate = useNavigate();
 
+  const paragraphsContainer = useRef<HTMLDivElement>(null);  
+
   const handleNextParagraph = () => {
     const nextParagraph = currentParagraph + 1;
     setLoadingProgress(
@@ -27,13 +29,13 @@ export const ConceptsApi = () => {
     setCurrentParagraph(nextParagraph);
   };
 
+  useEffect(() => {
+    paragraphsContainer.current?.querySelector(`p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`)?.scrollIntoView({ behavior: 'smooth' });
+  })
+
   const handleNextContent = () => {
     navigate("/concepts/rest");
   };
-
-  if (!!handleNextParagraph) {
-    window.scrollTo(0, document.body.scrollHeight);
-  }
 
   return (
     <Container>
@@ -43,7 +45,7 @@ export const ConceptsApi = () => {
       />
 
       <BodyContainerStyled>
-        <div>
+        <div ref={paragraphsContainer}>
           <Section title="API">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {

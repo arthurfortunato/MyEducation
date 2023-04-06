@@ -13,7 +13,7 @@ export const BodyContainerStyled = styled.body`
   max-width: 1050px;
   background: ${({ theme }) => theme.colors.backgroundContainerContents};
   align-self: center;
-  
+
   div {
     height: 100%;
     display: flex;

@@ -6,7 +6,7 @@ import { ButtonContinue } from "../../../components/ButtonContinue";
 import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { Section } from "../../../components/Section";
 import { HeaderContentCards } from "../../../components/HeaderContentCards";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const ConceptsRest = () => {
@@ -18,6 +18,8 @@ export const ConceptsRest = () => {
 
   const navigate = useNavigate();
 
+  const paragraphsContainer = useRef<HTMLDivElement>(null);
+
   const handleNextParagraph = () => {
     const nextParagraph = currentParagraph + 1;
     setLoadingProgress(
@@ -26,6 +28,14 @@ export const ConceptsRest = () => {
     setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
     setCurrentParagraph(nextParagraph);
   };
+
+  useEffect(() => {
+    paragraphsContainer.current
+      ?.querySelector(
+        `p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`
+      )
+      ?.scrollIntoView({ behavior: "smooth" });
+  });
 
   const handleNextContent = () => {
     navigate("/concepts/rest-full");

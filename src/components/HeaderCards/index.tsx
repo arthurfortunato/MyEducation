@@ -7,7 +7,7 @@ export const HeaderCards = (props: { title: string }) => {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/");
+    navigate("/home");
   };
 
   return (
