@@ -39,7 +39,7 @@ export const ConceptsApi = () => {
   const handleNextContent = () => {
     navigate("/concepts/rest");
   };
-
+ 
   return (
     <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
       <Container>

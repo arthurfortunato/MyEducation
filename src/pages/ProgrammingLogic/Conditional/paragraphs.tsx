@@ -1,4 +1,4 @@
-import { Table, Pre } from "./styles";
+import { Pre } from "./styles";
 
 export const paragraphs = [
   `A estrutura condicional "IF/ELSE" é da seguinte maneira:`,
