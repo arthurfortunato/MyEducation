@@ -9,12 +9,6 @@ export const Container = styled.div`
   width: 100%;
   background: #000;
   opacity: 0.8;
-
-  .link-start {
-    text-decoration: none;
-    color: #000;
-    font: 700 2rem "Nunito", sans-serif;
-  }
 `;
 
 export const ButtonStart = styled.div`
@@ -27,6 +21,9 @@ export const ButtonStart = styled.div`
   justify-content: center;
   border-radius: 999px;
   transition: filter 0.2s;
+
+  color: #000;
+  font: 500 2rem "Nunito", sans-serif;
 
   &:hover {
     filter: brightness(0.7);
