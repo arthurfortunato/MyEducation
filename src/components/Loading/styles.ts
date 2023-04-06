@@ -7,6 +7,7 @@ export const Container = styled.div`
   direction: ltr;
   position: relative;
   border-radius: 99px;
+  border: 0;
 
   @media(max-width: 900px) {
     transition: 1.8s all;

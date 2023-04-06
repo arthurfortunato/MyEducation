@@ -16,17 +16,17 @@ import { LogicalOperators } from "../pages/ProgrammingLogic/LogicalOperators";
 export const ProgrammingLogicRoutes = () => {
   return (
     <Routes>
-      <Route path="/programminglogic" element={<ProgrammingLogic />} />
-      <Route path="/programminglogic/introduction" element={<Introduction />} />
-      <Route path="programminglogic/variables" element={<Variables />} />
-      <Route path="programminglogic/conditional" element={<Conditional />} />
+      <Route path="programminglogic" element={<ProgrammingLogic />} />
+      <Route path="programminglogic/introduction" element={<Introduction />} />
       <Route path="programminglogic/logical-operators" element={<LogicalOperators />} />
+      <Route path="programminglogic/conditional" element={<Conditional />} />
+      <Route path="programminglogic/variables" element={<Variables />} />
 
       <Route path="programminglogic/loops" element={<LoopRepetition />} />
       <Route path="programminglogic/vectors" element={<Vectors />} />
       <Route path="programminglogic/functions" element={<Functions />} />
       <Route
-        path="programminglogic/higherorderfunctions"
+        path="package.jsonprogramminglogic/higherorderfunctions"
         element={<HigherOrderFunctions />}
       />
       <Route path="programminglogic/map" element={<Map />} />
