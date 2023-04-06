@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background: ${({ theme }) => theme.colors.background_white};
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
 `;
 
 export const CardWrapper = styled.div`
@@ -30,8 +30,19 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 500px) {
     transition: 1.8s all;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 20px;
+  }
+
+  @media (max-width: 300px) {
+    transition: 1.8s all;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  @media (max-height: 760px) {
+    transition: 1.8s all;
+    height: 70%;
   }
 `;
 
@@ -47,20 +58,21 @@ export const TopCard = styled.div`
     align-items: center;
     padding-left: 50px;
     text-decoration: none;
-    color: #000;
-    font: 700 1rem "Lato", sans-serif;
+    color: ${({ theme }) => theme.colors.textSection};
+    font: 700 1rem "Roboto", sans-serif;
 
     p {
       max-width: 120px;
     }
   }
-  
+
   .top-bottom {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color: ${({ theme }) => theme.colors.textSection};
     font: 700 1rem "Lato", sans-serif;
 
     p {
@@ -75,11 +87,21 @@ export const RightCard = styled.div`
   align-items: center;
   padding: 20px;
   font: 700 1rem "Lato", sans-serif;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.textSection};
+    font: 700 1rem "Lato", sans-serif;
+  }
 `;
 
 export const HeaderContainer = styled.div`
   width: 100%;
   height: 90px;
-  background: linear-gradient(90deg, rgba(40,31,185,1) 24%, rgba(0,212,255,1) 100%);
+  background: ${({ theme }) => theme.colors.backgroundGradiente};
   display: flex;
 `;

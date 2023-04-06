@@ -9,6 +9,7 @@ const theme = {
       textButtonContinue: "#281fb9",
       backgroundHeaderContentCards: "#fff",
       buttonHeaderContentCards: "#37373c",
+      backgroundGradiente: "linear-gradient(90deg, rgba(40,31,185,1) 24%, rgba(0,212,255,1) 100%)",
 
       secondary: "#bbb",
       success: "#28a745",
@@ -27,11 +28,13 @@ const theme = {
   dark: {
     colors: {
       textSection: "#fff",
-      backgroundContainerContents: "#37373c",
-      backgroundButtonContinue: "#37373c",
+      backgroundContainerContents: "#2f2f2f",
+      backgroundButtonContinue: "#2f2f2f",
       textButtonContinue: "#fff",
-      backgroundHeaderContentCards: "#37373c",
+      backgroundHeaderContentCards: "#2f2f2f",
       buttonHeaderContentCards: "#fff",
+      backgroundGradiente: "linear-gradient(90deg, rgba(27, 21, 34, 1) 24%, rgba(40, 31, 50, 1) 100%)",
+
 
       secondary: "#888",
       success: "#52c41a",
