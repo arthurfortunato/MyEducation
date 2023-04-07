@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const Pre = styled.pre`
-  align-self: center;
-  background: ${({theme}) => theme.colors.backgroundPreCode};
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: ${({ theme }) => theme.colors.backgroundPreCode};
   padding: 10px 50px 0 0;
   font: 500 1rem "Roboto", sans-serif;
   border-radius: 10px;
 
   code {
-    color: ${({theme}) => theme.colors.textPreCode};
-    display: flex;
+    color: ${({ theme }) => theme.colors.textPreCode};
     text-align: start;
     padding: 10px;
   }
@@ -23,6 +26,7 @@ export const Pre = styled.pre`
   }
 
   @media (max-width: 455px) {
+    padding: 10px 20px 0 0;
     code {
       font-size: 0.65rem;
     }
