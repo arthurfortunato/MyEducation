@@ -25,7 +25,8 @@ export const BodyContainerStyled = styled.body`
 `;
 
 export const Table = styled.table`
-  width: 70%;
+  width: 100%;
+
   thead tr th:first-child,
   tbody tr td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
@@ -62,12 +63,12 @@ export const Table = styled.table`
   @media (max-width: 560px) {
     th {
       transition: 1.8s all;
-      padding: 1rem 0.8rem;
+      padding: 0.5rem 0.5rem;
       font-size: 0.8rem;
     }
     tbody td {
-      padding: 1rem 0.5rem;
-      font-size: 0.8rem;
+      padding: 0.5rem 0.5rem;
+      font-size: 0.7rem;
     }
   }
 `;

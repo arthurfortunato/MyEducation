@@ -67,7 +67,7 @@ export const Home = () => {
               </Card>
               <p>1. Conceitos</p>
             </Link>
-            <Link to="/home" className="top-bottom">
+            <Link to="/programminglogic" className="top-bottom">
               <Card>
                 <ImageCard src={logica} />
               </Card>

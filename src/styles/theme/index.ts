@@ -10,6 +10,8 @@ const theme = {
       backgroundHeaderContentCards: "#fff",
       buttonHeaderContentCards: "#37373c",
       backgroundGradiente: "linear-gradient(90deg, rgba(40,31,185,1) 24%, rgba(0,212,255,1) 100%)",
+      backgroundPreCode: "#2f2f2f",
+      textPreCode: "#fff",
 
       secondary: "#bbb",
       success: "#28a745",
@@ -34,7 +36,8 @@ const theme = {
       backgroundHeaderContentCards: "#2f2f2f",
       buttonHeaderContentCards: "#fff",
       backgroundGradiente: "linear-gradient(90deg, rgba(27, 21, 34, 1) 24%, rgba(40, 31, 50, 1) 100%)",
-
+      backgroundPreCode: "#fff",
+      textPreCode: "#000",
 
       secondary: "#888",
       success: "#52c41a",

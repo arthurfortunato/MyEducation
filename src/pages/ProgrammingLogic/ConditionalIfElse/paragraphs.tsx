@@ -1,6 +1,7 @@
 import { Pre } from "./styles";
 
 export const paragraphs = [
+  `A condicional if-else é uma instrução condicional que permite que um programa faça uma escolha entre duas opções diferentes com base em uma condição booleana. O if testa a condição e, se ela for verdadeira, executa um bloco de código específico, caso contrário, executa um bloco de código diferente especificado pelo else.`,
   `A estrutura condicional "IF/ELSE" é da seguinte maneira:`,
 
   <Pre>
@@ -30,16 +31,14 @@ export const paragraphs = [
   <Pre>
     <code>
       {`
-              if(x > 0){
-                console.log("X é positivo")
-              }
-              else if(x == 0){
-                console.log("X é zero")
-              }
-              else{
-                console.log("X é negativo")
-              }
-          `}
+        if(x > 0) {
+          console.log("X é positivo")
+        } else if(x == 0) {
+            console.log("X é zero")
+        } else {
+            console.log("X é negativo")
+        }
+      `}
     </code>
   </Pre>,
 
