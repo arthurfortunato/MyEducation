@@ -9,7 +9,7 @@ import { HeaderContentCards } from "../../../components/HeaderContentCards";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Introduction = () => {
+export const ConditionalTernary = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -38,7 +38,7 @@ export const Introduction = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/programminglogic/logical-operators");
+    navigate("/programminglogic/conditional-switch");
   };
 
   return (
@@ -50,7 +50,7 @@ export const Introduction = () => {
 
       <BodyContainerStyled>
         <div ref={paragraphsContainer}>
-          <Section title="Introdução">
+          <Section title="Operador Ternário">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index}>{paragraph}</p>;

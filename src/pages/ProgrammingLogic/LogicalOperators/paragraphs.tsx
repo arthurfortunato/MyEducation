@@ -21,49 +21,49 @@ export const paragraphs = [
     </thead>
     <tbody>
       <tr>
-        <td> {">"} </td>
+        <td>{">"}</td>
         <td>Maior</td>
         <td>2 {">"} 0</td>
         <td>true</td>
       </tr>
       <tr>
-        <td> {">="} </td>
+        <td>{">="}</td>
         <td>Maior ou Igual</td>
         <td>2 {">="} 2</td>
         <td>true</td>
       </tr>
       <tr>
-        <td> {"<"} </td>
+        <td>{"<"}</td>
         <td>Menor</td>
         <td>2 {"<"} 0</td>
         <td>false</td>
       </tr>
       <tr>
-        <td> {"<="} </td>
+        <td>{"<="}</td>
         <td>Menor ou Igual</td>
         <td>2 {"<="} 1</td>
         <td>false</td>
       </tr>
       <tr>
-        <td> == </td>
+        <td>==</td>
         <td>Igual</td>
         <td>1 == '1'</td>
         <td>true</td>
       </tr>
       <tr>
-        <td> === </td>
+        <td>===</td>
         <td>Igual em valor e tipo</td>
         <td>1 === '1'</td>
         <td>false</td>
       </tr>
       <tr>
-        <td> != </td>
+        <td>!=</td>
         <td>Diferente</td>
         <td>1 != 2</td>
         <td>true</td>
       </tr>
       <tr>
-        <td> !== </td>
+        <td>!==</td>
         <td>Diferente em valor ou tipo</td>
         <td>5 !== '5'</td>
         <td>false</td>
@@ -79,7 +79,7 @@ export const paragraphs = [
         <th>Operador</th>
         <th>Nome</th>
         <th>Exemplo</th>
-        <th>Exemplo</th>
+        <th>Resultado</th>
       </tr>
     </thead>
     <tbody>

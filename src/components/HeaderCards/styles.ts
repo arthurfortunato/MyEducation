@@ -23,8 +23,9 @@ export const HeaderContainer = styled.div`
     color: #fff;
   }
 
-  @media(max-width: 400px) {
+  @media(max-width: 700px) {
     h1 {
+      font-size: 1.6rem;
       margin-left: 50px;
     }
   }

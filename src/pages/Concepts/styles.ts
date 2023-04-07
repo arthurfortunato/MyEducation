@@ -32,33 +32,3 @@ export const BodyContainerStyled = styled.body`
     }
   }
 `;
-
-export const Pre = styled.pre`
-  align-self: center;
-  width: 80%;
-  background: #26262a;
-  padding: 10px 80px 0 0;
-  font-size: 1rem;
-  border-radius: 10px;
-
-  code {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-
-  @media (max-width: 955px) {
-    transition: 1.8s all;
-    width: 100%;
-    code {
-      font-size: 0.8rem;
-    }
-  }
-
-  @media (max-width: 570px) {
-    code {
-      font-size: 0.57rem;
-    }
-  }
-`;

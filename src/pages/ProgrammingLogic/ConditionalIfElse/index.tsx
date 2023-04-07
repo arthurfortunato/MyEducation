@@ -6,10 +6,10 @@ import { ButtonContinue } from "../../../components/ButtonContinue";
 import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { Section } from "../../../components/Section";
 import { HeaderContentCards } from "../../../components/HeaderContentCards";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Conditional = () => {
+export const ConditionalIfElse = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -17,6 +17,8 @@ export const Conditional = () => {
   );
 
   const navigate = useNavigate();
+
+  const paragraphsContainer = useRef<HTMLDivElement>(null);
 
   const handleNextParagraph = () => {
     const nextParagraph = currentParagraph + 1;
@@ -27,16 +29,28 @@ export const Conditional = () => {
     setCurrentParagraph(nextParagraph);
   };
 
+  useEffect(() => {
+    paragraphsContainer.current
+      ?.querySelector(
+        `p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`
+      )
+      ?.scrollIntoView({ behavior: "smooth" });
+  });
+
   const handleNextContent = () => {
-    navigate("/concepts/rest");
+    navigate("/programminglogic/conditional-ternary");
   };
 
   return (
     <Container>
-      <HeaderContentCards loadingProgress={loadingProgress} />
+      <HeaderContentCards
+        loadingProgress={loadingProgress}
+        backRoute="/programminglogic"
+      />
+
       <BodyContainerStyled>
-        <div>
-          <Section title="Condicionais">
+        <div ref={paragraphsContainer}>
+          <Section title="IF ELSE">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index}>{paragraph}</p>;

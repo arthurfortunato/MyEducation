@@ -2,32 +2,38 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: #37373c;
-  font-family: Lato, Helvetica, sans-serif;
-  color: #e1e1e1;
-  padding-top: 80px;
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
+`;
 
-  strong {
-    color: #f5b324;
+export const BodyContainerStyled = styled.body`
+  max-width: 1050px;
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
+  align-self: center;
+
+  div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
 export const Pre = styled.pre`
   align-self: center;
-  width: 80%;
-  background: #26262a;
+  background: ${({theme}) => theme.colors.backgroundPreCode};
   padding: 10px 50px 0 0;
   font-size: 1rem;
   border-radius: 10px;
 
   code {
+    color: ${({theme}) => theme.colors.textPreCode};
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: start;
     padding: 10px;
   }
 
@@ -45,3 +51,4 @@ export const Pre = styled.pre`
     }
   }
 `;
+
