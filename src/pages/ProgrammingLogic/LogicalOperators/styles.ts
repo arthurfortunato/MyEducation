@@ -38,9 +38,9 @@ export const Table = styled.table`
   }
 
   th {
-    background: #26262a;
+    background: ${({ theme }) => theme.colors.backgroundTable};
     font-weight: normal;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.textPreCode};
     padding: 0.5rem 2rem;
   }
 
@@ -54,9 +54,9 @@ export const Table = styled.table`
   }
 
   tbody td {
-    background: #26262a;
+    background: ${({ theme }) => theme.colors.backgroundTable};
     padding: 0.5rem 3rem;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.textPreCode};
     font-size: 0.8rem;
   }
 
