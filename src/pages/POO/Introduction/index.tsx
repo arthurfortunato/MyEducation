@@ -1,62 +1,69 @@
-import { Container } from "./styles";
-import { Header } from "../../../components/Header";
+import { Container, BodyContainerStyled } from "./styles";
+
+import { paragraphs } from "./paragraphs";
+
+import { ButtonContinue } from "../../../components/ButtonContinue";
+import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { Section } from "../../../components/Section";
+import { HeaderContentCards } from "../../../components/HeaderContentCards";
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const IntroductionPOO = () => {
+  const [currentParagraph, setCurrentParagraph] = useState(0);
+  const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
+  const [loadingProgress, setLoadingProgress] = useState(
+    100 / paragraphs.length
+  );
+
+  const navigate = useNavigate();
+
+  const paragraphsContainer = useRef<HTMLDivElement>(null);  
+
+  const handleNextParagraph = () => {
+    const nextParagraph = currentParagraph + 1;
+    setLoadingProgress(
+      (prevProgress) => prevProgress + 100 / paragraphs.length
+    );
+    setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
+    setCurrentParagraph(nextParagraph);
+  };
+
+  useEffect(() => {
+    paragraphsContainer.current?.querySelector(`p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`)?.scrollIntoView({ behavior: 'smooth' });
+  })
+
+  const handleNextContent = () => {
+    navigate("/poo/class");
+  };
+
   return (
     <Container>
-      <Header title="Introdução POO"/>
+      <HeaderContentCards
+        loadingProgress={loadingProgress}
+        backRoute="/poo"
+      />
 
-      <Section>
-        <p>
-        <strong>A Orientação a Objetos é uma abordagem para a
-          programação que se baseia em conceitos como classes, objetos, herança,
-          polimorfismo e encapsulamento. Esses conceitos são utilizados para
-          modelar o mundo real em uma forma computacional, tornando a
-          programação mais clara, organizada e reutilizável.</strong>
-          <br />
-          <br />A orientação a objetos é um paradigma de programação que se
-          baseia no conceito de "objetos".{" "}
-          <strong>
-            Em vez de lidar com dados e funções de forma separada, a orientação
-            a objetos permite que você crie "objetos" que combinam dados e
-            funções relacionadas.
-          </strong>
-          <br />
-          <br />
-          <strong>Classe:</strong> é uma estrutura que descreve um conjunto de
-          objetos com características em comum. É uma definição abstrata que
-          contém informações sobre os atributos (variáveis) e métodos (funções)
-          que os objetos dessa classe possuem.
-          <br />
-          <br />
-          <strong>Objeto:</strong> é uma instância de uma classe, ou seja, é uma
-          entidade concreta criada a partir de uma definição de classe. Cada
-          objeto tem seus próprios valores de atributos e pode executar seus
-          próprios métodos.
-          <br />
-          <br />
-          <strong>Herança:</strong> é um mecanismo que permite criar uma nova
-          classe a partir de uma classe já existente, herdando todos os
-          atributos e métodos da classe original e adicionando novos atributos e
-          métodos. A classe que é herdada é chamada de superclasse ou classe
-          base, enquanto a nova classe é chamada de subclasse ou classe
-          derivada.
-          <br />
-          <br />
-          <strong>Polimorfismo:</strong> é a capacidade de um objeto ser tratado
-          como se fosse outro tipo de objeto. É possível usar uma mesma
-          interface para representar diferentes implementações de uma mesma
-          funcionalidade.
-          <br />
-          <br />
-          <strong>Encapsulamento:</strong> é o mecanismo que garante que os
-          dados de um objeto só possam ser acessados através de métodos
-          específicos, que controlam o acesso aos atributos do objeto. Isso
-          garante a integridade dos dados e evita que outros objetos modifiquem
-          os dados diretamente.
-        </p>
-      </Section>
+      <BodyContainerStyled>
+        <div ref={paragraphsContainer}>
+          <Section title="Introdução">
+            {paragraphs.map((paragraph, index) => {
+              if (displayedParagraphs.includes(index)) {
+                return <p key={index}>{paragraph}</p>;
+              }
+              return null;
+            })}
+          </Section>
+        </div>
+      </BodyContainerStyled>
+      {currentParagraph < paragraphs.length - 1 && (
+        <ButtonContinue onClick={handleNextParagraph}>
+          Tap to Cotinue
+        </ButtonContinue>
+      )}
+      {currentParagraph === paragraphs.length - 1 && (
+        <ButtonNextContent onClick={handleNextContent}>Next</ButtonNextContent>
+      )}
     </Container>
   );
 };

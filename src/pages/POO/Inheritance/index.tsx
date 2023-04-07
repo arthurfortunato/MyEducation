@@ -1,54 +1,69 @@
-import { Container, Pre } from "./styles";
-import { Header } from "../../../components/Header";
+import { Container, BodyContainerStyled } from "./styles";
+
+import { paragraphs } from "./paragraphs";
+
+import { ButtonContinue } from "../../../components/ButtonContinue";
+import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { Section } from "../../../components/Section";
+import { HeaderContentCards } from "../../../components/HeaderContentCards";
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Inheritance = () => {
+  const [currentParagraph, setCurrentParagraph] = useState(0);
+  const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
+  const [loadingProgress, setLoadingProgress] = useState(
+    100 / paragraphs.length
+  );
+
+  const navigate = useNavigate();
+
+  const paragraphsContainer = useRef<HTMLDivElement>(null);  
+
+  const handleNextParagraph = () => {
+    const nextParagraph = currentParagraph + 1;
+    setLoadingProgress(
+      (prevProgress) => prevProgress + 100 / paragraphs.length
+    );
+    setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
+    setCurrentParagraph(nextParagraph);
+  };
+
+  useEffect(() => {
+    paragraphsContainer.current?.querySelector(`p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`)?.scrollIntoView({ behavior: 'smooth' });
+  })
+
+  const handleNextContent = () => {
+    navigate("/poo/encapsulation");
+  };
+
   return (
     <Container>
-      <Header title="Herança"/>
+      <HeaderContentCards
+        loadingProgress={loadingProgress}
+        backRoute="/poo"
+      />
 
-      <Section>
-        <p>
-          <strong>
-            A Herança é um mecanismo da Orientação a Objetos que permite que uma
-            classe (chamada classe filha ou subclasse) herde as propriedades e
-            métodos de outra classe (chamada classe pai ou superclasse).
-          </strong>{" "}
-          Dessa forma, é possível reutilizar código e organizar de forma
-          hierárquica as classes de acordo com suas semelhanças.
-          <br />
-          <br />
-          Por exemplo, considere as classes Animal e Gato. A classe Animal pode
-          ter as propriedades nome e idade, enquanto a classe Gato pode ter a
-          propriedade raça. A classe Gato pode herdar as propriedades da classe
-          Animal, e adicionar a propriedade raça. Assim, todas as informações de
-          um gato podem ser representadas por sua classe.
-        </p>
-
-        <br />
-        <br />
-
-        <Pre>
-          <code>
-            {`
-              public class Professor extends Pessoa {
-                private String disciplina;
-                
-                public Professor(String nome, int idade, 
-                    String disciplina) {
-                      
-                  super(nome, idade);
-                  this.disciplina = disiplina;
-                }
-
-                public String getDisciplina() {
-                  return disciplina;
-                }
+      <BodyContainerStyled>
+        <div ref={paragraphsContainer}>
+          <Section title="Herança">
+            {paragraphs.map((paragraph, index) => {
+              if (displayedParagraphs.includes(index)) {
+                return <p key={index}>{paragraph}</p>;
               }
-            `}
-          </code>
-        </Pre>
-      </Section>
+              return null;
+            })}
+          </Section>
+        </div>
+      </BodyContainerStyled>
+      {currentParagraph < paragraphs.length - 1 && (
+        <ButtonContinue onClick={handleNextParagraph}>
+          Tap to Cotinue
+        </ButtonContinue>
+      )}
+      {currentParagraph === paragraphs.length - 1 && (
+        <ButtonNextContent onClick={handleNextContent}>Next</ButtonNextContent>
+      )}
     </Container>
   );
 };

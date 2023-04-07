@@ -1,10 +1,10 @@
-import { Pre } from "./styles";
+import { PreCode } from "../../../components/PreCode";
 
 export const paragraphs = [
   `A condicional switch é uma estrutura de controle de fluxo que permite avaliar uma expressão e executar diferentes ações dependendo do valor dessa expressão. É frequentemente usada quando há muitas opções possíveis para um valor específico e uma série de ações que precisam ser tomadas com base em cada opção.`,
   `A estrutura básica da condicional switch é a seguinte:`,
 
-  <Pre>
+  <PreCode>
     <code>
       {`
        switch (expressão) {
@@ -26,5 +26,5 @@ export const paragraphs = [
         }
       `}
     </code>
-  </Pre>,
+  </PreCode>,
 ];
