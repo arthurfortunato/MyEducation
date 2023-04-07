@@ -20,7 +20,7 @@ function App() {
         {isDarkMode ? (
           <MdDarkMode size={32} />
         ) : (
-          <MdLightMode size={32} color="#000" />
+          <MdLightMode size={32} color="#FFA500" />
         )}
       </ThemeMode>
       <GlobalStyled />
