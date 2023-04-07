@@ -75,7 +75,7 @@ export const Home = () => {
             </Link>
           </TopCard>
           <RightCard>
-            <Link to="/home" className="middle">
+            <Link to="/poo" className="middle">
               <Card>
                 <ImageCard src={oop} />
               </Card>

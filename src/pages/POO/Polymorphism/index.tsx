@@ -1,85 +1,73 @@
-import { Container, Pre } from "./styles";
-import { Header } from "../../../components/Header";
+import { Container, BodyContainerStyled } from "./styles";
+
+import { paragraphs } from "./paragraphs";
+
+import { ButtonContinue } from "../../../components/ButtonContinue";
+import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { Section } from "../../../components/Section";
+import { HeaderContentCards } from "../../../components/HeaderContentCards";
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Polymorphism = () => {
+  const [currentParagraph, setCurrentParagraph] = useState(0);
+  const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
+  const [loadingProgress, setLoadingProgress] = useState(
+    100 / paragraphs.length
+  );
+
+  const navigate = useNavigate();
+
+  const paragraphsContainer = useRef<HTMLDivElement>(null);
+
+  const handleNextParagraph = () => {
+    const nextParagraph = currentParagraph + 1;
+    setLoadingProgress(
+      (prevProgress) => prevProgress + 100 / paragraphs.length
+    );
+    setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
+    setCurrentParagraph(nextParagraph);
+  };
+
+  useEffect(() => {
+    paragraphsContainer.current
+      ?.querySelector(
+        `p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`
+      )
+      ?.scrollIntoView({ behavior: "smooth" });
+  });
+
+  const handleNextContent = () => {
+    navigate("/poo/inheritance");
+  };
+
   return (
     <Container>
-      <Header title="Polimorfismo"/>
+      <HeaderContentCards
+        loadingProgress={loadingProgress}
+        backRoute="/poo"
+      />
 
-      <Section>
-        <p>
-          O <strong>Polimorfismo</strong> é uma técnica da Orientação a Objetos
-          que permite tratar objetos de diferentes tipos de forma genérica, como
-          se fossem do mesmo tipo. Isto é possível através do uso de interfaces
-          e referências a objetos.
-          <br />
-          <br />
-          Por exemplo, considera uma classe Animal e suas subclasses Gato e
-          Cachorro. Se tivermos uma lista de animais, podemos chamar o método
-          `fazerBarulho` de cada objeto da lista, sem importar se o objeto é do
-          tipo Gato ou Cachorro. O método correto será chamado automaticamente,
-          dependendo do tipo do objeto.
-        </p>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {
-              `class Animal {
-                public void fazerBarulho() {
-                  System.out.println("Barulho genérico");
-                }
+      <BodyContainerStyled>
+        <div ref={paragraphsContainer}>
+          <Section title="Polimorfismo">
+            {paragraphs.map((paragraph, index) => {
+              if (displayedParagraphs.includes(index)) {
+                return <p key={index}>{paragraph}</p>;
               }
-            `}
-          </code>
-        </Pre>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {
-              `class Cachorro extends Animal {
-                public void fazerBarulho() {
-                  System.out.println("Au Au");
-                }
-              }
-            `}
-          </code>
-        </Pre>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {
-              `class Gato extends Animal {
-                public void fazerBarulho() {
-                  System.out.println("Miau");
-                }
-              }
-            `}
-          </code>
-        </Pre>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {
-              `public class Main {
-                public static void main(String[] args) {
-                  Animal[] animais = new Animal[2];
-                  animais[0] = new Cachorro();
-                  animais[1] = new Gato();
-
-                  for (Animal animal : animais) {
-                    animal.fazerBarulho();
-                  }
-                }
-              }
-            `}
-          </code>
-        </Pre>
-      </Section>
+              return null;
+            })}
+          </Section>
+        </div>
+      </BodyContainerStyled>
+      {currentParagraph < paragraphs.length - 1 && (
+        <ButtonContinue onClick={handleNextParagraph}>
+          Tap to Cotinue
+        </ButtonContinue>
+      )}
+      {currentParagraph === paragraphs.length - 1 && (
+        <ButtonNextContent onClick={handleNextContent}>Next</ButtonNextContent>
+      )}
     </Container>
   );
 };

@@ -1,79 +1,73 @@
-import { Container, Pre } from "./styles";
-import { Link } from "react-router-dom";
-import { Header } from "../../../components/Header";
-import { Section } from "../../../components/Section";
+import { Container, BodyContainerStyled } from "./styles";
 
-export const ClassAndConstructor = () => {
+import { paragraphs } from "./paragraphs";
+
+import { ButtonContinue } from "../../../components/ButtonContinue";
+import { ButtonNextContent } from "../../../components/ButtonNextContent";
+import { Section } from "../../../components/Section";
+import { HeaderContentCards } from "../../../components/HeaderContentCards";
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+export const ClassAndObject = () => {
+  const [currentParagraph, setCurrentParagraph] = useState(0);
+  const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
+  const [loadingProgress, setLoadingProgress] = useState(
+    100 / paragraphs.length
+  );
+
+  const navigate = useNavigate();
+
+  const paragraphsContainer = useRef<HTMLDivElement>(null);
+
+  const handleNextParagraph = () => {
+    const nextParagraph = currentParagraph + 1;
+    setLoadingProgress(
+      (prevProgress) => prevProgress + 100 / paragraphs.length
+    );
+    setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
+    setCurrentParagraph(nextParagraph);
+  };
+
+  useEffect(() => {
+    paragraphsContainer.current
+      ?.querySelector(
+        `p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`
+      )
+      ?.scrollIntoView({ behavior: "smooth" });
+  });
+
+  const handleNextContent = () => {
+    navigate("/poo/polymorphism");
+  };
+
   return (
     <Container>
-      <Header title="Classe" />
+      <HeaderContentCards
+        loadingProgress={loadingProgress}
+        backRoute="/poo"
+      />
 
-      <Section>
-        <p>
-          <strong>
-            Uma classe em Java é uma estrutura que define atributos e métodos
-            para descrever um objeto ou entidade do mundo real
-          </strong>
-          . É a unidade básica de organização e design do código. Uma classe
-          define as propriedades (variáveis de instância) e comportamentos
-          (métodos) que um objeto desta classe irá ter. Uma classe é definida
-          usando a palavra-chave "class" seguida pelo nome da classe.
-        </p>
-        <br />
-        <br />
-
-        <Pre>
-          <code>
-            {`
-              public class Pessoa {
-                private String nome;
-                private int idade;
-                
-                public Pessoa(String nome, int idade) {
-                  this.nome = nome;
-                  this.idade = idade;
-                }
-
-                public String getNome() {
-                  return nome;
-                }
-
-                public int getIdade() {
-                  return idade;
-                }
-            `}
-          </code>
-        </Pre>
-      </Section>
-
-      <Section>
-        <h2>Objeto</h2>
-        <p>
-          A classe é como um molde ou modelo para criar objetos. É uma definição
-          que descreve as características (atributos) e comportamentos (métodos)
-          de um tipo de objeto.
-          <br />
-          <br />
-          <strong>
-            Um objeto, por outro lado, é uma instância da classe. É uma
-            representação concreta de um objeto descrito pela classe.
-          </strong>{" "}
-          Cada objeto tem sua própria cópia dos atributos da classe, bem como
-          seus próprios valores para esses atributos.
-        </p>
-        <br />
-        <br />
-        <Pre>
-          <code>
-            {`
-              Pessoa arthur = new Pessoa("Arthur", 30);
-            `}
-          </code>
-        </Pre>
-      </Section>
-      <Link className="link" to="/poo/polymorphism">
-        Go to Polymorphism
-      </Link>
+      <BodyContainerStyled>
+        <div ref={paragraphsContainer}>
+          <Section title="Classe e Objeto">
+            {paragraphs.map((paragraph, index) => {
+              if (displayedParagraphs.includes(index)) {
+                return <p key={index}>{paragraph}</p>;
+              }
+              return null;
+            })}
+          </Section>
+        </div>
+      </BodyContainerStyled>
+      {currentParagraph < paragraphs.length - 1 && (
+        <ButtonContinue onClick={handleNextParagraph}>
+          Tap to Cotinue
+        </ButtonContinue>
+      )}
+      {currentParagraph === paragraphs.length - 1 && (
+        <ButtonNextContent onClick={handleNextContent}>Next</ButtonNextContent>
+      )}
     </Container>
   );
 };
