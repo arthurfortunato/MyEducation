@@ -10,13 +10,15 @@ export const paragraphs = [
   exemplo: caso um desenvolvedor queira criar um aplicativo de fotos
   para Android, ele poderá ter acesso à câmera do celular através da API
   do sistema operacional, sem ter a necessidade de criar uma nova
-  interface de câmera do zero. O mesmo acontece com aplicativos que
+  interface de câmera do zero.`,
+
+  `O mesmo acontece com aplicativos que
   utilizam os serviços de mapas por meio da API do Google Maps ou,
   ainda, nas integrações entre apps, como o Spotify e o Instagram, que
   possibilita compartilhar faixas nos Stories. Uma API nada mais é do
   que um código programável que permite que dois softwares diferentes
   comuniquem-se entre si.`,
-  
+
   ` As APIs são construídas por dois elementos diferentes. O primeiro é
  uma especificação que descreve como a informação é trocada entre os
  programas. O segundo é um software de interface, escrito
