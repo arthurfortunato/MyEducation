@@ -5,6 +5,7 @@ import { HomeRoutes } from "./homeRoutes";
 import { ConceptsRoutes } from "./concepts";
 import { ProgrammingLogicRoutes } from "./programmingLogicRoutes";
 import { PooRoutes } from "./pooRoutes";
+import { JavaRoutes } from "./javaRoutes";
 
 export const Routers: any = () => {
   return (
@@ -14,6 +15,7 @@ export const Routers: any = () => {
       <ConceptsRoutes />
       <ProgrammingLogicRoutes />
       <PooRoutes />
+      <JavaRoutes />
     </BrowserRouter>
   );
 };

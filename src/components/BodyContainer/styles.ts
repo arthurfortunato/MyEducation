@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: ${({ theme }) => theme.colors.backgroundContainerContents};
-  font-family: Lato, Helvetica, sans-serif;
-`;
-
 export const BodyContainerStyled = styled.body`
   max-width: 1050px;
   background: ${({ theme }) => theme.colors.backgroundContainerContents};
@@ -21,5 +11,14 @@ export const BodyContainerStyled = styled.body`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    .fade-in {
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+    }
   }
 `;

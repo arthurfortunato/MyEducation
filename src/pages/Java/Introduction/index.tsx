@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const ConceptsApi = () => {
+export const Introduction = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -51,16 +51,16 @@ export const ConceptsApi = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/concepts/rest");
+    navigate("/java");
   };
 
   return (
     <Container>
-      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/concepts" />
+      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/java" />
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Api">
+          <Section title="Introdução">
             {paragraphs.map((paragraph, index) => {
               const isDisplayed = displayedParagraphs.includes(index);
               const className = isDisplayed ? "fade-in show" : "fade-in";
