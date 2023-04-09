@@ -58,7 +58,7 @@ export const TopCard = styled.div`
     align-items: center;
     padding-left: 50px;
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.textSection};
+    color: ${({ theme }) => theme.colors.titleSection};
     font: 700 0.8rem "Roboto", sans-serif;
 
     p {
@@ -72,7 +72,7 @@ export const TopCard = styled.div`
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.textSection};
+    color: ${({ theme }) => theme.colors.titleSection};
     font: 700 0.8rem "Roboto", sans-serif;
 
     p {
@@ -94,7 +94,7 @@ export const RightCard = styled.div`
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.textSection};
+    color: ${({ theme }) => theme.colors.titleSection};
     font: 700 0.8rem "Roboto", sans-serif;
   }
 `;

@@ -1,3 +1,5 @@
+import { List } from "../../../components/List";
+
 export const paragraphs = [
   `REST é um acrônimo para "Representational State Transfer" (Transferência de Estado Representacional). É um estilo arquitetural para a criação de APIs baseadas em HTTP.`,
 
@@ -5,9 +7,25 @@ export const paragraphs = [
   `,
   `Alguns dos princípios fundamentais do REST incluem:`,
 
-  `Uso consistente de URLs para identificar recursos;`,
+  /*   `Uso consistente de URLs para identificar recursos;`,
   `Uso de verbos HTTP para indicar ações sobre os recursos;`,
   `Uso de respostas HTTP padronizadas (como códigos de status e cabeçalhos) para indicar o resultado da operação;`,
   `Separação clara entre o cliente (quem acessa a API) e o servidor (onde os recursos são armazenados).`,
-  `APIs RESTful são muito populares na construção de aplicações web e mobile, já que permitem que diferentes plataformas e linguagens de programação possam acessar os mesmos recursos de maneira padronizada e eficiente.`,
+  `APIs RESTful são muito populares na construção de aplicações web e mobile, já que permitem que diferentes plataformas e linguagens de programação possam acessar os mesmos recursos de maneira padronizada e eficiente.`, */
+
+  <List>Uso consistente de URLs para identificar recursos</List>,
+  <List>Uso de verbos HTTP para indicar ações sobre os recursos</List>,
+  <List>
+    Uso de respostas HTTP padronizadas (como códigos de status e cabeçalhos)
+    para indicar o resultado da operação
+  </List>,
+  <List>
+    Separação clara entre o cliente (quem acessa a API) e o servidor (onde os
+    recursos são armazenados).
+  </List>,
+  <List>
+    APIs RESTful são muito populares na construção de aplicações web e mobile,
+    já que permitem que diferentes plataformas e linguagens de programação
+    possam acessar os mesmos recursos de maneira padronizada e eficiente.
+  </List>,
 ];

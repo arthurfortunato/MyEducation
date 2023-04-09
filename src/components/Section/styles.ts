@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  width: 100%;
+  max-width: 1050px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  li {
+    flex-wrap: wrap;
+    text-align: left;
+  }
 
   h2 {
     text-align: center;
