@@ -51,7 +51,7 @@ export const ConceptsRestFull = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="RESTFULL">
+          <Section title="RESTFUL">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (
