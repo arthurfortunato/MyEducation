@@ -1,3 +1,5 @@
+import { List } from "../../../components/List";
+
 export const paragraphs = [
   `RESTful é um estilo arquitetural que descreve como as APIs devem ser projetadas para serem eficientes, escaláveis e fáceis de manter. RESTful é uma abordagem que utiliza os princípios do estilo arquitetural REST para a criação de APIs.`,
 
@@ -5,11 +7,23 @@ export const paragraphs = [
 
   `Algumas das características de uma API RESTful incluem:`,
 
-  `Uso consistente de URIs para identificar recursos;`,
-  `Uso de verbos HTTP para indicar ações sobre os recursos;`,
-  `Uso de respostas HTTP padronizadas para indicar o resultado da operação;`,
-  `Separação clara entre o cliente (quem acessa a API) e o servidor (onde os recursos são armazenados);`,
-  `Utilização de caching para otimizar o desempenho da API;`,
-  `Uso de formatos de representação de dados padronizados, como JSON ou XML.`,
-  `Em resumo, uma API RESTful segue completamente os princípios do estilo arquitetural REST, permitindo uma interação eficiente e escalável entre os clientes e os servidores que a utilizam.`,
+  <List>Uso consistente de URIs para identificar recursos;</List>,
+  <List>Uso de verbos HTTP para indicar ações sobre os recursos;</List>,
+  <List>
+    Uso de respostas HTTP padronizadas para indicar o resultado da operação;
+  </List>,
+  <List>
+    Separação clara entre o cliente (quem acessa a API) e o servidor (onde os
+    recursos são armazenados);
+  </List>,
+  <List>Utilização de caching para otimizar o desempenho da API;</List>,
+
+  <List>
+    Uso de formatos de representação de dados padronizados, como JSON ou XML.
+  </List>,
+  <List>
+    Em resumo, uma API RESTful segue completamente os princípios do estilo
+    arquitetural REST, permitindo uma interação eficiente e escalável entre os
+    clientes e os servidores que a utilizam.
+  </List>,
 ];
