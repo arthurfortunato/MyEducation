@@ -12,9 +12,19 @@ export const BodyContainerStyled = styled.body`
     justify-content: space-between;
     align-items: center;
 
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     .fade-in {
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+      visibility: visible;
     }
 
     .fade-in.show {
