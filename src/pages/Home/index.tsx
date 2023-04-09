@@ -84,9 +84,12 @@ export const Home = () => {
           </RightCard>
 
           <TopCard>
-            <Card>
-              <ImageCard src={java} />
-            </Card>
+          <Link to="/java" className="top">
+              <Card>
+                <ImageCard src={java} />
+              </Card>
+              <p>4. Java</p>
+            </Link>
             <Card>
               <ImageCard src={poo} />
             </Card>

@@ -1,12 +1,13 @@
-import { Container, BodyContainerStyled } from "./styles";
+import { Container } from "../../../components/Container";
+import { HeaderContentCards } from "../../../components/HeaderContentCards";
+import { BodyContainer } from "../../../components/BodyContainer";
+import { Section } from "../../../components/Section";
+import { ButtonContinue } from "../../../components/ButtonContinue";
+import { ButtonNextContent } from "../../../components/ButtonNextContent";
 
 import { paragraphs } from "./paragraphs";
 
-import { ButtonContinue } from "../../../components/ButtonContinue";
-import { ButtonNextContent } from "../../../components/ButtonNextContent";
-import { Section } from "../../../components/Section";
-import { HeaderContentCards } from "../../../components/HeaderContentCards";
-import { useEffect, useRef, useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const ConceptsStatusCode = () => {
@@ -27,6 +28,18 @@ export const ConceptsStatusCode = () => {
     );
     setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
     setCurrentParagraph(nextParagraph);
+
+    const paragraphsEls = paragraphsContainer.current?.querySelectorAll("p");
+    if (paragraphsEls) {
+      const prevEl = paragraphsEls[currentParagraph];
+      const nextEl = paragraphsEls[nextParagraph];
+      prevEl?.classList.remove("show");
+      nextEl?.classList.add("show");
+      setTimeout(() => {
+        prevEl?.classList.remove("fade-in");
+        nextEl?.classList.add("fade-in");
+      }, 0);
+    }
   };
 
   useEffect(() => {
@@ -43,22 +56,23 @@ export const ConceptsStatusCode = () => {
 
   return (
     <Container>
-      <HeaderContentCards
-        loadingProgress={loadingProgress}
-        backRoute="/concepts"
-      />
-      <BodyContainerStyled>
+      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/concepts" />
+
+      <BodyContainer>
         <div ref={paragraphsContainer}>
           <Section title="Status Code">
             {paragraphs.map((paragraph, index) => {
-              if (displayedParagraphs.includes(index)) {
-                return <p key={index}>{paragraph}</p>;
-              }
-              return null;
+              const isDisplayed = displayedParagraphs.includes(index);
+              const className = isDisplayed ? "fade-in show" : "fade-in";
+              return (
+                <p key={index} className={className}>
+                  {paragraph}
+                </p>
+              );
             })}
           </Section>
         </div>
-      </BodyContainerStyled>
+      </BodyContainer>
       {currentParagraph < paragraphs.length - 1 && (
         <ButtonContinue onClick={handleNextParagraph}>
           Tap to Cotinue

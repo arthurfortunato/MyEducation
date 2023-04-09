@@ -1,63 +1,33 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  height: 100vh;
   width: 100%;
-  background: #fff;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
+  font-family: Lato, Helvetica, sans-serif;
+`;
+ 
+export const BodyContainerStyled = styled.body`
+  max-width: 1050px;
+  margin: 40px;
+  background: ${({ theme }) => theme.colors.backgroundContainerContents};
+  align-self: center;
 
-  @media (max-width: 920px) {
-    height: 100%;
-  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
-  main {
-    width: 90%;
-    h1 {
-      text-align: center;
-      padding-top: 20px;
-      font: 700 4rem "Lato", sans-serif;
-    }
-
-    p {
-      font: 400 1.3rem "Lato", sans-serif;
-      padding: 10px 20px 0 20px;
-      text-align: justify;
-      line-height: 1.7rem;
-    }
-
-    strong {
-      color: #f5b324;
-    }
-
-    img {
-      width: 100%;
-      height: 85%;
-    }
-
-    @media (max-width: 920px) {
-      height: 100%;
-      h1 {
-        transition: 1.8s all;
-        font-size: 2.5rem;
-      }
+    .link {
+      text-decoration: none;
       p {
-        transition: 1.8s all;
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width: 790px) {
-      h1 {
-        font-size: 2rem;
-      }
-    }
-
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 1.5rem;
+        color: #fff;
+        font: 700 1rem "Lato", sans-serif;
+        align-self: flex-start;
       }
     }
   }

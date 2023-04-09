@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Java } from "../pages/Java";
+import { Introduction } from "../pages/Java/Introduction";
 import { AbstractClass } from "../pages/Java/AbstractClass";
 import { Interface } from "../pages/Java/Interface";
 import { JDBC } from "../pages/Java/JDBC";
@@ -13,6 +14,7 @@ export const JavaRoutes = () => {
   return (
     <Routes>
       <Route path="/java" element={<Java />} />
+      <Route path="/java/introduction" element={<Introduction />} />
       <Route path="/java/spring" element={<SpringFramework />} />
       <Route path="/java/jvm" element={<JVM />} />
       <Route path="/java/jdk" element={<JDK />} />
