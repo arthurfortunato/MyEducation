@@ -7,12 +7,6 @@ export const paragraphs = [
   `,
   `Alguns dos princípios fundamentais do REST incluem:`,
 
-  /*   `Uso consistente de URLs para identificar recursos;`,
-  `Uso de verbos HTTP para indicar ações sobre os recursos;`,
-  `Uso de respostas HTTP padronizadas (como códigos de status e cabeçalhos) para indicar o resultado da operação;`,
-  `Separação clara entre o cliente (quem acessa a API) e o servidor (onde os recursos são armazenados).`,
-  `APIs RESTful são muito populares na construção de aplicações web e mobile, já que permitem que diferentes plataformas e linguagens de programação possam acessar os mesmos recursos de maneira padronizada e eficiente.`, */
-
   <List>Uso consistente de URLs para identificar recursos</List>,
   <List>Uso de verbos HTTP para indicar ações sobre os recursos</List>,
   <List>

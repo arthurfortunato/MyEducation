@@ -50,7 +50,7 @@ export const LogicalOperators = () => {
 
       <BodyContainerStyled>
         <div ref={paragraphsContainer}>
-          <Section title="Operadores">
+          <Section title="Operadores Lógicos">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index}>{paragraph}</p>;
