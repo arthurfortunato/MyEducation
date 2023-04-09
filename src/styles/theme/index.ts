@@ -3,10 +3,11 @@ import { colors } from "../colors";
 const theme = {
   light: {
     colors: {
-      textSection: "#333",
+      titleSection: "#000",
+      textSection: "#585f82",
       backgroundContainerContents: "#fff",
       backgroundButtonContinue: "#fff",
-      textButtonContinue: "#281fb9",
+      textButtonContinue: "#585f82",
       backgroundHeaderContentCards: "#fff",
       buttonHeaderContentCards: "#37373c",
       backgroundGradiente: "linear-gradient(90deg, rgba(40,31,185,1) 24%, rgba(0,212,255,1) 100%)",
@@ -30,7 +31,8 @@ const theme = {
   },
   dark: {
     colors: {
-      textSection: "#fff",
+      titleSection: "#FFF",
+      textSection: "#F5F5F5",
       backgroundContainerContents: "#2f2f2f",
       backgroundButtonContinue: "#2f2f2f",
       textButtonContinue: "#fff",

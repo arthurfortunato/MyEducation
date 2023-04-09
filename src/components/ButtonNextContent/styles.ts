@@ -15,7 +15,8 @@ export const ButtonNextContentStyled = styled.button`
   font: 700 1rem "Lato", sans-serif;
   color: #fff;
 
-  transition: 0.4s;
+  transition: 1.8s all;
+
   &:hover {
     opacity: 0.8;
   }
@@ -23,4 +24,16 @@ export const ButtonNextContentStyled = styled.button`
   &:active {
     transform: translateY(4px);
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  animation-name: fadeIn;
+  animation-duration: 4s;
 `;
