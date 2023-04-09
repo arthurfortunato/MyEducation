@@ -28,18 +28,6 @@ export const ConceptsRest = () => {
     );
     setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
     setCurrentParagraph(nextParagraph);
-
-    const paragraphsEls = paragraphsContainer.current?.querySelectorAll("p");
-    if (paragraphsEls) {
-      const prevEl = paragraphsEls[currentParagraph];
-      const nextEl = paragraphsEls[nextParagraph];
-      prevEl?.classList.remove("show");
-      nextEl?.classList.add("show");
-      setTimeout(() => {
-        prevEl?.classList.remove("fade-in");
-        nextEl?.classList.add("fade-in");
-      }, 0);
-    }
   };
 
   useEffect(() => {
@@ -56,19 +44,23 @@ export const ConceptsRest = () => {
 
   return (
     <Container>
-      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/concepts" />
+      <HeaderContentCards
+        loadingProgress={loadingProgress}
+        backRoute="/concepts"
+      />
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
           <Section title="Rest">
             {paragraphs.map((paragraph, index) => {
-              const isDisplayed = displayedParagraphs.includes(index);
-              const className = isDisplayed ? "fade-in show" : "fade-in";
-              return (
-                <p key={index} className={className}>
-                  {paragraph}
-                </p>
-              );
+              if (displayedParagraphs.includes(index)) {
+                return (
+                  <p key={index} className="fade-in">
+                    {paragraph}
+                  </p>
+                );
+              }
+              return null;
             })}
           </Section>
         </div>
