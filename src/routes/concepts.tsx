@@ -4,6 +4,7 @@ import { ConceptsApi } from "../pages/Concepts/Api";
 import { ConceptsRest } from "../pages/Concepts/Rest";
 import { ConceptsRestFull } from "../pages/Concepts/RestFull";
 import { ConceptsStatusCode } from "../pages/Concepts/StatusCode";
+import { Versioning } from "../pages/Concepts/Versioning";
 
 export const ConceptsRoutes = () => {
   return (
@@ -13,6 +14,7 @@ export const ConceptsRoutes = () => {
       <Route path="concepts/rest" element={<ConceptsRest />} />
       <Route path="concepts/rest-full" element={<ConceptsRestFull />} />
       <Route path="concepts/status-code" element={<ConceptsStatusCode />} />
+      <Route path="concepts/versioning" element={<Versioning />} />
     </Routes>
   );
 };
