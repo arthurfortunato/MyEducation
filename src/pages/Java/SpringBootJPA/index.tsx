@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Maven = () => {
+export const SpringBootJPA = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const Maven = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/java/springboot");
+    navigate("/java/springboot/hibernate");
   };
 
   return (
@@ -48,7 +48,7 @@ export const Maven = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Maven">
+          <Section title="Spring Data JPA">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

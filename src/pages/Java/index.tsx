@@ -8,6 +8,9 @@ import introducao from "../../assets/Java/introducao.jpg";
 import framework from "../../assets/Java/framework.png";
 import jvm from "../../assets/Java/jvm.png";
 import jdk from "../../assets/Java/jdk.png";
+import jdbc from "../../assets/Java/jdbc.jpg";
+import maven from "../../assets/Java/maven.jpg";
+import springBoot from "../../assets/Java/springBoot.png";
 
 export const Java = () => {
   return (
@@ -33,6 +36,21 @@ export const Java = () => {
           <Link to="/java/jdk" className="link">
             <Card width="350px" height="100px" backgroundImage={jdk}>
               <p>4. JDK</p>
+            </Card>
+          </Link>
+          <Link to="/java/jdbc" className="link">
+            <Card width="350px" height="100px" backgroundImage={jdbc}>
+              <p>4. JDBC</p>
+            </Card>
+          </Link>
+          <Link to="/java/maven" className="link">
+            <Card width="350px" height="100px" backgroundImage={maven}>
+              <p>4. MAVEN</p>
+            </Card>
+          </Link>
+          <Link to="/java/springboot" className="link">
+            <Card width="350px" height="100px" backgroundImage={springBoot}>
+              <p>4. SPRING BOOT</p>
             </Card>
           </Link>
         </div>
