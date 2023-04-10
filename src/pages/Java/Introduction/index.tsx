@@ -39,7 +39,7 @@ export const Introduction = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/java");
+    navigate("/java/spring");
   };
 
   return (
