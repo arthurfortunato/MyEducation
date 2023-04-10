@@ -17,6 +17,7 @@ import {
 } from "./styles";
 import poo from "../../assets/poo.png";
 import { useState } from "react";
+import { Header } from "../../components/Header";
 
 export const Home = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -45,8 +46,7 @@ export const Home = () => {
   };
   return (
     <Container>
-      <HeaderContainer />
-
+      <Header title="Aprende aí" />
       <CardWrapper>
         <div
           style={{
@@ -84,49 +84,13 @@ export const Home = () => {
           </RightCard>
 
           <TopCard>
-          <Link to="/java" className="top">
+            <Link to="/java" className="top">
               <Card>
                 <ImageCard src={java} />
               </Card>
               <p>4. Java</p>
             </Link>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
           </TopCard>
-          <RightCard>
-            <Card>
-              <ImageCard src={node} />
-            </Card>
-          </RightCard>
-
-          <TopCard>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
-          </TopCard>
-          <RightCard>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
-          </RightCard>
-
-          <TopCard>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
-          </TopCard>
-          <RightCard>
-            <Card>
-              <ImageCard src={poo} />
-            </Card>
-          </RightCard>
         </div>
       </CardWrapper>
     </Container>
