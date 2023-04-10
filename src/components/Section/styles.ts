@@ -27,6 +27,10 @@ export const StyledSection = styled.section`
     line-height: 1.7rem;
   }
 
+  img {
+   width: 90%;
+  }
+
   @media (max-width: 600px) {
     width: 90%;
     p {

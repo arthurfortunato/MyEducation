@@ -6,6 +6,7 @@ import { ConceptsRoutes } from "./concepts";
 import { ProgrammingLogicRoutes } from "./programmingLogicRoutes";
 import { PooRoutes } from "./pooRoutes";
 import { JavaRoutes } from "./javaRoutes";
+import { CollectionsRoutes } from "./collections";
 
 export const Routers: any = () => {
   return (
@@ -16,6 +17,7 @@ export const Routers: any = () => {
       <ProgrammingLogicRoutes />
       <PooRoutes />
       <JavaRoutes />
+      <CollectionsRoutes />
     </BrowserRouter>
   );
 };

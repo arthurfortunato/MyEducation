@@ -6,6 +6,7 @@ import oop from "../../assets/HomeImages/OOP.gif";
 import logica from "../../assets/HomeImages/LOGICA.jpg";
 import java from "../../assets/HomeImages/JAVA.gif";
 import conceitos from "../../assets/HomeImages/CONCEITOS.gif";
+import collections from "../../assets/HomeImages/COLLECTIONS.gif";
 
 import {
   Container,
@@ -86,6 +87,12 @@ export const Home = () => {
                 <ImageCard src={java} />
               </Card>
               <p>4. Java</p>
+            </Link>
+            <Link to="/collections" className="top">
+              <Card>
+                <ImageCard src={collections} />
+              </Card>
+              <p>5. Coleções</p>
             </Link>
           </TopCard>
         </div>
