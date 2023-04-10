@@ -5,7 +5,6 @@ import { ImageCard } from "../../components/ImageCard";
 import oop from "../../assets/HomeImages/OOP.gif";
 import logica from "../../assets/HomeImages/LOGICA.jpg";
 import java from "../../assets/HomeImages/JAVA.gif";
-import node from "../../assets/HomeImages/NODE.gif";
 import conceitos from "../../assets/HomeImages/CONCEITOS.gif";
 
 import {
@@ -13,9 +12,7 @@ import {
   CardWrapper,
   TopCard,
   RightCard,
-  HeaderContainer,
 } from "./styles";
-import poo from "../../assets/poo.png";
 import { useState } from "react";
 import { Header } from "../../components/Header";
 
