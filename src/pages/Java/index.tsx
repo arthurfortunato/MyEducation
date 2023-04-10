@@ -4,7 +4,7 @@ import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
-import introducao from "../../assets/ProgrammingLogicImages/Introducao.jpg";
+import introducao from "../../assets/Java/introducao.jpg";
 
 export const Java = () => {
   return (

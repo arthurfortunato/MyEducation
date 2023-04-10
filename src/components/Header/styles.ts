@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-  width: 60%;
-  h1 {
-    text-align: center;
-    font: 700 2.6rem "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
+  width: 100%;
+  height: 90px;
+  background: ${({ theme }) => theme.colors.backgroundGradiente};
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-  @media (max-width: 600px) {
-    transition: 1.8s all;
-    width: 80%;
+
+  h1 {
+    color: #fff;
+    font: 400 1.8rem "Delicious Handrawn", sans-serif;
+    padding-right: 30px;
   }
 `;
