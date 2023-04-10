@@ -1,39 +1,75 @@
-import { Container } from "./styles";
-import { Header } from "../../../components/Header";
+import { Container } from "../../../components/Container";
+import { HeaderContentCards } from "../../../components/HeaderContentCards";
+import { BodyContainer } from "../../../components/BodyContainer";
 import { Section } from "../../../components/Section";
+import { ButtonContinue } from "../../../components/ButtonContinue";
+import { ButtonNextContent } from "../../../components/ButtonNextContent";
+
+import { paragraphs } from "./paragraphs";
+
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const JDBC = () => {
+  const [currentParagraph, setCurrentParagraph] = useState(0);
+  const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
+  const [loadingProgress, setLoadingProgress] = useState(
+    100 / paragraphs.length
+  );
+
+  const navigate = useNavigate();
+
+  const paragraphsContainer = useRef<HTMLDivElement>(null);
+
+  const handleNextParagraph = () => {
+    const nextParagraph = currentParagraph + 1;
+    setLoadingProgress(
+      (prevProgress) => prevProgress + 100 / paragraphs.length
+    );
+    setDisplayedParagraphs([...displayedParagraphs, nextParagraph]);
+    setCurrentParagraph(nextParagraph);
+  };
+
+  useEffect(() => {
+    paragraphsContainer.current
+      ?.querySelector(
+        `p:nth-child(n + ${displayedParagraphs.length + 1}):last-child`
+      )
+      ?.scrollIntoView({ behavior: "smooth" });
+  });
+
+  const handleNextContent = () => {
+    navigate("/java/maven");
+  };
+
   return (
     <Container>
-      <Header title="JDBC"/>
+      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/java" />
 
-      <Section>
-        <p>
-          <strong>
-            O JDBC é uma API — Application Programming Interface — do Java que
-            contém uma série de classes e interfaces para realizar a comunicação
-            entre uma aplicação desenvolvida em Java e o banco de dados
-            utilizado por ela.
-          </strong>{" "}
-          É um recurso antigo do Java, pois está disponível desde a versão 1.1
-          do JDK — Java Development Kit —, que foi lançada em 1997.
-          <br />
-          <br />
-          <strong>
-            Na prática, o JDBC funciona como uma ponte, ou seja, é uma camada
-            intermediária entre a aplicação e o banco de dados.{" "}
-          </strong>
-          Ele realiza a interpretação e a conversão dos comandos necessários
-          para a manipulação do banco de dados, de acordo com as características
-          de cada um.
-          <br />
-          <br />É importante dizer que é preciso utilizar o driver JDBC de
-          acordo com a base de dados utilizada, ou seja, se formos utilizar um
-          banco MySQL, devemos usar o JDBC apropriado para ele. Por isso, cada
-          empresa desenvolvedora de banco de dados disponibiliza o seu próprio
-          driver para ser utilizado no Java.
-        </p>
-      </Section>
+      <BodyContainer>
+        <div ref={paragraphsContainer}>
+          <Section title="JDBC">
+            {paragraphs.map((paragraph, index) => {
+              if (displayedParagraphs.includes(index)) {
+                return (
+                  <p key={index} className="fade-in">
+                    {paragraph}
+                  </p>
+                );
+              }
+              return null;
+            })}
+          </Section>
+        </div>
+      </BodyContainer>
+      {currentParagraph < paragraphs.length - 1 && (
+        <ButtonContinue onClick={handleNextParagraph}>
+          Tap to Cotinue
+        </ButtonContinue>
+      )}
+      {currentParagraph === paragraphs.length - 1 && (
+        <ButtonNextContent onClick={handleNextContent}>Next</ButtonNextContent>
+      )}
     </Container>
   );
 };

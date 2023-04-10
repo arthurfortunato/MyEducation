@@ -39,7 +39,7 @@ export const JVMvsJDK = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/java");
+    navigate("/java/jdbc");
   };
 
   return (
