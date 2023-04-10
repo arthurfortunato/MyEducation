@@ -8,6 +8,7 @@ import api from "../../assets/ConceptsImages/API.jpg";
 import rest from "../../assets/ConceptsImages/REST.png";
 import restFull from "../../assets/ConceptsImages/RESTFULL.jpg";
 import statusCode from "../../assets/ConceptsImages/STATUSCODE.jpg";
+import versioning from "../../assets/ConceptsImages/VERSIONAMENTO.jpg";
 
 export const Concepts = () => {
   return (
@@ -33,6 +34,11 @@ export const Concepts = () => {
           <Link to="/concepts/status-code" className="link">
             <Card width="350px" height="100px" backgroundImage={statusCode}>
               <p>4. Status Code</p>
+            </Card>
+          </Link>
+          <Link to="/concepts/versioning" className="link">
+            <Card width="350px" height="100px" backgroundImage={versioning}>
+              <p>5. Versionamento Semântico</p>
             </Card>
           </Link>
         </div>
