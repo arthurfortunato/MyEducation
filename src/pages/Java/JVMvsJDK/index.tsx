@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const SpringFramework = () => {
+export const JVMvsJDK = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const SpringFramework = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/java/jvm");
+    navigate("/java");
   };
 
   return (
@@ -48,7 +48,7 @@ export const SpringFramework = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Spring Framework">
+          <Section title="JVM vs JDK">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

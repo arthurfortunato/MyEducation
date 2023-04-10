@@ -25,12 +25,12 @@ export const Java = () => {
               <p>2. SPRING FRAMEWORK</p>
             </Card>
           </Link>
-          <Link to="/java" className="link">
+          <Link to="/java/jvm" className="link">
             <Card width="350px" height="100px" backgroundImage={jvm}>
               <p>3. JVM</p>
             </Card>
           </Link>
-          <Link to="/java" className="link">
+          <Link to="/java/jdk" className="link">
             <Card width="350px" height="100px" backgroundImage={jdk}>
               <p>4. JDK</p>
             </Card>

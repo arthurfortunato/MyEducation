@@ -6,6 +6,7 @@ import { Interface } from "../pages/Java/Interface";
 import { JDBC } from "../pages/Java/JDBC";
 import { JDK } from "../pages/Java/JDK";
 import { JVM } from "../pages/Java/JVM";
+import { JVMvsJDK } from "../pages/Java/JVMvsJDK";
 import { Maven } from "../pages/Java/Maven";
 import { SpringBoot } from "../pages/Java/SpringBoot";
 import { SpringFramework } from "../pages/Java/SpringFramework";
@@ -18,6 +19,7 @@ export const JavaRoutes = () => {
       <Route path="/java/spring" element={<SpringFramework />} />
       <Route path="/java/jvm" element={<JVM />} />
       <Route path="/java/jdk" element={<JDK />} />
+      <Route path="/java/jvm-jdk" element={<JVMvsJDK />} />
       <Route path="/java/jdbc" element={<JDBC />} />
       <Route path="/java/maven" element={<Maven />} />
       <Route path="/java/springboot" element={<SpringBoot />} />
