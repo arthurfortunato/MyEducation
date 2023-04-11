@@ -19,37 +19,37 @@ export const Collections = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/collections/introduction" className="link">
-            <Card width="300px" height="100px" backgroundImage={introducao}>
+            <Card width="350px" height="100px" backgroundImage={introducao}>
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/collections/interfaces" className="link">
-            <Card width="300px" height="100px" backgroundImage={interfaces}>
+            <Card width="350px" height="100px" backgroundImage={interfaces}>
               <p>2. INTERFACES</p>
             </Card>
           </Link>
           <Link to="/collections/implementations" className="link">
-            <Card width="300px" height="100px" backgroundImage={implementations}>
+            <Card width="350px" height="100px" backgroundImage={implementations}>
               <p>3. IMPLEMENTAÇÕES</p>
             </Card>
           </Link>
           <Link to="/collections/list" className="link">
-            <Card width="300px" height="100px" backgroundImage={list}>
+            <Card width="350px" height="100px" backgroundImage={list}>
               <p>4. LIST</p>
             </Card>
           </Link>
           <Link to="/collections/set" className="link">
-            <Card width="300px" height="100px" backgroundImage={set}>
+            <Card width="350px" height="100px" backgroundImage={set}>
               <p>5. SET</p>
             </Card>
           </Link>
           <Link to="/collections/queue" className="link">
-            <Card width="300px" height="100px" backgroundImage={queue}>
+            <Card width="350px" height="100px" backgroundImage={queue}>
               <p>6. QUEUE</p>
             </Card>
           </Link>
           <Link to="/collections/map" className="link">
-            <Card width="300px" height="100px" backgroundImage={map}>
+            <Card width="350px" height="100px" backgroundImage={map}>
               <p>7. MAP</p>
             </Card>
           </Link>

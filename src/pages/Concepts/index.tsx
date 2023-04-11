@@ -17,27 +17,27 @@ export const Concepts = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/concepts/api" className="link">
-            <Card width="300px" height="100px" backgroundImage={api}>
+            <Card width="350px" height="100px" backgroundImage={api}>
               <p>1. API</p>
             </Card>
           </Link>
           <Link to="/concepts/rest" className="link">
-            <Card width="300px" height="100px" backgroundImage={rest}>
+            <Card width="350px" height="100px" backgroundImage={rest}>
               <p>2. REST</p>
             </Card>
           </Link>
           <Link to="/concepts/rest-full" className="link">
-            <Card width="300px" height="100px" backgroundImage={restFull}>
+            <Card width="350px" height="100px" backgroundImage={restFull}>
               <p>3. RESTFUL</p>
             </Card>
           </Link>
           <Link to="/concepts/status-code" className="link">
-            <Card width="300px" height="100px" backgroundImage={statusCode}>
+            <Card width="350px" height="100px" backgroundImage={statusCode}>
               <p>4. Status Code</p>
             </Card>
           </Link>
           <Link to="/concepts/versioning" className="link">
-            <Card width="300px" height="100px" backgroundImage={versioning}>
+            <Card width="350px" height="100px" backgroundImage={versioning}>
               <p>5. Versionamento Semântico</p>
             </Card>
           </Link>
