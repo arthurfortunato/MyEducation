@@ -1,4 +1,51 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+//import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const HashMap = `
+Map<String, Integer> mapaDeNotas = new HashMap<>();
+mapaDeNotas.put("João", 8);
+mapaDeNotas.put("Maria", 9);
+mapaDeNotas.put("Pedro", 7);
+System.out.println(mapaDeNotas); 
+// Imprime: {João=8, Maria=9, Pedro=7}
+int notaDaMaria = mapaDeNotas.get("Maria");
+System.out.println(notaDaMaria); 
+// Imprime: 9
+mapaDeNotas.remove("Pedro");
+System.out.println(mapaDeNotas); 
+// Imprime: {João=8, Maria=9}
+`;
+
+const TreeMap = `
+  Map<String, Integer> mapaDeNotas = new TreeMap<>();
+  mapaDeNotas.put("João", 8);
+  mapaDeNotas.put("Maria", 9);
+  mapaDeNotas.put("Pedro", 7);
+  System.out.println(mapaDeNotas);
+  // Imprime: {João=8, Maria=9, Pedro=7}
+  int notaDaMaria = mapaDeNotas.get("Maria");
+  System.out.println(notaDaMaria);
+  // Imprime: 9
+  mapaDeNotas.remove("Pedro");
+  System.out.println(mapaDeNotas);
+  // Imprime: {João=8, Maria=9}
+`;
+
+const LinkedHashMap = `
+  Map<String, Integer> mapaDeNotas = new LinkedHashMap<>();
+  mapaDeNotas.put("João", 8);
+  mapaDeNotas.put("Maria", 9);
+  mapaDeNotas.put("Pedro", 7);
+  System.out.println(mapaDeNotas); 
+  // Imprime: {João=8, Maria=9, Pedro=7}
+  int notaDaMaria = mapaDeNotas.get("Maria");
+  System.out.println(notaDaMaria); 
+  // Imprime: 9
+  mapaDeNotas.remove("Pedro");
+  System.out.println(mapaDeNotas); 
+  // Imprime: {João=8, Maria=9}
+`;
 
 export const paragraphs = [
   <p>
@@ -14,24 +61,9 @@ export const paragraphs = [
     em sua chave. Exemplo de uso do HashMap:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Map<String, Integer> mapaDeNotas = new HashMap<>();
-        mapaDeNotas.put("João", 8);
-        mapaDeNotas.put("Maria", 9);
-        mapaDeNotas.put("Pedro", 7);
-        System.out.println(mapaDeNotas); 
-        // Imprime: {João=8, Maria=9, Pedro=7}
-        int notaDaMaria = mapaDeNotas.get("Maria");
-        System.out.println(notaDaMaria); 
-        // Imprime: 9
-        mapaDeNotas.remove("Pedro");
-        System.out.println(mapaDeNotas); 
-        // Imprime: {João=8, Maria=9}
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {HashMap.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     <strong>TreeMap</strong>: implementação de Map baseada em uma árvore que
@@ -39,24 +71,9 @@ export const paragraphs = [
     fornecido pelo usuário. Exemplo de uso do TreeMap:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Map<String, Integer> mapaDeNotas = new TreeMap<>();
-        mapaDeNotas.put("João", 8);
-        mapaDeNotas.put("Maria", 9);
-        mapaDeNotas.put("Pedro", 7);
-        System.out.println(mapaDeNotas); 
-        // Imprime: {João=8, Maria=9, Pedro=7}
-        int notaDaMaria = mapaDeNotas.get("Maria");
-        System.out.println(notaDaMaria); 
-        // Imprime: 9
-        mapaDeNotas.remove("Pedro");
-        System.out.println(mapaDeNotas); 
-        // Imprime: {João=8, Maria=9}
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {TreeMap.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     <strong>LinkedHashMap</strong>: implementação de Map baseada em uma lista
@@ -64,25 +81,9 @@ export const paragraphs = [
     de uso do LinkedHashMap:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Map<String, Integer> mapaDeNotas 
-                        = new LinkedHashMap<>();
-        mapaDeNotas.put("João", 8);
-        mapaDeNotas.put("Maria", 9);
-        mapaDeNotas.put("Pedro", 7);
-        System.out.println(mapaDeNotas); 
-        // Imprime: {João=8, Maria=9, Pedro=7}
-        int notaDaMaria = mapaDeNotas.get("Maria");
-        System.out.println(notaDaMaria); 
-        // Imprime: 9
-        mapaDeNotas.remove("Pedro");
-        System.out.println(mapaDeNotas); 
-        // Imprime: {João=8, Maria=9}
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {LinkedHashMap.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     Em resumo, a interface Map e suas implementações em Java fornecem uma
