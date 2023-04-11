@@ -1,4 +1,27 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const HashSet = `
+  Set<String> conjuntoDeNomes = new HashSet<>();
+  conjuntoDeNomes.add("João");
+  conjuntoDeNomes.add("Maria");
+  conjuntoDeNomes.add("Pedro");
+  conjuntoDeNomes.add("Maria"); 
+  // Não adiciona um segundo "Maria"
+  System.out.println(conjuntoDeNomes); 
+  // Imprime: [Pedro, João, Maria]
+`;
+
+const LinkedHashSet = `
+  Set<String> conjuntoDeNomes = new LinkedHashSet<>();
+  conjuntoDeNomes.add("João");
+  conjuntoDeNomes.add("Maria");
+  conjuntoDeNomes.add("Pedro");
+  conjuntoDeNomes.add("Maria"); 
+  // Não adiciona um segundo "Maria"
+  System.out.println(conjuntoDeNomes); 
+  // Imprime: [João, Maria, Pedro]
+`;
 
 export const paragraphs = [
   <p>
@@ -14,39 +37,18 @@ export const paragraphs = [
     mantém a ordem em que os elementos foram inseridos. Exemplo:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Set<String> conjuntoDeNomes = new HashSet<>();
-        conjuntoDeNomes.add("João");
-        conjuntoDeNomes.add("Maria");
-        conjuntoDeNomes.add("Pedro");
-        conjuntoDeNomes.add("Maria"); 
-        // Não adiciona um segundo "Maria"
-        System.out.println(conjuntoDeNomes); 
-        // Imprime: [Pedro, João, Maria]
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {HashSet.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     <strong>LinkedHashSet</strong>: implementação de Set baseada em tabela de
     espalhamento que mantém a ordem em que os elementos foram inseridos.Exemplo:
   </p>,
-  <PreCode>
-    <code>
-      {`
-        Set<String> conjuntoDeNomes = new LinkedHashSet<>();
-        conjuntoDeNomes.add("João");
-        conjuntoDeNomes.add("Maria");
-        conjuntoDeNomes.add("Pedro");
-        conjuntoDeNomes.add("Maria"); 
-        // Não adiciona um segundo "Maria"
-        System.out.println(conjuntoDeNomes); 
-        // Imprime: [João, Maria, Pedro]
-      `}
-    </code>
-  </PreCode>,
+
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {LinkedHashSet.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     Em resumo, a interface Set e suas implementações em Java fornecem uma

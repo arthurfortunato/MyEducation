@@ -1,23 +1,34 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const ifElse = `
+  let condicao = x > 0; 
+
+  if(condicao) {
+    console.log("X é maior do que zero")
+  }
+  else {
+    console.log("X é menor ou igual a que zero")
+  }
+`;
+
+const elseIf = `
+  if(x > 0) {
+    console.log("X é positivo")
+  } else if(x == 0) {
+      console.log("X é zero")
+  } else {
+      console.log("X é negativo")
+  }
+`;
 
 export const paragraphs = [
   `A condicional if-else é uma instrução condicional que permite que um programa faça uma escolha entre duas opções diferentes com base em uma condição booleana. O if testa a condição e, se ela for verdadeira, executa um bloco de código específico, caso contrário, executa um bloco de código diferente especificado pelo else.`,
   `A estrutura condicional "IF/ELSE" é da seguinte maneira:`,
 
-  <PreCode>
-    <code>
-      {`
-          let condicao = x > 0; 
-
-          if(condicao) {
-            console.log("X é maior do que zero")
-          }
-          else {
-            console.log("X é menor ou igual a que zero")
-          }
-          `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {ifElse.trim()}
+  </StyledSyntaxHighlighter>,
 
   `A condição deve estar entre parêntesis. Para fim de ilustração o
           resultado condição foi guardada em uma variável (linha 1), porém é
@@ -28,19 +39,9 @@ export const paragraphs = [
   `Ainda é possível fazer estruturas que verifiquem mais de uma condição
           usando o else if:`,
 
-  <PreCode>
-    <code>
-      {`
-        if(x > 0) {
-          console.log("X é positivo")
-        } else if(x == 0) {
-            console.log("X é zero")
-        } else {
-            console.log("X é negativo")
-        }
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {elseIf.trim()}
+  </StyledSyntaxHighlighter>,
 
   `Caso a condição do if for false, é verificado a condição do else if,
           se esta por sua vez for falsa é verificado a condição do próximo else

@@ -1,4 +1,43 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const classAnimal = `
+  class Animal {
+    public void fazerBarulho() {
+      System.out.println("Barulho genérico");
+    }
+  }
+`;
+
+const classCachorro = `
+  class Cachorro extends Animal {
+    public void fazerBarulho() {
+      System.out.println("Au Au");
+    }
+}
+`;
+
+const classGato = `
+  class Gato extends Animal {
+    public void fazerBarulho() {
+      System.out.println("Miau");
+    }
+  }
+`;
+
+const classMain = `
+  public class Main {
+    public static void main(String[] args) {
+      Animal[] animais = new Animal[2];
+      animais[0] = new Cachorro();
+      animais[1] = new Gato();
+
+      for (Animal animal : animais) {
+        animal.fazerBarulho();
+      }
+    }
+  }
+`;
 
 export const paragraphs = [
   `O Polimorfismo é uma técnica da Orientação a Objetos
@@ -12,53 +51,19 @@ Cachorro. Se tivermos uma lista de animais, podemos chamar o método
 tipo Gato ou Cachorro. O método correto será chamado automaticamente,
 dependendo do tipo do objeto.`,
 
-  <PreCode>
-    <code>
-      {`class Animal {
-      public void fazerBarulho() {
-        System.out.println("Barulho genérico");
-      }
-    }
-  `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {classAnimal.trim()}
+  </StyledSyntaxHighlighter>,
 
-  <PreCode>
-    <code>
-      {`class Cachorro extends Animal {
-      public void fazerBarulho() {
-        System.out.println("Au Au");
-      }
-    }
-  `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {classCachorro.trim()}
+  </StyledSyntaxHighlighter>,
 
-  <PreCode>
-    <code>
-      {`class Gato extends Animal {
-         public void fazerBarulho() {
-           System.out.println("Miau");
-         }
-       }
-     `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {classGato.trim()}
+  </StyledSyntaxHighlighter>,
 
-  <PreCode>
-    <code>
-      {`public class Main {
-      public static void main(String[] args) {
-        Animal[] animais = new Animal[2];
-        animais[0] = new Cachorro();
-        animais[1] = new Gato();
-
-        for (Animal animal : animais) {
-          animal.fazerBarulho();
-        }
-      }
-    }
-  `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {classMain.trim()}
+  </StyledSyntaxHighlighter>,
 ];

@@ -1,4 +1,22 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const example = `
+  public class Professor extends Pessoa {
+    private String disciplina;
+    
+    public Professor(String nome, int idade, 
+        String disciplina) {
+          
+      super(nome, idade);
+      this.disciplina = disiplina;
+    }
+
+    public String getDisciplina() {
+      return disciplina;
+    }
+  }
+`;
 
 export const paragraphs = [
   `A Herança é um mecanismo da Orientação a Objetos que permite que uma
@@ -14,24 +32,7 @@ export const paragraphs = [
   Animal, e adicionar a propriedade raça. Assim, todas as informações de
   um gato podem ser representadas por sua classe.`,
 
-        <PreCode>
-          <code>
-            {`
-              public class Professor extends Pessoa {
-                private String disciplina;
-                
-                public Professor(String nome, int idade, 
-                    String disciplina) {
-                      
-                  super(nome, idade);
-                  this.disciplina = disiplina;
-                }
-
-                public String getDisciplina() {
-                  return disciplina;
-                }
-              }
-            `}
-          </code>
-        </PreCode>
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {example.trim()}
+  </StyledSyntaxHighlighter>,
 ];

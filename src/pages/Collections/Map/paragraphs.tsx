@@ -1,5 +1,4 @@
 import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
-//import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const HashMap = `
@@ -33,7 +32,8 @@ const TreeMap = `
 `;
 
 const LinkedHashMap = `
-  Map<String, Integer> mapaDeNotas = new LinkedHashMap<>();
+  Map<String, Integer> mapaDeNotas 
+                  = new LinkedHashMap<>();
   mapaDeNotas.put("João", 8);
   mapaDeNotas.put("Maria", 9);
   mapaDeNotas.put("Pedro", 7);
