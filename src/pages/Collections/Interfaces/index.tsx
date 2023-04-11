@@ -39,7 +39,7 @@ export const Interfaces = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/collections");
+    navigate("/collections/implementations");
   };
 
   return (
