@@ -37,10 +37,6 @@ export const CardWrapper = styled.div`
     transition: 1.8s all;
     margin-left: 20px;
   }
-
-  @media (max-height: 760px) {
-    transition: 1.8s all;
-  }
 `;
 
 export const TopCard = styled.div`
@@ -71,7 +67,7 @@ export const TopCard = styled.div`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.titleSection};
     font: 700 0.8rem "Roboto", sans-serif;
-    margin-top: 50px;
+    margin-top: 70px;
     p {
       padding-left: 25px;
       max-width: 120px;
@@ -83,7 +79,7 @@ export const RightCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0px 40px 0px 50px;
 
   .middle {
     display: flex;

@@ -88,7 +88,7 @@ export const Home = () => {
               </Card>
               <p>4. Java</p>
             </Link>
-            <Link to="/collections" className="top">
+            <Link to="/collections" className="top-bottom">
               <Card>
                 <ImageCard src={collections} />
               </Card>
