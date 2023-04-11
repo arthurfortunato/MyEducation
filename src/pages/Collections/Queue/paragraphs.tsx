@@ -1,4 +1,53 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+const LinkedList = `
+  Queue<String> filaDeNomes = new LinkedList<>();
+  filaDeNomes.add("João");
+  filaDeNomes.add("Maria");
+  filaDeNomes.add("Pedro");
+  System.out.println(filaDeNomes); 
+  // Imprime: [João, Maria, Pedro]
+  String primeiroDaFila = filaDeNomes.remove();
+  System.out.println(primeiroDaFila); 
+  // Imprime: João
+  System.out.println(filaDeNomes); 
+  // Imprime: [Maria, Pedro]
+`;
+
+const PriorityQueue = `
+  Queue<Integer> filaDeNumeros = new PriorityQueue<>();
+  filaDeNumeros.add(10);
+  filaDeNumeros.add(5);
+  filaDeNumeros.add(8);
+  System.out.println(filaDeNumeros); 
+  // Imprime: [5, 10, 8]
+  int primeiroDaFila = filaDeNumeros.remove();
+  System.out.println(primeiroDaFila); 
+  // Imprime: 5
+  System.out.println(filaDeNumeros); 
+  // Imprime: [8, 10]
+`;
+
+const ArrayDeque = `
+  Deque<String> filaDeNomes = new ArrayDeque<>();
+  filaDeNomes.add("João");
+  filaDeNomes.add("Maria");
+  filaDeNomes.add("Pedro");
+  System.out.println(filaDeNomes); 
+  // Imprime: [João, Maria, Pedro]
+  String primeiroDaFila = filaDeNomes.remove();
+  System.out.println(primeiroDaFila); 
+  // Imprime: João
+  filaDeNomes.push("Carlos");
+  System.out.println(filaDeNomes); 
+  // Imprime: [Carlos, Maria, Pedro]
+  String ultimoDaFila = filaDeNomes.pop();
+  System.out.println(ultimoDaFila); 
+  // Imprime: Pedro
+  System.out.println(filaDeNomes); 
+  // Imprime: [Carlos, Maria]
+`;
 
 export const paragraphs = [
   <p>
@@ -15,23 +64,9 @@ export const paragraphs = [
     início e no fim da fila. Exemplo de uso do LinkedList como Queue:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Queue<String> filaDeNomes = new LinkedList<>();
-        filaDeNomes.add("João");
-        filaDeNomes.add("Maria");
-        filaDeNomes.add("Pedro");
-        System.out.println(filaDeNomes); 
-        // Imprime: [João, Maria, Pedro]
-        String primeiroDaFila = filaDeNomes.remove();
-        System.out.println(primeiroDaFila); 
-        // Imprime: João
-        System.out.println(filaDeNomes); 
-        // Imprime: [Maria, Pedro]
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {LinkedList.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     <strong>PriorityQueue</strong>: implementação de Queue baseada em uma fila
@@ -40,23 +75,9 @@ export const paragraphs = [
     usuário. Exemplo de uso do PriorityQueue:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Queue<Integer> filaDeNumeros = new PriorityQueue<>();
-        filaDeNumeros.add(10);
-        filaDeNumeros.add(5);
-        filaDeNumeros.add(8);
-        System.out.println(filaDeNumeros); 
-        // Imprime: [5, 10, 8]
-        int primeiroDaFila = filaDeNumeros.remove();
-        System.out.println(primeiroDaFila); 
-        // Imprime: 5
-        System.out.println(filaDeNumeros); 
-        // Imprime: [8, 10]
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {PriorityQueue.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     <strong>ArrayDeque</strong>: implementação de Queue baseada em um array
@@ -65,29 +86,9 @@ export const paragraphs = [
     com os métodos push e pop. Exemplo de uso do ArrayDeque:
   </p>,
 
-  <PreCode>
-    <code>
-      {`
-        Deque<String> filaDeNomes = new ArrayDeque<>();
-        filaDeNomes.add("João");
-        filaDeNomes.add("Maria");
-        filaDeNomes.add("Pedro");
-        System.out.println(filaDeNomes); 
-        // Imprime: [João, Maria, Pedro]
-        String primeiroDaFila = filaDeNomes.remove();
-        System.out.println(primeiroDaFila); 
-        // Imprime: João
-        filaDeNomes.push("Carlos");
-        System.out.println(filaDeNomes); 
-        // Imprime: [Carlos, Maria, Pedro]
-        String ultimoDaFila = filaDeNomes.pop();
-        System.out.println(ultimoDaFila); 
-        // Imprime: Pedro
-        System.out.println(filaDeNomes); 
-        // Imprime: [Carlos, Maria]
-      `}
-    </code>
-  </PreCode>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {ArrayDeque.trim()}
+  </StyledSyntaxHighlighter>,
 
   <p>
     Em resumo, a interface Queue e suas implementações em Java fornecem uma

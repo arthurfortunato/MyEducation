@@ -1,5 +1,30 @@
-import { PreCode } from "../../../components/PreCode";
+import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
+const encapsulationExample = `
+  @Getter
+  public class ContaBancaria {
+    private int numero;
+    private double saldo;
+  }
+
+  public ContaBancaria(int numero) {
+    this.numero = numero;
+    this.saldo = 0;
+  }
+
+  publit void depositar(double valor) {
+    saldo += valor;
+  }
+
+  public void sacar(double valor) {
+    if(valor <= saldo) {
+      saldo -= valor;
+    } else {
+      System.out.println("Saldo insuficiente.");
+    }
+  }
+`;
 export const paragraphs = [
   `O encapsulamento é um conceito fundamental da programação orientada a
  objetos e é amplamente utilizado em Java.`,
@@ -23,33 +48,7 @@ export const paragraphs = [
  outras partes do programa, o que facilita a manutenção e a evolução do
  software.`,
 
- <PreCode>
- <code>
-   {`
-     @Getter
-     public class ContaBancaria {
-       private int numero;
-       private double saldo;
-     }
-
-     public ContaBancaria(int numero) {
-       this.numero = numero;
-       this.saldo = 0;
-     }
-
-     publit void depositar(double valor) {
-       saldo += valor;
-     }
-
-     public void sacar(double valor) {
-       if(valor <= saldo) {
-         saldo -= valor;
-       } else {
-         System.out.println("Saldo insuficiente.");
-       }
-     }
-   `}
- </code>
-</PreCode>
- 
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {encapsulationExample.trim()}
+  </StyledSyntaxHighlighter>,
 ];
