@@ -17,27 +17,27 @@ export const ProgrammingLogic = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/programminglogic/introduction" className="link">
-            <Card width="350px" height="100px" backgroundImage={introducao}>
+            <Card width="300px" height="100px" backgroundImage={introducao}>
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/programminglogic/logical-operators" className="link">
-            <Card width="350px" height="100px" backgroundImage={operadoresLogicos}>
+            <Card width="300px" height="100px" backgroundImage={operadoresLogicos}>
               <p>2. OPERADORES LÓGICOS</p>
             </Card>
           </Link>
           <Link to="/programminglogic/conditional-if-else" className="link">
-            <Card width="350px" height="100px" backgroundImage={ifElse}>
+            <Card width="300px" height="100px" backgroundImage={ifElse}>
               <p>3. IF ELSE</p>
             </Card>
           </Link>
           <Link to="/programminglogic/conditional-ternary" className="link">
-            <Card width="350px" height="100px" backgroundImage={ternario}>
+            <Card width="300px" height="100px" backgroundImage={ternario}>
               <p>4. OPERADOR TERNÁRIO</p>
             </Card>
           </Link>
           <Link to="/programminglogic/conditional-switch" className="link">
-            <Card width="350px" height="100px" backgroundImage={Switch}>
+            <Card width="300px" height="100px" backgroundImage={Switch}>
               <p>5. SWITCH</p>
             </Card>
           </Link>

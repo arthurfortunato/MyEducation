@@ -30,7 +30,7 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 500px) {
     transition: 1.8s all;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 20px;
   }
 
@@ -42,6 +42,7 @@ export const CardWrapper = styled.div`
 
   @media (max-height: 760px) {
     transition: 1.8s all;
+    margin-top: 40px;
     height: 70%;
   }
 `;
