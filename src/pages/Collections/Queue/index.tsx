@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const ImplementationsComments = () => {
+export const Queue = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const ImplementationsComments = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/collections/list");
+    navigate("/collections/map");
   };
 
   return (
@@ -51,10 +51,14 @@ export const ImplementationsComments = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Implementações">
+          <Section title="Queue">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
-                return <p key={index} className="fade-in">{paragraph}</p>;
+                return (
+                  <p key={index} className="fade-in">
+                    {paragraph}
+                  </p>
+                );
               }
               return null;
             })}

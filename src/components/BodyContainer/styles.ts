@@ -23,7 +23,7 @@ export const BodyContainerStyled = styled.body`
 
     .fade-in {
       animation-name: fadeIn;
-      animation-duration: 3s;
+      animation-duration: 2s;
       visibility: visible;
     }
 
