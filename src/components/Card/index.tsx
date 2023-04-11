@@ -11,9 +11,9 @@ interface CardProps {
 }
 
 export const Card = ({
-  width = "150px",
+  width = "170px",
   children,
-  height = "150px",
+  height = "170px",
   noShadow = false,
   background = "#fff",
   backgroundImage,
