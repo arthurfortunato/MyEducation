@@ -26,6 +26,7 @@ export const Pre = styled.pre`
   }
 
   @media (max-width: 455px) {
+    max-width: 355px;
     padding: 10px 20px 0 0;
     code {
       font-size: 0.65rem;

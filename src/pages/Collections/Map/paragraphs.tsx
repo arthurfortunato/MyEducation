@@ -21,11 +21,14 @@ export const paragraphs = [
         mapaDeNotas.put("João", 8);
         mapaDeNotas.put("Maria", 9);
         mapaDeNotas.put("Pedro", 7);
-        System.out.println(mapaDeNotas); // Imprime: {João=8, Maria=9, Pedro=7}
+        System.out.println(mapaDeNotas); 
+        // Imprime: {João=8, Maria=9, Pedro=7}
         int notaDaMaria = mapaDeNotas.get("Maria");
-        System.out.println(notaDaMaria); // Imprime: 9
+        System.out.println(notaDaMaria); 
+        // Imprime: 9
         mapaDeNotas.remove("Pedro");
-        System.out.println(mapaDeNotas); // Imprime: {João=8, Maria=9}
+        System.out.println(mapaDeNotas); 
+        // Imprime: {João=8, Maria=9}
       `}
     </code>
   </PreCode>,
@@ -43,11 +46,14 @@ export const paragraphs = [
         mapaDeNotas.put("João", 8);
         mapaDeNotas.put("Maria", 9);
         mapaDeNotas.put("Pedro", 7);
-        System.out.println(mapaDeNotas); // Imprime: {João=8, Maria=9, Pedro=7}
+        System.out.println(mapaDeNotas); 
+        // Imprime: {João=8, Maria=9, Pedro=7}
         int notaDaMaria = mapaDeNotas.get("Maria");
-        System.out.println(notaDaMaria); // Imprime: 9
+        System.out.println(notaDaMaria); 
+        // Imprime: 9
         mapaDeNotas.remove("Pedro");
-        System.out.println(mapaDeNotas); // Imprime: {João=8, Maria=9}
+        System.out.println(mapaDeNotas); 
+        // Imprime: {João=8, Maria=9}
       `}
     </code>
   </PreCode>,
@@ -61,15 +67,19 @@ export const paragraphs = [
   <PreCode>
     <code>
       {`
-        Map<String, Integer> mapaDeNotas = new LinkedHashMap<>();
+        Map<String, Integer> mapaDeNotas 
+                        = new LinkedHashMap<>();
         mapaDeNotas.put("João", 8);
         mapaDeNotas.put("Maria", 9);
         mapaDeNotas.put("Pedro", 7);
-        System.out.println(mapaDeNotas); // Imprime: {João=8, Maria=9, Pedro=7}
+        System.out.println(mapaDeNotas); 
+        // Imprime: {João=8, Maria=9, Pedro=7}
         int notaDaMaria = mapaDeNotas.get("Maria");
-        System.out.println(notaDaMaria); // Imprime: 9
+        System.out.println(notaDaMaria); 
+        // Imprime: 9
         mapaDeNotas.remove("Pedro");
-        System.out.println(mapaDeNotas); // Imprime: {João=8, Maria=9}
+        System.out.println(mapaDeNotas); 
+        // Imprime: {João=8, Maria=9}
       `}
     </code>
   </PreCode>,

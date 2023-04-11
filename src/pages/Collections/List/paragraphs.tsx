@@ -21,7 +21,8 @@ export const paragraphs = [
         listaDeNomes.add("João");
         listaDeNomes.add("Maria");
         listaDeNomes.add("Pedro");
-        System.out.println(listaDeNomes); // Imprime: [João, Maria, Pedro]
+        System.out.println(listaDeNomes); 
+        // Imprime: [João, Maria, Pedro]
       `}
     </code>
   </PreCode>,
@@ -39,7 +40,8 @@ export const paragraphs = [
         listaDeNomes.add("João");
         listaDeNomes.add("Maria");
         listaDeNomes.add("Pedro");
-        System.out.println(listaDeNomes); // Imprime: [João, Maria, Pedro]
+        System.out.println(listaDeNomes); 
+        // Imprime: [João, Maria, Pedro]
       `}
     </code>
   </PreCode>,
