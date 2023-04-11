@@ -21,8 +21,10 @@ export const paragraphs = [
         conjuntoDeNomes.add("João");
         conjuntoDeNomes.add("Maria");
         conjuntoDeNomes.add("Pedro");
-        conjuntoDeNomes.add("Maria"); // Não adiciona um segundo "Maria"
-        System.out.println(conjuntoDeNomes); // Imprime: [Pedro, João, Maria]
+        conjuntoDeNomes.add("Maria"); 
+        // Não adiciona um segundo "Maria"
+        System.out.println(conjuntoDeNomes); 
+        // Imprime: [Pedro, João, Maria]
       `}
     </code>
   </PreCode>,
@@ -38,8 +40,10 @@ export const paragraphs = [
         conjuntoDeNomes.add("João");
         conjuntoDeNomes.add("Maria");
         conjuntoDeNomes.add("Pedro");
-        conjuntoDeNomes.add("Maria"); // Não adiciona um segundo "Maria"
-        System.out.println(conjuntoDeNomes); // Imprime: [João, Maria, Pedro]
+        conjuntoDeNomes.add("Maria"); 
+        // Não adiciona um segundo "Maria"
+        System.out.println(conjuntoDeNomes); 
+        // Imprime: [João, Maria, Pedro]
       `}
     </code>
   </PreCode>,

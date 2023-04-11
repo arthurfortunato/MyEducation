@@ -22,10 +22,13 @@ export const paragraphs = [
         filaDeNomes.add("João");
         filaDeNomes.add("Maria");
         filaDeNomes.add("Pedro");
-        System.out.println(filaDeNomes); // Imprime: [João, Maria, Pedro]
+        System.out.println(filaDeNomes); 
+        // Imprime: [João, Maria, Pedro]
         String primeiroDaFila = filaDeNomes.remove();
-        System.out.println(primeiroDaFila); // Imprime: João
-        System.out.println(filaDeNomes); // Imprime: [Maria, Pedro]
+        System.out.println(primeiroDaFila); 
+        // Imprime: João
+        System.out.println(filaDeNomes); 
+        // Imprime: [Maria, Pedro]
       `}
     </code>
   </PreCode>,
@@ -44,10 +47,13 @@ export const paragraphs = [
         filaDeNumeros.add(10);
         filaDeNumeros.add(5);
         filaDeNumeros.add(8);
-        System.out.println(filaDeNumeros); // Imprime: [5, 10, 8]
+        System.out.println(filaDeNumeros); 
+        // Imprime: [5, 10, 8]
         int primeiroDaFila = filaDeNumeros.remove();
-        System.out.println(primeiroDaFila); // Imprime: 5
-        System.out.println(filaDeNumeros); // Imprime: [8, 10]
+        System.out.println(primeiroDaFila); 
+        // Imprime: 5
+        System.out.println(filaDeNumeros); 
+        // Imprime: [8, 10]
       `}
     </code>
   </PreCode>,
@@ -66,14 +72,19 @@ export const paragraphs = [
         filaDeNomes.add("João");
         filaDeNomes.add("Maria");
         filaDeNomes.add("Pedro");
-        System.out.println(filaDeNomes); // Imprime: [João, Maria, Pedro]
+        System.out.println(filaDeNomes); 
+        // Imprime: [João, Maria, Pedro]
         String primeiroDaFila = filaDeNomes.remove();
-        System.out.println(primeiroDaFila); // Imprime: João
+        System.out.println(primeiroDaFila); 
+        // Imprime: João
         filaDeNomes.push("Carlos");
-        System.out.println(filaDeNomes); // Imprime: [Carlos, Maria, Pedro]
+        System.out.println(filaDeNomes); 
+        // Imprime: [Carlos, Maria, Pedro]
         String ultimoDaFila = filaDeNomes.pop();
-        System.out.println(ultimoDaFila); // Imprime: Pedro
-        System.out.println(filaDeNomes); // Imprime: [Carlos, Maria]
+        System.out.println(ultimoDaFila); 
+        // Imprime: Pedro
+        System.out.println(filaDeNomes); 
+        // Imprime: [Carlos, Maria]
       `}
     </code>
   </PreCode>,
