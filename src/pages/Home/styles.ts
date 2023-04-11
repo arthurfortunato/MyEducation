@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background: ${({ theme }) => theme.colors.backgroundContainerContents};
 `;
 
 export const CardWrapper = styled.div`
+  height: 100%;
   display: flex;
-  margin-top: 100px;
+  align-items:center;
   margin-left: 100px;
-  height: 60%;
+
 
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -24,26 +25,21 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 900px) {
     transition: 1.8s all;
-    margin-top: 100px;
     margin-left: 50px;
   }
 
   @media (max-width: 500px) {
     transition: 1.8s all;
-    margin-top: 80px;
     margin-left: 20px;
   }
 
   @media (max-width: 300px) {
     transition: 1.8s all;
-    margin-top: 40px;
     margin-left: 20px;
   }
 
   @media (max-height: 760px) {
     transition: 1.8s all;
-    margin-top: 40px;
-    height: 70%;
   }
 `;
 
@@ -75,7 +71,7 @@ export const TopCard = styled.div`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.titleSection};
     font: 700 0.8rem "Roboto", sans-serif;
-
+    margin-top: 50px;
     p {
       padding-left: 25px;
       max-width: 120px;
