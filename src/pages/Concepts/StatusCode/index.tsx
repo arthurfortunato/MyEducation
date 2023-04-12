@@ -39,7 +39,7 @@ export const ConceptsStatusCode = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/versioning");
+    navigate("/concepts/versioning");
   };
 
   return (
