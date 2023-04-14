@@ -7,6 +7,7 @@ import logica from "../../assets/HomeImages/LOGICA.jpg";
 import java from "../../assets/HomeImages/JAVA.gif";
 import conceitos from "../../assets/HomeImages/CONCEITOS.gif";
 import collections from "../../assets/HomeImages/COLLECTIONS.gif";
+import spring from "../../assets/HomeImages/spring.gif";
 
 import {
   Container,
@@ -95,6 +96,14 @@ export const Home = () => {
               <p>5. Coleções</p>
             </Link>
           </TopCard>
+          <RightCard>
+            <Link to="/annotations" className="middle">
+              <Card>
+                <ImageCard src={spring} />
+              </Card>
+              <p>6. Spring Annotations</p>
+            </Link>
+          </RightCard>
         </div>
       </CardWrapper>
     </Container>
