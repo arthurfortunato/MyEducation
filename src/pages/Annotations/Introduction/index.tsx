@@ -39,7 +39,7 @@ export const Introduction = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/annotations");
+    navigate("/annotations/spring-annotations");
   };
 
   return (
