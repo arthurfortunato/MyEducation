@@ -26,7 +26,7 @@ export const BodyContainerStyled = styled.body`
       text-decoration: none;
       p {
         color: #fff;
-        font: 700 1rem "Lato", sans-serif;
+        font: 700 1rem "Roboto", sans-serif;
         align-self: flex-start;
       }
     }

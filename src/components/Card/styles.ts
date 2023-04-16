@@ -29,8 +29,9 @@ export const ContainerStyled = styled.div<IContainer>`
     backgroundImage &&
     css`
       background-image: url(${backgroundImage});
-      background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
       opacity: 0.8;
       z-index: -1;
     `}
