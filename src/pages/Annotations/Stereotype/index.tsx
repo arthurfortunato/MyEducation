@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const SpringAnnotations = () => {
+export const Stereotype = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const SpringAnnotations = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/annotations/stereotypes");
+    navigate("/annotations");
   };
 
   return (
@@ -51,7 +51,7 @@ export const SpringAnnotations = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Spring Annotations">
+          <Section title="Stereotypes">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index} className="fade-in">{paragraph}</p>;

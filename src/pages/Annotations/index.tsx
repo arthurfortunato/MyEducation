@@ -22,6 +22,11 @@ export const Annotations = () => {
               <p>2. SPRING ANNOTATIONS</p>
             </Card>
           </Link>
+          <Link to="/annotations/stereotypes" className="link">
+            <Card width="350px" height="100px" backgroundImage={introducao}>
+              <p>3. STEREOTYPES</p>
+            </Card>
+          </Link>
         </div>
       </BodyContainerStyled>
     </Container>
