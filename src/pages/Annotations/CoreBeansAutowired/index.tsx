@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Stereotype = () => {
+export const CoreBeansAutowired = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const Stereotype = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/annotations/core-beans-autowired");
+    navigate("/annotations/autowired-constructor");
   };
 
   return (
@@ -51,7 +51,7 @@ export const Stereotype = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Stereotypes">
+          <Section title="Core Beans - @Autowired">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index} className="fade-in">{paragraph}</p>;

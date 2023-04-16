@@ -6,7 +6,7 @@ export const paragraphs = [
   <p>
     A anotação genérica <strong>@Component</strong> pode ser usada para qualquer
     Bean que queiramos especificar no Spring. Já as anotações específicas, como
-    <strong>@Service</strong>, <strong>@Repository</strong> e
+    <strong>@Service</strong>, <strong>@Repository</strong> e{" "}
     <strong>@Controller</strong>, indicam a responsabilidade de cada classe de
     forma mais clara.
   </p>,
