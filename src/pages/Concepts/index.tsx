@@ -33,7 +33,7 @@ export const Concepts = () => {
           </Link>
           <Link to="/concepts/status-code" className="link">
             <Card width="350px" height="100px" backgroundImage={statusCode}>
-              <p>4. Status Code</p>
+              <p>4. STATUS CODE</p>
             </Card>
           </Link>
           <Link to="/concepts/versioning" className="link">

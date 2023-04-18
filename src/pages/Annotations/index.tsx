@@ -34,7 +34,7 @@ export const Annotations = () => {
           </Link>
           <Link to="/annotations/core-beans-autowired" className="link">
             <Card width="350px" height="100px" backgroundImage={autowired}>
-              <p>4. Core Beans @Autowired</p>
+              <p>4. CORE BEANS @Autowired</p>
             </Card>
           </Link>
           <Link to="/annotations/autowired-constructor" className="link">
@@ -44,7 +44,7 @@ export const Annotations = () => {
           </Link>
           <Link to="/annotations/core-beans-qualifier" className="link">
             <Card width="350px" height="100px" backgroundImage={qualifier}>
-              <p>6.Core Beans @Qualifier</p>
+              <p>6.CORE BEANS @Qualifier</p>
             </Card>
           </Link>
         </div>
