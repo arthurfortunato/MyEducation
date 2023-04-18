@@ -22,7 +22,7 @@ export const Annotations = () => {
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
-          <Link to="/annotations/introducao-annotations" className="link">
+          <Link to="/annotations/spring-annotations" className="link">
             <Card width="350px" height="100px" backgroundImage={annotations}>
               <p>2. INTRODUÇÃO ANNOTATIONS</p>
             </Card>
