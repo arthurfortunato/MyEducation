@@ -10,6 +10,7 @@ import stereotypes from "../../assets/Annotations/springboot.jpg";
 import autowired from "../../assets/Annotations/autowired.png";
 import constructor from "../../assets/Annotations/constructor.png";
 import qualifier from "../../assets/Annotations/qualifier.png";
+import value from "../../assets/Annotations/value.png";
 
 export const Annotations = () => {
   return (
@@ -45,6 +46,11 @@ export const Annotations = () => {
           <Link to="/annotations/core-beans-qualifier" className="link">
             <Card width="350px" height="100px" backgroundImage={qualifier}>
               <p>6.CORE BEANS @Qualifier</p>
+            </Card>
+          </Link>
+          <Link to="/annotations/core-beans-value" className="link">
+            <Card width="350px" height="100px" backgroundImage={value}>
+              <p>7.CORE BEANS @Value</p>
             </Card>
           </Link>
         </div>
