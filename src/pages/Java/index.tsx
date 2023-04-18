@@ -40,17 +40,17 @@ export const Java = () => {
           </Link>
           <Link to="/java/jdbc" className="link">
             <Card width="350px" height="100px" backgroundImage={jdbc}>
-              <p>4. JDBC</p>
+              <p>5. JDBC</p>
             </Card>
           </Link>
           <Link to="/java/maven" className="link">
             <Card width="350px" height="100px" backgroundImage={maven}>
-              <p>4. MAVEN</p>
+              <p>6. MAVEN</p>
             </Card>
           </Link>
           <Link to="/java/springboot" className="link">
             <Card width="350px" height="100px" backgroundImage={springBoot}>
-              <p>4. SPRING BOOT</p>
+              <p>7. SPRING BOOT</p>
             </Card>
           </Link>
         </div>
