@@ -9,6 +9,7 @@ import annotations from "../../assets/Annotations/annotations.png";
 import stereotypes from "../../assets/Annotations/springboot.jpg";
 import autowired from "../../assets/Annotations/autowired.png";
 import constructor from "../../assets/Annotations/constructor.png";
+import qualifier from "../../assets/Annotations/qualifier.png";
 
 export const Annotations = () => {
   return (
@@ -39,6 +40,11 @@ export const Annotations = () => {
           <Link to="/annotations/autowired-constructor" className="link">
             <Card width="350px" height="100px" backgroundImage={constructor}>
               <p>5. @Autowired vs Constructor</p>
+            </Card>
+          </Link>
+          <Link to="/annotations/core-beans-qualifier" className="link">
+            <Card width="350px" height="100px" backgroundImage={qualifier}>
+              <p>6.Core Beans @Qualifier</p>
             </Card>
           </Link>
         </div>

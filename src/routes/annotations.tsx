@@ -5,6 +5,7 @@ import { SpringAnnotations } from "../pages/Annotations/SpringAnnotations";
 import { Stereotype } from "../pages/Annotations/Stereotype";
 import { CoreBeansAutowired } from "../pages/Annotations/CoreBeansAutowired";
 import { AutowiredVSConstructor } from "../pages/Annotations/AutowiredVSConstructor";
+import { CoreBeansQualifier } from "../pages/Annotations/CoreBeansQualifier";
 
 export const AnnotationsRoutes = () => {
   return (
@@ -15,6 +16,7 @@ export const AnnotationsRoutes = () => {
       <Route path="annotations/stereotypes" element={<Stereotype />} />
       <Route path="annotations/core-beans-autowired" element={<CoreBeansAutowired />} />
       <Route path="annotations/autowired-constructor" element={<AutowiredVSConstructor />} />
+      <Route path="annotations/core-beans-qualifier" element={<CoreBeansQualifier />} />
     </Routes>
   );
 };
