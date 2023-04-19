@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const CoreBeansValue = () => {
+export const CoreContextConfiguration = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const CoreBeansValue = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/annotations/core-context-configuration");
+    navigate("/annotations");
   };
 
   return (
@@ -51,7 +51,7 @@ export const CoreBeansValue = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Core Beans - @Value">
+          <Section title="Core Context - @Configuration">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index} className="fade-in">{paragraph}</p>;
