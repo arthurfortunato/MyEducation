@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { ContainerStyled, Skeleton } from "./styles";
+import { ContainerStyled } from "./styles";
 
 interface CardProps {
   width?: string;
@@ -20,7 +19,6 @@ export const Card = ({
   backgroundImage,
   opacity = 1,
 }: CardProps) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <ContainerStyled
       width={width}
@@ -29,17 +27,7 @@ export const Card = ({
       background={background}
       backgroundImage={backgroundImage}
       opacity={opacity}
-      style={{
-        backgroundImage: imageLoaded ? `url(${backgroundImage})` : "none",
-      }}
     >
-      {!imageLoaded && <Skeleton />}
-      <img
-        src={backgroundImage}
-        alt=""
-        style={{ display: "none" }}
-        onLoad={() => setImageLoaded(true)}
-      />
       {children}
     </ContainerStyled>
   );

@@ -36,21 +36,3 @@ export const ContainerStyled = styled.div<IContainer>`
       z-index: -1;
     `}
 `;
-
-export const Skeleton = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: #f2f2f2;
-  animation: pulse 1.2s infinite ease-in-out;
-  @keyframes pulse {
-    0% {
-      opacity: 0.6;
-    }
-    50% {
-      opacity: 0.3;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
-`;
