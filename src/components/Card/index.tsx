@@ -28,6 +28,7 @@ export const Card = ({
       backgroundImage={backgroundImage}
       opacity={opacity}
     >
+      <img src={backgroundImage} loading="lazy" alt="background cards"/>
       {children}
     </ContainerStyled>
   );
