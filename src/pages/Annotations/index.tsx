@@ -12,6 +12,7 @@ import constructor from "../../assets/Annotations/constructor.png";
 import qualifier from "../../assets/Annotations/qualifier.png";
 import value from "../../assets/Annotations/value.png";
 import configuration from "../../assets/Annotations/configuration.png";
+import scan from "../../assets/Annotations/scan.png";
 
 export const Annotations = () => {
   return (
@@ -57,6 +58,11 @@ export const Annotations = () => {
           <Link to="/annotations/core-context-configuration" className="link">
             <Card width="350px" height="100px" backgroundImage={configuration}>
               <p>8.CORE CONTEXT @Configuration</p>
+            </Card>
+          </Link>
+          <Link to="/annotations/core-context-scan" className="link">
+            <Card width="350px" height="100px" backgroundImage={scan}>
+              <p>9.CORE CONTEXT @ComponentScan</p>
             </Card>
           </Link>
         </div>

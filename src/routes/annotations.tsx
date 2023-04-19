@@ -8,6 +8,7 @@ import { AutowiredVSConstructor } from "../pages/Annotations/AutowiredVSConstruc
 import { CoreBeansQualifier } from "../pages/Annotations/CoreBeansQualifier";
 import { CoreBeansValue } from "../pages/Annotations/CoreBeansValue";
 import { CoreContextConfiguration } from "../pages/Annotations/CoreContextConfiguration";
+import { CoreContextComponentScan } from "../pages/Annotations/CoreContextComponentScan";
 
 export const AnnotationsRoutes = () => {
   return (
@@ -21,6 +22,7 @@ export const AnnotationsRoutes = () => {
       <Route path="annotations/core-beans-qualifier" element={<CoreBeansQualifier />} />
       <Route path="annotations/core-beans-value" element={<CoreBeansValue />} />
       <Route path="annotations/core-context-configuration" element={<CoreContextConfiguration />} />
+      <Route path="annotations/core-context-scan" element={<CoreContextComponentScan />} />
     </Routes>
   );
 };
