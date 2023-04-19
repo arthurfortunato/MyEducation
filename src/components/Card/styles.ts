@@ -28,6 +28,7 @@ export const ContainerStyled = styled.div<IContainer>`
   ${({ backgroundImage }) =>
     backgroundImage &&
     css`
+      loading: lazy;
       background-image: url(${backgroundImage});
       background-size: cover;
       background-position: center center;
