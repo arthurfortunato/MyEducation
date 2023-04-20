@@ -1,29 +1,46 @@
 import { List } from "../../../components/List";
 
 export const paragraphs = [
-  `RESTful é um estilo arquitetural que descreve como as APIs devem ser projetadas para serem eficientes, escaláveis e fáceis de manter. RESTful é uma abordagem que utiliza os princípios do estilo arquitetural REST para a criação de APIs.`,
-
-  `Uma API RESTful é considerada "RESTful" quando segue completamente os princípios do estilo arquitetural REST. Isso significa que ela utiliza as operações HTTP (GET, POST, PUT, DELETE) de forma adequada, utiliza URIs (Uniform Resource Identifier) para identificar os recursos, utiliza os códigos HTTP de forma correta e também utiliza um modelo cliente-servidor com uma separação clara das responsabilidades entre as partes.`,
-
-  `Algumas das características de uma API RESTful incluem:`,
-
-  <List>Uso consistente de URIs para identificar recursos;</List>,
-  <List>Uso de verbos HTTP para indicar ações sobre os recursos;</List>,
-  <List>
-    Uso de respostas HTTP padronizadas para indicar o resultado da operação;
-  </List>,
-  <List>
-    Separação clara entre o cliente (quem acessa a API) e o servidor (onde os
-    recursos são armazenados);
-  </List>,
-  <List>Utilização de caching para otimizar o desempenho da API;</List>,
+  <p>
+    REST e RESTful são termos frequentemente usados ​​para descrever a mesma
+    abordagem arquitetônica de serviços web, mas há uma diferença sutil entre
+    eles.
+  </p>,
+  <p>
+    RESTful é uma variação da arquitetura REST, que segue os princípios e
+    restrições do REST de forma mais completa e rigorosa. Enquanto REST é um
+    conjunto de princípios, RESTful é uma implementação desses princípios.
+  </p>,
+  <p>Um serviço web RESTful segue as seguintes restrições, entre outras:</p>,
 
   <List>
-    Uso de formatos de representação de dados padronizados, como JSON ou XML.
+    Client-server: o cliente e o servidor são separados e independentes um do
+    outro, o que permite que eles evoluam e sejam mantidos separadamente.
   </List>,
   <List>
-    Em resumo, uma API RESTful segue completamente os princípios do estilo
-    arquitetural REST, permitindo uma interação eficiente e escalável entre os
-    clientes e os servidores que a utilizam.
+    Stateless: o servidor não mantém o estado das solicitações do cliente. Cada
+    solicitação contém todas as informações necessárias para que o servidor
+    entenda a solicitação e possa processá-la.
   </List>,
+  <List>
+    Cacheable: as respostas devem ser definidas como cacheáveis ou não
+    cacheáveis, permitindo que as respostas sejam armazenadas em cache para
+    melhorar o desempenho.
+  </List>,
+  <List>
+    Interface uniforme: a interface do serviço web deve ser uniforme, incluindo
+    um conjunto bem definido de verbos HTTP (GET, POST, PUT, DELETE, etc.),
+    recursos identificados por URIs e representações dos recursos em formatos
+    padrão (como JSON, XML, etc.).
+  </List>,
+  <List>
+    Sistema em camadas: o serviço web pode ser composto por camadas
+    intermediárias, como caches, gateways e proxies, sem afetar a interface
+    uniforme.
+  </List>,
+  <p>
+    Portanto, pode-se dizer que RESTful é uma implementação mais completa e
+    rigorosa dos princípios do REST, que segue as restrições adicionais acima
+    mencionadas.
+  </p>,
 ];

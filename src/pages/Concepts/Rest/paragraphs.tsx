@@ -1,25 +1,36 @@
 import { List } from "../../../components/List";
 
 export const paragraphs = [
-  `REST é um acrônimo para "Representational State Transfer" (Transferência de Estado Representacional). É um estilo arquitetural para a criação de APIs baseadas em HTTP.`,
+  <strong>
+    REST é um acrônimo para "Representational State Transfer" (Transferência de
+    Estado Representacional). É um estilo arquitetural para a criação de APIs
+    baseadas em HTTP, que é utilizado para criar serviços web que possam ser
+    acessados por outras aplicações na internet.
+  </strong>,
 
-  `Uma API RESTful (ou RESTful API) é uma API que segue os princípios do estilo arquitetural REST. Isso significa que ela usa métodos HTTP (como GET, POST, PUT e DELETE) para permitir a criação, leitura, atualização e exclusão de recursos (como informações de um banco de dados) de maneira padronizada e escalável.
-  `,
-  `Alguns dos princípios fundamentais do REST incluem:`,
+  <p>
+    De maneira simples, podemos dizer que REST é um conjunto de princípios que
+    guiam a construção de uma API (Interface de Programação de Aplicativos) para
+    que ela possa ser consumida de forma eficiente e flexível.
+  </p>,
 
-  <List>Uso consistente de URLs para identificar recursos</List>,
-  <List>Uso de verbos HTTP para indicar ações sobre os recursos</List>,
-  <List>
-    Uso de respostas HTTP padronizadas (como códigos de status e cabeçalhos)
-    para indicar o resultado da operação
-  </List>,
-  <List>
-    Separação clara entre o cliente (quem acessa a API) e o servidor (onde os
-    recursos são armazenados).
-  </List>,
-  <List>
-    APIs RESTful são muito populares na construção de aplicações web e mobile,
-    já que permitem que diferentes plataformas e linguagens de programação
-    possam acessar os mesmos recursos de maneira padronizada e eficiente.
-  </List>,
+  <p>
+    Os serviços RESTful (que seguem os princípios do REST) são baseados no
+    protocolo HTTP e utilizam seus verbos (GET, POST, PUT, DELETE, etc.) para
+    que um cliente possa realizar ações em um servidor. Essas ações são
+    executadas em recursos (como arquivos, bancos de dados, imagens, etc.) que
+    são identificados por URLs específicas.
+  </p>,
+
+  <p>
+    Assim, ao acessar uma <strong>API REST</strong>, o cliente pode solicitar
+    dados, enviar informações, atualizar registros ou excluir recursos, tudo
+    isso de forma padronizada e simples de entender.
+  </p>,
+
+  <p>
+    Em resumo, <strong>REST</strong> é uma abordagem para a construção de
+    serviços web que permite que diferentes aplicações possam se comunicar de
+    forma interoperável, por meio de protocolos e padrões bem definidos.
+  </p>,
 ];

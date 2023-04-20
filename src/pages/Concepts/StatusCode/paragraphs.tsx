@@ -1,20 +1,56 @@
+import { List } from "../../../components/List";
+
 export const paragraphs = [
-  `Status code (código de status) é um código numérico de três dígitos que indica o resultado de uma requisição feita a um servidor web. Cada código de status indica uma situação específica que ocorreu durante o processamento da requisição.`,
-
-  `Os códigos de status são parte do protocolo HTTP (Hypertext Transfer Protocol), que é utilizado para a transferência de dados pela internet. Existem vários códigos de status diferentes que podem ser retornados em uma requisição HTTP, cada um com um significado específico. Alguns exemplos comuns de códigos de status são:`,
-
-  `200 OK: indica que a requisição foi bem-sucedida e que o servidor retornou os dados solicitados;`,
-  `404 Not Found: indica que o servidor não conseguiu encontrar o recurso solicitado pelo cliente;`,
-  `500 Internal Server Error: indica que ocorreu um erro interno no servidor durante o processamento da requisição.`,
-  `Existem muitos outros códigos de status que podem ser retornados em uma requisição HTTP, cada um com um significado específico. O uso correto dos códigos de status é importante para que os clientes possam entender corretamente o resultado da requisição e tomar as ações necessárias em caso de erros ou problemas na comunicação com o servidor.`,
-
-  `1. Respostas de informação (100-199)`,
-
-  `2. Respostas de sucesso (200-299)`,
-
-  `3. Redirecionamentos (300-399)`,
-
-  `4. Erros do cliente (400-499)`,
-
-  `5. Erros do servidor (500-599)`,
+  <strong>
+    O status code (código de status) é um número de três dígitos que é retornado
+    pelo servidor em resposta a uma solicitação feita pelo cliente, geralmente
+    por meio do protocolo HTTP.
+  </strong>,
+  <p>
+    Cada código de status tem um significado específico, que ajuda a indicar ao
+    cliente o resultado da solicitação e como ele deve agir a seguir. Esses
+    códigos são divididos em 5 categorias principais:
+  </p>,
+  <List>
+    <strong>1xx (Informacional)</strong>: Indica que a solicitação foi recebida
+    e o servidor está continuando a processá-la.
+  </List>,
+  <List>
+    <strong>2xx (Sucesso)</strong>: Indica que a solicitação foi recebida,
+    entendida e aceita com sucesso.
+  </List>,
+  <List>
+    <strong>3xx (Redirecionamento)</strong>: Indica que mais ações são
+    necessárias para concluir a solicitação.
+  </List>,
+  <List>
+    <strong>4xx (Erro do cliente)</strong>: Indica que a solicitação não pôde
+    ser concluída devido a um erro do cliente.
+  </List>,
+  <List>
+    <strong>5xx (Erro do servidor)</strong>: Indica que a solicitação não pôde
+    ser concluída devido a um erro no servidor.
+  </List>,
+  <p>Alguns exemplos comuns de códigos de status incluem:</p>,
+  <List>
+    <strong>200 OK</strong>: indica que a solicitação foi bem-sucedida e o
+    servidor retornou os dados solicitados.
+  </List>,
+  <List>
+    <strong>400 Bad Request</strong>: indica que a solicitação enviada pelo
+    cliente estava incorreta ou incompleta.
+  </List>,
+  <List>
+    <strong>404 Not Found</strong>: indica que o servidor não encontrou o
+    recurso solicitado.
+  </List>,
+  <List>
+    <strong>500 Internal Server Error</strong>: indica que ocorreu um erro
+    interno no servidor que impediu a conclusão da solicitação.
+  </List>,
+  <p>
+    Ao entender os diferentes códigos de status e seus significados, os
+    desenvolvedores podem usar essas informações para solucionar problemas de
+    aplicativos e fornecer uma melhor experiência do usuário.
+  </p>,
 ];
