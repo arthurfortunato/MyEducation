@@ -1,5 +1,3 @@
-import { List } from "../../../components/List";
-
 export const paragraphs = [
   <strong>
     REST é um acrônimo para "Representational State Transfer" (Transferência de
