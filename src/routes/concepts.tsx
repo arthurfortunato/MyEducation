@@ -5,6 +5,7 @@ import { ConceptsRest } from "../pages/Concepts/Rest";
 import { ConceptsRestFull } from "../pages/Concepts/RestFull";
 import { ConceptsStatusCode } from "../pages/Concepts/StatusCode";
 import { Versioning } from "../pages/Concepts/Versioning";
+import { QuizzConcepts } from "../pages/Concepts/QuizzConcepts";
 
 export const ConceptsRoutes = () => {
   return (
@@ -15,6 +16,7 @@ export const ConceptsRoutes = () => {
       <Route path="concepts/rest-full" element={<ConceptsRestFull />} />
       <Route path="concepts/status-code" element={<ConceptsStatusCode />} />
       <Route path="concepts/versioning" element={<Versioning />} />
+      <Route path="concepts/quizz" element={<QuizzConcepts />} />
     </Routes>
   );
 };

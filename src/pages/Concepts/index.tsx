@@ -41,6 +41,11 @@ export const Concepts = () => {
               <p>5. Versionamento Semântico</p>
             </Card>
           </Link>
+          <Link to="/concepts/quizz" className="link">
+            <Card width="350px" height="100px" backgroundImage={versioning}>
+              <p>6. Quizz</p>
+            </Card>
+          </Link>
         </div>
       </BodyContainerStyled>
     </Container>

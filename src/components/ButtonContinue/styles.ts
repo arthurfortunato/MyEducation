@@ -7,6 +7,7 @@ export const ButtonContinueStyled = styled.button`
   cursor: pointer;
   border: 0;
   background: ${({ theme }) => theme.colors.backgroundButtonContinue};
+  z-index: 1;
 
   &:active {
     transform: translateY(4px);

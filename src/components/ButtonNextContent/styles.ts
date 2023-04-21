@@ -36,4 +36,5 @@ export const ButtonNextContentStyled = styled.button`
 
   animation-name: fadeIn;
   animation-duration: 4s;
+  z-index: 10;
 `;
