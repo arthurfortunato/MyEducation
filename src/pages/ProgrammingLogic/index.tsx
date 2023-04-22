@@ -8,7 +8,7 @@ import introductionImg from "../../assets/ProgrammingLogicImages/INTRODUCTION.jp
 import logicalOperatorsImg from "../../assets/ProgrammingLogicImages/LOGICALOPERATORS.jpg";
 import ifElseImg from "../../assets/ProgrammingLogicImages/IF.jpg";
 import ternaryImg from "../../assets/ProgrammingLogicImages/TERNARY.jpg";
-import switchImg from "../../assets/ProgrammingLogicImages/SWITCH.jpg";
+import switchImg from "../../assets/ProgrammingLogicImages/SWITCHIMG.jpg";
 
 export const ProgrammingLogic = () => {
   return (
