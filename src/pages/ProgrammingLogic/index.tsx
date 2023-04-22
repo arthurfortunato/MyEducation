@@ -4,11 +4,11 @@ import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
-import introducao from "../../assets/ProgrammingLogicImages/INTRODUCTION.jpg";
-import operadoresLogicos from "../../assets/ProgrammingLogicImages/LOGICALOPERATORS.jpg";
-import ifElse from "../../assets/ProgrammingLogicImages/IF.jpg";
-import ternario from "../../assets/ProgrammingLogicImages/TERNARY.jpg";
-import Switch from "../../assets/ProgrammingLogicImages/SWITCH.jpg";
+import introductionImg from "../../assets/ProgrammingLogicImages/INTRODUCTION.jpg";
+import logicalOperatorsImg from "../../assets/ProgrammingLogicImages/LOGICALOPERATORS.jpg";
+import ifElseImg from "../../assets/ProgrammingLogicImages/IF.jpg";
+import ternaryImg from "../../assets/ProgrammingLogicImages/TERNARY.jpg";
+import switchImg from "../../assets/ProgrammingLogicImages/SWITCH.jpg";
 
 export const ProgrammingLogic = () => {
   return (
@@ -17,27 +17,27 @@ export const ProgrammingLogic = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/programminglogic/introduction" className="link">
-            <Card width="330px" height="100px" backgroundImage={introducao}>
+            <Card width="330px" height="100px" backgroundImage={introductionImg}>
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/programminglogic/logical-operators" className="link">
-            <Card width="330px" height="100px" backgroundImage={operadoresLogicos}>
+            <Card width="330px" height="100px" backgroundImage={logicalOperatorsImg}>
               <p>2. OPERADORES LÓGICOS</p>
             </Card>
           </Link>
           <Link to="/programminglogic/conditional-if-else" className="link">
-            <Card width="330px" height="100px" backgroundImage={ifElse}>
+            <Card width="330px" height="100px" backgroundImage={ifElseImg}>
               <p>3. IF ELSE</p>
             </Card>
           </Link>
           <Link to="/programminglogic/conditional-ternary" className="link">
-            <Card width="330px" height="100px" backgroundImage={ternario}>
+            <Card width="330px" height="100px" backgroundImage={ternaryImg}>
               <p>4. OPERADOR TERNÁRIO</p>
             </Card>
           </Link>
           <Link to="/programminglogic/conditional-switch" className="link">
-            <Card width="330px" height="100px" backgroundImage={Switch}>
+            <Card width="330px" height="100px" backgroundImage={switchImg}>
               <p>5. SWITCH</p>
             </Card>
           </Link>
