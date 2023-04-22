@@ -8,7 +8,7 @@ import introducao from "../../assets/Java/INTRODUCTION.jpg";
 import framework from "../../assets/Java/SPRINGFRAMEWORK.jpg";
 import jvm from "../../assets/Java/JVM.jpg";
 import jdk from "../../assets/Java/JDK.jpg";
-import jdbc from "../../assets/Java/JDBC.jpg";
+import jdbc from "../../assets/Java/JDBCIMG.jpg";
 import maven from "../../assets/Java/MAVEN.jpg";
 import springBoot from "../../assets/Java/SPRINGBOOT.jpg";
 
