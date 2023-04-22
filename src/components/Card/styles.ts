@@ -24,7 +24,7 @@ export const ContainerStyled = styled.div<IContainer>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   ${({ backgroundImage }) =>
     backgroundImage &&
     css`
