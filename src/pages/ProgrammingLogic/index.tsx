@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import introducao from "../../assets/ProgrammingLogicImages/INTRODUCTION.jpg";
 import operadoresLogicos from "../../assets/ProgrammingLogicImages/LOGICALOPERATORS.jpg";
-import ifElse from "../../assets/ProgrammingLogicImages/IFELSE.jpg";
+import ifElse from "../../assets/ProgrammingLogicImages/IF.jpg";
 import ternario from "../../assets/ProgrammingLogicImages/TERNARY.jpg";
 import Switch from "../../assets/ProgrammingLogicImages/SWITCH.jpg";
 
