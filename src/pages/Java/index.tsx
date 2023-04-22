@@ -9,7 +9,7 @@ import framework from "../../assets/Java/SPRINGFRAMEWORK.jpg";
 import jvm from "../../assets/Java/JVM.jpg";
 import jdk from "../../assets/Java/JDK.jpg";
 import jdbc from "../../assets/Java/JDBCIMG.jpg";
-import maven from "../../assets/Java/MAVEN.jpg";
+import maven from "../../assets/Java/MAVENIMG.jpg";
 import springBoot from "../../assets/Java/SPRINGBOOT.jpg";
 
 export const Java = () => {
