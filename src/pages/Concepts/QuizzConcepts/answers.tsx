@@ -89,3 +89,26 @@ export const statusCode = [
     answer: false,
   },
 ];
+
+export const versioning = [
+  {
+    id: "opcao1",
+    text: "Versionamento Semântico é um sistema de gerenciamento de versões de software que utiliza números de versão baseados em uma sequência aleatória de dígitos, sem seguir regras específicas.",
+    answer: false,
+  },
+  {
+    id: "opcao2",
+    text: "Versionamento Semântico é um processo de desenvolvimento de software que envolve a criação de novas versões apenas quando mudanças significativas são feitas, sem seguir um padrão de numeração específico.",
+    answer: false,
+  },
+  {
+    id: "opcao3",
+    text: "Versionamento Semântico é um sistema de gerenciamento de versões de software que utiliza um conjunto específico de regras de numeração de versão, incluindo um número principal, um número secundário e um número de patch, com cada número representando a gravidade das mudanças introduzidas na nova versão.",
+    answer: true,
+  },
+  {
+    id: "opcao4",
+    text: "Versionamento Semântico é um processo de desenvolvimento de software que envolve a criação de novas versões a intervalos regulares, independentemente das mudanças feitas, usando um número de versão com base na data de lançamento.",
+    answer: false,
+  },
+];

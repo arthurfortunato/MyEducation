@@ -5,8 +5,14 @@ import { useState } from "react";
 import { Correct } from "../../../components/Correct";
 import { Wrong } from "../../../components/Wrong";
 import { StyledSection, ContainerStyled } from "./styles";
-import { api, rest, restFul, statusCode } from "./answers";
-import { apiQuestion, restQuestion, restFulQuestion, statusCodeQuestion } from "./questions";
+import { api, rest, restFul, statusCode, versioning } from "./answers";
+import {
+  apiQuestion,
+  restQuestion,
+  restFulQuestion,
+  statusCodeQuestion,
+  versioningQuestion,
+} from "./questions";
 import { ButtonNextContent } from "../../../components/ButtonNextContent";
 import { useNavigate } from "react-router-dom";
 
@@ -55,9 +61,12 @@ export const QuizzConcepts = () => {
     } else if (currentAnswers === rest) {
       setCurrentAnswers(restFul);
       setCurrentQuestion(restFulQuestion);
-    } else if(currentAnswers === restFul){
+    } else if (currentAnswers === restFul) {
       setCurrentAnswers(statusCode);
       setCurrentQuestion(statusCodeQuestion);
+    } else if (currentAnswers === statusCode) {
+      setCurrentAnswers(versioning);
+      setCurrentQuestion(versioningQuestion);
     } else {
       navigate("/concepts");
     }
