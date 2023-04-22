@@ -4,11 +4,11 @@ import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
-import introducao from "../../assets/Poo/introducao.jpg";
-import classe from "../../assets/Poo/classe.jpg";
-import heranca from "../../assets/Poo/heranca.jpg";
-import encapsulamento from "../../assets/Poo/encapsulamento.jpg";
-import polimorfismo from "../../assets/Poo/polimorfismo.jpg";
+import introducao from "../../assets/Poo/INTRODUCTION.jpg";
+import classe from "../../assets/Poo/CLASS.jpg";
+import heranca from "../../assets/Poo/INHERITANCE.jpg";
+import encapsulamento from "../../assets/Poo/ENCAPSULATION.jpg";
+import polimorfismo from "../../assets/Poo/POLYMORPHISM.jpg";
 
 export const POO = () => {
   return (
