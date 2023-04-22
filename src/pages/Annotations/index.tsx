@@ -21,47 +21,47 @@ export const Annotations = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/annotations/introduction" className="link">
-            <Card width="350px" height="100px" backgroundImage={introducao}>
+            <Card width="330px" height="100px" backgroundImage={introducao}>
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/annotations/spring-annotations" className="link">
-            <Card width="350px" height="100px" backgroundImage={annotations}>
+            <Card width="330px" height="100px" backgroundImage={annotations}>
               <p>2. INTRODUÇÃO ANNOTATIONS</p>
             </Card>
           </Link>
           <Link to="/annotations/stereotypes" className="link">
-            <Card width="350px" height="100px" backgroundImage={stereotypes}>
+            <Card width="330px" height="100px" backgroundImage={stereotypes}>
               <p>3. STEREOTYPES</p>
             </Card>
           </Link>
           <Link to="/annotations/core-beans-autowired" className="link">
-            <Card width="350px" height="100px" backgroundImage={autowired}>
+            <Card width="330px" height="100px" backgroundImage={autowired}>
               <p>4. CORE BEANS @Autowired</p>
             </Card>
           </Link>
           <Link to="/annotations/autowired-constructor" className="link">
-            <Card width="350px" height="100px" backgroundImage={constructor}>
+            <Card width="330px" height="100px" backgroundImage={constructor}>
               <p>5. @Autowired vs Constructor</p>
             </Card>
           </Link>
           <Link to="/annotations/core-beans-qualifier" className="link">
-            <Card width="350px" height="100px" backgroundImage={qualifier}>
+            <Card width="330px" height="100px" backgroundImage={qualifier}>
               <p>6.CORE BEANS @Qualifier</p>
             </Card>
           </Link>
           <Link to="/annotations/core-beans-value" className="link">
-            <Card width="350px" height="100px" backgroundImage={value}>
+            <Card width="330px" height="100px" backgroundImage={value}>
               <p>7.CORE BEANS @Value</p>
             </Card>
           </Link>
           <Link to="/annotations/core-context-configuration" className="link">
-            <Card width="350px" height="100px" backgroundImage={configuration}>
+            <Card width="330px" height="100px" backgroundImage={configuration}>
               <p>8.CORE CONTEXT @Configuration</p>
             </Card>
           </Link>
           <Link to="/annotations/core-context-scan" className="link">
-            <Card width="350px" height="100px" backgroundImage={scan}>
+            <Card width="330px" height="100px" backgroundImage={scan}>
               <p>9.CORE CONTEXT @ComponentScan</p>
             </Card>
           </Link>

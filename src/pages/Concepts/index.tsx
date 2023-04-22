@@ -39,12 +39,12 @@ export const Concepts = () => {
           </Link>
           <Link to="/concepts/versioning" className="link">
             <Card width="330px" height="100px" backgroundImage={versioning}>
-              <p>5. Versionamento Semântico</p>
+              <p>5. VERSIONAMENTO</p>
             </Card>
           </Link>
           <Link to="/concepts/quizz" className="link">
             <Card width="330px" height="100px" backgroundImage={quizz}>
-              <p>6. Quizz</p>
+              <p>6. QUIZZ</p>
             </Card>
           </Link>
         </div>

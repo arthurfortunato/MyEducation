@@ -17,27 +17,27 @@ export const POO = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/poo/introduction" className="link">
-            <Card width="350px" height="100px" backgroundImage={introducao}>
+            <Card width="330px" height="100px" backgroundImage={introducao}>
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/poo/class" className="link">
-            <Card width="350px" height="100px" backgroundImage={classe}>
+            <Card width="330px" height="100px" backgroundImage={classe}>
               <p>2. CLASSE E OBJETO</p>
             </Card>
           </Link>
           <Link to="/poo/polymorphism" className="link">
-            <Card width="350px" height="100px" backgroundImage={polimorfismo}>
+            <Card width="330px" height="100px" backgroundImage={polimorfismo}>
               <p>3. POLIMORFISMO</p>
             </Card>
           </Link>
           <Link to="/poo/inheritance" className="link">
-            <Card width="350px" height="100px" backgroundImage={heranca}>
+            <Card width="330px" height="100px" backgroundImage={heranca}>
               <p>4. HERANÇA</p>
             </Card>
           </Link>
           <Link to="/poo/encapsulation" className="link">
-            <Card width="350px" height="100px" backgroundImage={encapsulamento}>
+            <Card width="330px" height="100px" backgroundImage={encapsulamento}>
               <p>5. ENCAPSULAMENTO</p>
             </Card>
           </Link>

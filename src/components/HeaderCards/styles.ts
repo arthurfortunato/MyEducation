@@ -25,7 +25,7 @@ export const HeaderContainer = styled.div`
 
   @media(max-width: 700px) {
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       margin-left: 50px;
     }
   }
