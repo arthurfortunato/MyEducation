@@ -32,7 +32,7 @@ export const ContainerStyled = styled.div<IContainer>`
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      opacity: 0.8;
+      opacity: 1;
       z-index: -1;
     `}
 `;
