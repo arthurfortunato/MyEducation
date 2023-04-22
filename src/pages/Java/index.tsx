@@ -4,13 +4,13 @@ import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
-import introducao from "../../assets/Java/introducao.jpg";
-import framework from "../../assets/Java/framework.png";
-import jvm from "../../assets/Java/jvm.png";
-import jdk from "../../assets/Java/jdk.png";
-import jdbc from "../../assets/Java/jdbc.jpg";
-import maven from "../../assets/Java/maven.jpg";
-import springBoot from "../../assets/Java/springBoot.png";
+import introducao from "../../assets/Java/INTRODUCTION.jpg";
+import framework from "../../assets/Java/SPRINGFRAMEWORK.jpg";
+import jvm from "../../assets/Java/JVM.jpg";
+import jdk from "../../assets/Java/JDK.jpg";
+import jdbc from "../../assets/Java/JDBC.jpg";
+import maven from "../../assets/Java/MAVEN.jpg";
+import springBoot from "../../assets/Java/SPRINGBOOT.jpg";
 
 export const Java = () => {
   return (
