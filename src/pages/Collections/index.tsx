@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import introducao from "../../assets/Collections/INTRODUCTION.jpg"
 import interfaces from "../../assets/Collections/INTERFACESIMG.jpg"
 import implementations from "../../assets/Collections/IMPLEMENTATIONS.jpg"
-import list from "../../assets/Collections/LIST.jpg"
+import list from "../../assets/Collections/LISTIMG.jpg"
 import set from "../../assets/Collections/SET.jpg"
 import queue from "../../assets/Collections/QUEUE.jpg"
 import map from "../../assets/Collections/MAPIMG.jpg"
