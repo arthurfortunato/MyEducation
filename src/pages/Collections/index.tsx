@@ -4,13 +4,13 @@ import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
-import introducao from "../../assets/Collections/collectionsIntroducao.jpg"
-import interfaces from "../../assets/Collections/interfaces.jpg"
-import implementations from "../../assets/Collections/implementationsCard.jpg"
-import list from "../../assets/Collections/list.jpg"
-import queue from "../../assets/Collections/queue.jpg"
-import map from "../../assets/Collections/mapCard.jpg"
-import set from "../../assets/Collections/set.jpg"
+import introducao from "../../assets/Collections/INTRODUCTION.jpg"
+import interfaces from "../../assets/Collections/INTERFACES.jpg"
+import implementations from "../../assets/Collections/IMPLEMENTATIONS.jpg"
+import list from "../../assets/Collections/LIST.jpg"
+import set from "../../assets/Collections/SET.jpg"
+import queue from "../../assets/Collections/QUEUE.jpg"
+import map from "../../assets/Collections/MAPIMG.jpg"
 
 export const Collections = () => {
   return (
