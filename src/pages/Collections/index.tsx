@@ -5,7 +5,7 @@ import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
 import introducao from "../../assets/Collections/INTRODUCTION.jpg"
-import interfaces from "../../assets/Collections/INTERFACES.jpg"
+import interfaces from "../../assets/Collections/INTERFACESIMG.jpg"
 import implementations from "../../assets/Collections/IMPLEMENTATIONS.jpg"
 import list from "../../assets/Collections/LIST.jpg"
 import set from "../../assets/Collections/SET.jpg"
