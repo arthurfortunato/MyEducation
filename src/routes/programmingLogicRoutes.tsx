@@ -6,6 +6,7 @@ import { ConditionalIfElse } from "../pages/ProgrammingLogic/ConditionalIfElse";
 import { ConditionalTernary } from "../pages/ProgrammingLogic/ConditionalTernary";
 import { ConditionalSwitch } from "../pages/ProgrammingLogic/ConditionalSwitch";
 import { LogicalOperators } from "../pages/ProgrammingLogic/LogicalOperators";
+import { While } from "../pages/ProgrammingLogic/While";
 
 export const ProgrammingLogicRoutes = () => {
   return (
@@ -28,6 +29,7 @@ export const ProgrammingLogicRoutes = () => {
         path="programminglogic/conditional-switch"
         element={<ConditionalSwitch />}
       />
+      <Route path="programminglogic/while" element={<While />} />
     </Routes>
   );
 };
