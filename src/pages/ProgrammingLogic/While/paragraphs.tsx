@@ -27,7 +27,6 @@ export const paragraphs = [
     <StyledSyntaxHighlighter language="java" style={coldarkDark}>
       {example.trim()}
     </StyledSyntaxHighlighter>
-    ,
   </>,
 
   <p>
