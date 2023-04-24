@@ -21,8 +21,18 @@ const example = `
   }
 `;
 export const paragraphs = [
-  `A condicional switch é uma estrutura de controle de fluxo que permite avaliar uma expressão e executar diferentes ações dependendo do valor dessa expressão. É frequentemente usada quando há muitas opções possíveis para um valor específico e uma série de ações que precisam ser tomadas com base em cada opção.`,
-  `A estrutura básica da condicional switch é a seguinte:`,
+  <p>
+    A condicional <strong>switch</strong> é uma estrutura de controle de fluxo
+    que permite avaliar uma expressão e executar diferentes ações dependendo do
+    valor dessa expressão.{" "}
+    <strong>
+      É frequentemente usada quando há muitas opções possíveis para um valor
+      específico e uma série de ações que precisam ser tomadas com base em cada
+      opção
+    </strong>
+    .
+  </p>,
+  <p>A estrutura básica da condicional switch é a seguinte:</p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
     {example.trim()}

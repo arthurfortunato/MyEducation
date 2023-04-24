@@ -1,14 +1,54 @@
 import { Table } from "./styles";
 
 export const paragraphs = [
-  `Em programação, condicionais são estruturas de decisões. O código
-          executa de uma maneira ou de outra a depender de uma condição, que por
-          sua vez será interpretada como verdadeiro ou falso. Esse tipo de dado
-          é chamado de booleano e possui valor true or false.`,
+  <p>
+    Em programação, <strong>condicionais são estruturas de decisões</strong>. O
+    código executa de uma maneira ou de outra a depender de uma condição, que
+    por sua vez será interpretada como verdadeiro ou falso.{" "}
+    <strong>
+      Esse tipo de dado é chamado de booleano e possui valor true or false
+    </strong>
+    .
+  </p>,
 
-  `Uma condição é uma operação lógica que tem como resultado um valor
-            booleano.`,
-  `Os operados de comparação em Javascript são:`,
+  <strong>Os operadores lógicos são:</strong>,
+
+  <Table>
+    <thead>
+      <tr>
+        <th>Operador</th>
+        <th>Nome</th>
+        <th>Exemplo</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{"&&"}</td>
+        <td>E</td>
+        <td>
+          2 {">"} 0 {"&&"} 1!==1
+        </td>
+        <td>false</td>
+      </tr>
+      <tr>
+        <td>||</td>
+        <td>Ou</td>
+        <td>
+          2 {">"} 0 {"&&"} 1!==1
+        </td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>!</td>
+        <td>Não</td>
+        <td>!(1===1)</td>
+        <td>false</td>
+      </tr>
+    </tbody>
+  </Table>,
+
+  <strong>Os operados de comparação são:</strong>,
 
   <Table>
     <thead>
@@ -71,52 +111,22 @@ export const paragraphs = [
     </tbody>
   </Table>,
 
-  `Os operadores lógicos em JavaScript são:`,
+  <p>
+    Os operadores de comparação retornam um booleano a depender do resultado da
+    comparação. E os operados lógicos fazem operações sobre valores booleano.
+  </p>,
+  <p>
+    O operador <strong>&&</strong> só retorna verdadeiro se as duas condições
+    forem verdadeira.
+  </p>,
 
-  <Table>
-    <thead>
-      <tr>
-        <th>Operador</th>
-        <th>Nome</th>
-        <th>Exemplo</th>
-        <th>Resultado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>{"&&"}</td>
-        <td>E</td>
-        <td>
-          2 {">"} 0 {"&&"} 1!==1
-        </td>
-        <td>false</td>
-      </tr>
-      <tr>
-        <td>||</td>
-        <td>Ou</td>
-        <td>
-          2 {">"} 0 {"&&"} 1!==1
-        </td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>!</td>
-        <td>Não</td>
-        <td>!(1===1)</td>
-        <td>false</td>
-      </tr>
-    </tbody>
-  </Table>,
+  <p>
+    Enquanto para o operador <strong>||</strong> basta uma das condições ser
+    para o resultado ser verdadeiro.
+  </p>,
 
-  `Os operadores de comparação retornam um booleano a depender do
-resultado da comparação. E os operados lógicos fazem operações sobre
-valores booleano.`,
-  `O operador "&&" só retorna verdadeiro se as
-duas condições forem verdadeira.`,
-
-  `Enquanto para o operador "||" basta uma das condições
-ser para o resultado ser verdadeiro.`,
-
-  `O operador "!" inverte o valor lógico, ou seja,
-verdadeiro vira falso e vice-versa.`,
+  <p>
+    O operador <strong>!</strong> inverte o valor lógico, ou seja, verdadeiro
+    vira falso e vice-versa.
+  </p>,
 ];

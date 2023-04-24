@@ -18,15 +18,25 @@ const example = `
 `;
 
 export const paragraphs = [
-  `O operador ternário é um operador condicional que avalia uma expressão e retorna um valor com base em se a expressão é verdadeira ou falsa. A sintaxe básica é a seguinte:`,
+  <p>
+    O <strong>operador ternário</strong> é um operador condicional que avalia
+    uma expressão e retorna um valor com base em se a expressão é verdadeira ou
+    falsa. A sintaxe básica é a seguinte:
+  </p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
     {exampleTernary.trim()}
   </StyledSyntaxHighlighter>,
 
-  `Se a condição for avaliada como verdadeira, o operador ternário retornará o valor_se_verdadeiro, caso contrário, retornará o valor_se_falso.`,
+  <p>
+    Se a condição for avaliada como verdadeira, o operador ternário retornará o
+    valor_se_verdadeiro, caso contrário, retornará o valor_se_falso.
+  </p>,
 
-  `Aqui está um exemplo simples de como usar o operador ternário em JavaScript para verificar se um número é positivo ou negativo:`,
+  <p>
+    Aqui está um exemplo simples de como usar o operador ternário em JavaScript
+    para verificar se um número é positivo ou negativo:
+  </p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
     {example.trim()}

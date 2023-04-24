@@ -1,49 +1,59 @@
 import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const ifElse = `
-  let condicao = x > 0; 
-
-  if(condicao) {
-    console.log("X é maior do que zero")
-  }
-  else {
-    console.log("X é menor ou igual a que zero")
-  }
+const estrutura = `
+if (condição) {
+  // bloco de código a ser executado 
+  // se a condição for verdadeira
+} else {
+  // bloco de código a ser executado 
+  // se a condição for falsa
+}
 `;
+const example = `
+int numero = -5;
 
-const elseIf = `
-  if(x > 0) {
-    console.log("X é positivo")
-  } else if(x == 0) {
-      console.log("X é zero")
-  } else {
-      console.log("X é negativo")
-  }
+if (numero > 0) {
+   System.out.println("O número é positivo.");
+} else {
+   System.out.println("O número é negativo.");
+}
+
 `;
 
 export const paragraphs = [
-  `A condicional if-else é uma instrução condicional que permite que um programa faça uma escolha entre duas opções diferentes com base em uma condição booleana. O if testa a condição e, se ela for verdadeira, executa um bloco de código específico, caso contrário, executa um bloco de código diferente especificado pelo else.`,
-  `A estrutura condicional "IF/ELSE" é da seguinte maneira:`,
+  <p>
+    A condicional <strong>if-else</strong> é uma estrutura de controle em Java
+    que permite executar um bloco de código se uma condição for verdadeira e
+    outro bloco de código se a condição for falsa.
+  </p>,
+  <p>A sintaxe da condicional if-else em Java é a seguinte:</p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-    {ifElse.trim()}
+    {estrutura.trim()}
   </StyledSyntaxHighlighter>,
 
-  `A condição deve estar entre parêntesis. Para fim de ilustração o
-          resultado condição foi guardada em uma variável (linha 1), porém é
-          prática escrever diretamente dentro dos parênteses. Caso a condição
-          seja true o código dentro do if é executado, senão o do else é
-          executado.`,
+  <p>
+    A condição é uma expressão booleana que pode ser avaliada como verdadeira ou
+    falsa. Se a condição for verdadeira, o bloco de código dentro das chaves
+    após o "if" será executado. Caso contrário, o bloco de código dentro das
+    chaves após o "else" será executado.
+  </p>,
 
-  `Ainda é possível fazer estruturas que verifiquem mais de uma condição
-          usando o else if:`,
+  <p>
+    Por exemplo, podemos usar a condicional if-else para verificar se um número
+    é positivo ou negativo:
+  </p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-    {elseIf.trim()}
+    {example.trim()}
   </StyledSyntaxHighlighter>,
 
-  `Caso a condição do if for false, é verificado a condição do else if,
-          se esta por sua vez for falsa é verificado a condição do próximo else
-        if, se houver, senão é executado o else, também se houver.`,
+  <p>
+    Neste exemplo, a condição é <strong>{"numero > 0"}</strong>. Se o número for
+    maior que 0, o bloco de código dentro das chaves após o "if" será executado
+    e o programa imprimirá "O número é positivo.". Se o número for menor ou
+    igual a 0, o bloco de código dentro das chaves após o "else" será executado
+    e o programa imprimirá "O número é negativo.".
+  </p>,
 ];
