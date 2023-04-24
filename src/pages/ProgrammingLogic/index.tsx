@@ -10,6 +10,7 @@ import ifElseImg from "../../assets/ProgrammingLogicImages/IF.jpg";
 import ternaryImg from "../../assets/ProgrammingLogicImages/TERNARY.jpg";
 import switchImg from "../../assets/ProgrammingLogicImages/SWITCHIMG.jpg";
 import whileImg from "../../assets/ProgrammingLogicImages/WHILE.jpg";
+import doWhileImg from "../../assets/ProgrammingLogicImages/DOWHILE.jpg";
 
 export const ProgrammingLogic = () => {
   return (
@@ -45,6 +46,11 @@ export const ProgrammingLogic = () => {
           <Link to="/programminglogic/while" className="link">
             <Card width="330px" height="100px" backgroundImage={whileImg}>
               <p>6. WHILE</p>
+            </Card>
+          </Link>
+          <Link to="/programminglogic/do-while" className="link">
+            <Card width="330px" height="100px" backgroundImage={doWhileImg}>
+              <p>7. DO-WHILE</p>
             </Card>
           </Link>
         </div>

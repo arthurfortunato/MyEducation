@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const While= () => {
+export const DoWhile= () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const While= () => {
   });
 
   const handleNextContent = () => {
-    navigate("/programminglogic/do-while");
+    navigate("/programminglogic");
   };
 
   return (
@@ -51,7 +51,7 @@ export const While= () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="While">
+          <Section title="Do-While">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return <p key={index} className="fade-in">{paragraph}</p>;
