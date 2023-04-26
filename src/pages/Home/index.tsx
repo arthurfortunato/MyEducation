@@ -8,13 +8,9 @@ import java from "../../assets/HomeImages/JAVA.gif";
 import conceitos from "../../assets/HomeImages/CONCEITOS.gif";
 import collections from "../../assets/HomeImages/COLLECTIONS.gif";
 import spring from "../../assets/HomeImages/spring.gif";
+import newRelic from "../../assets/HomeImages/NEWRELIC.png";
 
-import {
-  Container,
-  CardWrapper,
-  TopCard,
-  RightCard,
-} from "./styles";
+import { Container, CardWrapper, TopCard, RightCard } from "./styles";
 import { useState } from "react";
 import { Header } from "../../components/Header";
 
@@ -104,6 +100,14 @@ export const Home = () => {
               <p>6. Spring Annotations</p>
             </Link>
           </RightCard>
+          <TopCard>
+            <Link to="/new-relic" className="top">
+              <Card>
+                <ImageCard src={newRelic} />
+              </Card>
+              <p>7. New Relic</p>
+            </Link>
+          </TopCard>
         </div>
       </CardWrapper>
     </Container>

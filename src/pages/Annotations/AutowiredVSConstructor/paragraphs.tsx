@@ -1,6 +1,6 @@
 export const paragraphs = [
   <p>
-    Ao usar a annotation <strong>@Autowired</strong>, o Spring irá
+    Ao usar a annotation <strong>@Autowired</strong>, o Spring irá{" "}
     <strong>
       automaticamente injetar as dependências necessárias em um Bean, sem a
       necessidade de escrever código adicional
