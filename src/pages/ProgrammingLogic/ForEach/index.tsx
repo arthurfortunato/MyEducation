@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const For = () => {
+export const ForEach = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const For = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/programminglogic/for-each");
+    navigate("/programminglogic");
   };
 
   return (
@@ -51,7 +51,7 @@ export const For = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="For">
+          <Section title="For Each">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

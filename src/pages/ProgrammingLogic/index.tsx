@@ -12,6 +12,7 @@ import switchImg from "../../assets/ProgrammingLogicImages/SWITCHIMG.jpg";
 import whileImg from "../../assets/ProgrammingLogicImages/WHILE.jpg";
 import doWhileImg from "../../assets/ProgrammingLogicImages/DOWHILE.jpg";
 import forImg from "../../assets/ProgrammingLogicImages/FOR.jpg";
+import forEachImg from "../../assets/ProgrammingLogicImages/FOREACH.jpg";
 
 export const ProgrammingLogic = () => {
   return (
@@ -20,12 +21,20 @@ export const ProgrammingLogic = () => {
       <BodyContainerStyled>
         <div>
           <Link to="/programminglogic/introduction" className="link">
-            <Card width="330px" height="100px" backgroundImage={introductionImg}>
+            <Card
+              width="330px"
+              height="100px"
+              backgroundImage={introductionImg}
+            >
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/programminglogic/logical-operators" className="link">
-            <Card width="330px" height="100px" backgroundImage={logicalOperatorsImg}>
+            <Card
+              width="330px"
+              height="100px"
+              backgroundImage={logicalOperatorsImg}
+            >
               <p>2. OPERADORES LÓGICOS</p>
             </Card>
           </Link>
@@ -56,7 +65,12 @@ export const ProgrammingLogic = () => {
           </Link>
           <Link to="/programminglogic/for" className="link">
             <Card width="330px" height="100px" backgroundImage={forImg}>
-              <p>7. FOR</p>
+              <p>8. FOR</p>
+            </Card>
+          </Link>
+          <Link to="/programminglogic/for-each" className="link">
+            <Card width="330px" height="100px" backgroundImage={forEachImg}>
+              <p>9. FOR EACH</p>
             </Card>
           </Link>
         </div>
