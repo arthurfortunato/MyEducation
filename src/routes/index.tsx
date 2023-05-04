@@ -9,6 +9,7 @@ import { JavaRoutes } from "./javaRoutes";
 import { CollectionsRoutes } from "./collections";
 import { AnnotationsRoutes } from "./annotations";
 import { NewRelicRoutes } from "./newRelic";
+import { DockerRoutes } from "./dockerRoutes";
 
 export const Routers: any = () => {
   return (
@@ -22,6 +23,7 @@ export const Routers: any = () => {
       <CollectionsRoutes />
       <AnnotationsRoutes />
       <NewRelicRoutes />
+      <DockerRoutes />
     </BrowserRouter>
   );
 };

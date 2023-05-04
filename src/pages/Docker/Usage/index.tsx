@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Introduction = () => {
+export const Usage = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const Introduction = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/docker/usage");
+    navigate("/docker/commands");
   };
 
   return (
@@ -48,7 +48,7 @@ export const Introduction = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Introdução">
+          <Section title="Utilização">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

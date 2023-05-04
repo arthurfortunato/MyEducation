@@ -15,7 +15,7 @@ export const Card = ({
   children,
   height = "170px",
   noShadow = false,
-  background = "#fff",
+  background = "#fdfdfd",
   backgroundImage,
   opacity = 1,
 }: CardProps) => {

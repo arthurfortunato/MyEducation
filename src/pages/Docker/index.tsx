@@ -1,25 +1,39 @@
-import { Container } from "./styles";
+import { Container, BodyContainerStyled } from "./styles";
+import { Card } from "../../components/Card";
+import { HeaderCards } from "../../components/HeaderCards";
+import { Link } from "react-router-dom";
 
-import { FaDocker } from "react-icons/fa";
+import introductionImg from "../../assets/Docker/INTRODUCTION.jpg";
+import usageImg from "../../assets/Docker/USAGE.jpg";
+import commandsImg from "../../assets/Docker/COMMANDS.jpg";
 
 export const Docker = () => {
   return (
     <Container>
-      <main>
+      <HeaderCards title="Docker" />
+      <BodyContainerStyled>
         <div>
-          <h1>Docker</h1>
-          <FaDocker color="#2496ed" size={"50px"}/>
+          <Link to="/docker/introduction" className="link">
+            <Card
+              width="330px"
+              height="100px"
+              backgroundImage={introductionImg}
+            >
+              <p>1. INTRODUÇÃO</p>
+            </Card>
+          </Link>
+          <Link to="/docker/usage" className="link">
+            <Card width="330px" height="100px" backgroundImage={usageImg}>
+              <p>2. USO</p>
+            </Card>
+          </Link>
+          <Link to="/docker/commands" className="link">
+            <Card width="330px" height="100px" backgroundImage={commandsImg}>
+              <p>3. COMANDOS</p>
+            </Card>
+          </Link>
         </div>
-
-        <p>
-          <strong>
-            O Docker é uma plataforma de software que simplifica o processo de
-            construção, execução, gerenciamento e distribuição de aplicativos.
-          </strong>{" "}
-          Ele faz isso virtualizando o sistema operacional do computador no qual
-          está instalado e sendo executado.
-        </p>
-      </main>
+      </BodyContainerStyled>
     </Container>
   );
 };

@@ -9,6 +9,7 @@ import conceitos from "../../assets/HomeImages/CONCEITOS.gif";
 import collections from "../../assets/HomeImages/COLLECTIONS.gif";
 import spring from "../../assets/HomeImages/spring.gif";
 import newRelic from "../../assets/HomeImages/NEWRELIC.png";
+import dockerImg from "../../assets/HomeImages/DOCKER.gif";
 
 import { Container, CardWrapper, TopCard, RightCard } from "./styles";
 import { useState } from "react";
@@ -107,6 +108,12 @@ export const Home = () => {
               </Card>
               <p>7. New Relic</p>
             </Link>
+            <Link to="/docker" className="top-bottom">
+            <Card>
+              <ImageCard src={dockerImg} />
+            </Card>
+            <p>8. Docker</p>
+          </Link>
           </TopCard>
         </div>
       </CardWrapper>
