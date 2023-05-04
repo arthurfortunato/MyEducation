@@ -8,6 +8,7 @@ import { ConditionalSwitch } from "../pages/ProgrammingLogic/ConditionalSwitch";
 import { LogicalOperators } from "../pages/ProgrammingLogic/LogicalOperators";
 import { While } from "../pages/ProgrammingLogic/While";
 import { DoWhile } from "../pages/ProgrammingLogic/DoWhile";
+import { For } from "../pages/ProgrammingLogic/For";
 
 export const ProgrammingLogicRoutes = () => {
   return (
@@ -32,6 +33,7 @@ export const ProgrammingLogicRoutes = () => {
       />
       <Route path="programminglogic/while" element={<While />} />
       <Route path="programminglogic/do-while" element={<DoWhile />} />
+      <Route path="programminglogic/for" element={<For />} />
     </Routes>
   );
 };
