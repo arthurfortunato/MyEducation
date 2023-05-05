@@ -1,6 +1,6 @@
 {
   "name": "myeducation",
-  "version": "2.9.16",
+  "version": "2.9.17",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",

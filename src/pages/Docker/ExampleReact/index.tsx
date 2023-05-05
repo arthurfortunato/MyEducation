@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Commands = () => {
+export const ExampleReact = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,19 +39,16 @@ export const Commands = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/docker/example-react");
+    navigate("/docker");
   };
 
   return (
     <Container>
-      <HeaderContentCards
-        loadingProgress={loadingProgress}
-        backRoute="/docker"
-      />
+      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/docker" />
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Principais Comandos">
+          <Section title="Dockerfile React">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (
