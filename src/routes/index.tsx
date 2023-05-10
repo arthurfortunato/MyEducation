@@ -10,6 +10,7 @@ import { CollectionsRoutes } from "./collections";
 import { AnnotationsRoutes } from "./annotations";
 import { NewRelicRoutes } from "./newRelic";
 import { DockerRoutes } from "./dockerRoutes";
+import { DeployRoutes } from "./deployRoutes";
 
 export const Routers: any = () => {
   return (
@@ -24,6 +25,7 @@ export const Routers: any = () => {
       <AnnotationsRoutes />
       <NewRelicRoutes />
       <DockerRoutes />
+      <DeployRoutes />
     </BrowserRouter>
   );
 };

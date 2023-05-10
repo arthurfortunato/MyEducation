@@ -10,6 +10,7 @@ import collections from "../../assets/HomeImages/COLLECTIONS.gif";
 import spring from "../../assets/HomeImages/spring.gif";
 import newRelic from "../../assets/HomeImages/NEWRELIC.png";
 import dockerImg from "../../assets/HomeImages/DOCKER.gif";
+import deploy from "../../assets/HomeImages/DEPLOY.jpg";
 
 import { Container, CardWrapper, TopCard, RightCard } from "./styles";
 import { useState } from "react";
@@ -115,6 +116,14 @@ export const Home = () => {
             <p>8. Docker</p>
           </Link>
           </TopCard>
+          <RightCard>
+            <Link to="/deploy" className="middle">
+              <Card>
+                <ImageCard src={deploy} />
+              </Card>
+              <p>9. Deploy</p>
+            </Link>
+          </RightCard>
         </div>
       </CardWrapper>
     </Container>
