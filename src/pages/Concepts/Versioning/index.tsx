@@ -39,7 +39,7 @@ export const Versioning = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/concepts");
+    navigate("/concepts/quizz");
   };
 
   return (

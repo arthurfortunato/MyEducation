@@ -1,7 +1,7 @@
 import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const estrutura = `
+const structure = `
 if (condição) {
   // bloco de código a ser executado 
   // se a condição for verdadeira
@@ -10,6 +10,7 @@ if (condição) {
   // se a condição for falsa
 }
 `;
+
 const example = `
 int numero = -5;
 
@@ -24,15 +25,21 @@ if (numero > 0) {
 export const paragraphs = [
   <p>
     A condicional <strong>if-else</strong> é uma estrutura de controle em Java
-    que permite executar um bloco de código se uma condição for verdadeira e
-    outro bloco de código se a condição for falsa.
+    que{" "}
+    <strong>
+      permite executar um bloco de código se uma condição for verdadeira e outro
+      bloco de código se a condição for falsa
+    </strong>
+    .
   </p>,
-  <p>A sintaxe da condicional if-else em Java é a seguinte:</p>,
-
-  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-    {estrutura.trim()}
-  </StyledSyntaxHighlighter>,
-
+  <>
+    <p>
+      A sintaxe da condicional <strong>if-else</strong> em Java é a seguinte:
+    </p>
+    <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+      {structure.trim()}
+    </StyledSyntaxHighlighter>
+  </>,
   <p>
     A condição é uma expressão booleana que pode ser avaliada como verdadeira ou
     falsa. Se a condição for verdadeira, o bloco de código dentro das chaves
@@ -41,8 +48,8 @@ export const paragraphs = [
   </p>,
 
   <p>
-    Por exemplo, podemos usar a condicional if-else para verificar se um número
-    é positivo ou negativo:
+    Por exemplo, podemos usar a condicional <strong>if-else</strong> para
+    verificar se um número é positivo ou negativo:
   </p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
@@ -51,9 +58,11 @@ export const paragraphs = [
 
   <p>
     Neste exemplo, a condição é <strong>{"numero > 0"}</strong>. Se o número for
-    maior que 0, o bloco de código dentro das chaves após o "if" será executado
-    e o programa imprimirá "O número é positivo.". Se o número for menor ou
-    igual a 0, o bloco de código dentro das chaves após o "else" será executado
-    e o programa imprimirá "O número é negativo.".
+    <strong>maior que 0</strong>, o bloco de código dentro das chaves após o
+    <strong>"if"</strong> será executado e o programa imprimirá{" "}
+    <strong>"O número é positivo."</strong>. Se o número for{" "}
+    <strong>menor ou igual a 0 {"numero <= 0"}</strong>, o bloco de código
+    dentro das chaves após o <strong>"else"</strong> será executado e o programa
+    imprimirá <strong>"O número é negativo."</strong>.
   </p>,
 ];

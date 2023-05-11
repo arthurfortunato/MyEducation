@@ -26,27 +26,38 @@ const encapsulationExample = `
   }
 `;
 export const paragraphs = [
-  `O encapsulamento é um conceito fundamental da programação orientada a
- objetos e é amplamente utilizado em Java.`,
+  <p>
+    O <strong>encapsulamento</strong> é um conceito fundamental da programação
+    orientada a objetos e é amplamente utilizado em Java.
+  </p>,
 
-  `O encapsulamento é a técnica de esconder os detalhes de
- implementação de um objeto, expondo apenas os aspectos necessários para outros objetos ou partes
- do programa.`,
+  <strong>
+    O encapsulamento é a técnica de esconder os detalhes de implementação de um
+    objeto, expondo apenas os aspectos necessários para outros objetos ou partes
+    do programa.
+  </strong>,
 
-  `Em JAVA o encapsulamento é implementado através do uso de modificadores de
- acesso como "private", "protected" e "public".`,
+  <p>
+    Em JAVA o <strong>encapsulamento</strong> é implementado através do uso de{" "}
+    <strong>modificadores de acesso</strong> como{" "}
+    <strong>"private", "protected" e "public"</strong>.
+  </p>,
 
-  `Atributos e métodos com modificador "private" são acessíveis apenas
- dentro da classe que os define, enquanto atributos e métodos com
- modificador "public" são acessíveis de qualquer lugar.`,
+  <p>
+    Atributos e métodos com modificador <strong>"private"</strong> são
+    acessíveis apenas dentro da classe que os define, enquanto atributos e
+    métodos com modificador <strong>"public"</strong> são acessíveis de qualquer
+    lugar.
+  </p>,
 
-  `O encapsulamento é importante porque permite a construção de
- objetos mais robustos e seguros, pois ele protege os dados e
- comportamentos de um objeto de acesso inadequado ou modificação por
- parte de outras partes do programa. Além disso, o encapsulamento
- permite que a implementação de um objeto seja alterada sem afetar
- outras partes do programa, o que facilita a manutenção e a evolução do
- software.`,
+  <p>
+    O <strong>encapsulamento</strong> é importante porque permite a construção
+    de objetos mais robustos e seguros, pois ele protege os dados e
+    comportamentos de um objeto de acesso inadequado ou modificação por parte de
+    outras partes do programa. Além disso, o <strong>encapsulamento</strong>{" "}
+    permite que a implementação de um objeto seja alterada sem afetar outras
+    partes do programa, o que facilita a manutenção e a evolução do software.
+  </p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
     {encapsulationExample.trim()}

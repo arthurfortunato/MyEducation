@@ -1,5 +1,3 @@
-import { List } from "../../../components/List";
-
 export const paragraphs = [
   <strong>
     O status code (código de status) é um número de três dígitos que é retornado
@@ -11,43 +9,43 @@ export const paragraphs = [
     cliente o resultado da solicitação e como ele deve agir a seguir. Esses
     códigos são divididos em 5 categorias principais:
   </p>,
-  <List>
+  <li>
     <strong>1xx (Informacional)</strong>: Indica que a solicitação foi recebida
     e o servidor está continuando a processá-la.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>2xx (Sucesso)</strong>: Indica que a solicitação foi recebida,
     entendida e aceita com sucesso.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>3xx (Redirecionamento)</strong>: Indica que mais ações são
     necessárias para concluir a solicitação.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>4xx (Erro do cliente)</strong>: Indica que a solicitação não pôde
     ser concluída devido a um erro do cliente.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>5xx (Erro do servidor)</strong>: Indica que a solicitação não pôde
     ser concluída devido a um erro no servidor.
-  </List>,
+  </li>,
   <p>Alguns exemplos comuns de códigos de status incluem:</p>,
-  <List>
+  <li>
     <strong>200 OK</strong>: indica que a solicitação foi bem-sucedida e o
     servidor retornou os dados solicitados.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>400 Bad Request</strong>: indica que a solicitação enviada pelo
     cliente estava incorreta ou incompleta.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>404 Not Found</strong>: indica que o servidor não encontrou o
     recurso solicitado.
-  </List>,
-  <List>
+  </li>,
+  <li>
     <strong>500 Internal Server Error</strong>: indica que ocorreu um erro
     interno no servidor que impediu a conclusão da solicitação.
-  </List>,
+  </li>,
   <p>
     Ao entender os diferentes códigos de status e seus significados, os
     desenvolvedores podem usar essas informações para solucionar problemas de

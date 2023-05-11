@@ -1,23 +1,23 @@
 import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const example = `
+const structure = `
   switch (expressão) {
   case valor1:
     // código a ser executado caso expressão 
-          seja igual a valor1
+    // seja igual a valor1
     break;
   case valor2:
     // código a ser executado caso expressão 
-          seja igual a valor2
+    // seja igual a valor2
     break;
   case valor3:
     // código a ser executado caso expressão
-          seja igual a valor3
+    // seja igual a valor3
     break;
   default:
     // código a ser executado caso nenhum 
-          dos casos anteriores seja verdadeiro
+    // dos casos anteriores seja verdadeiro
   }
 `;
 export const paragraphs = [
@@ -32,9 +32,10 @@ export const paragraphs = [
     </strong>
     .
   </p>,
-  <p>A estrutura básica da condicional switch é a seguinte:</p>,
-
-  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-    {example.trim()}
-  </StyledSyntaxHighlighter>,
+  <>
+    <p>A estrutura básica da condicional switch é a seguinte:</p>
+    <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+      {structure.trim()}
+    </StyledSyntaxHighlighter>
+  </>,
 ];

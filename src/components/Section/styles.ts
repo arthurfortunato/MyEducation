@@ -8,8 +8,9 @@ export const StyledSection = styled.section`
   align-items: center;
 
   li {
+    max-width: 700px;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: justify;
   }
 
   h2 {

@@ -1,7 +1,7 @@
 import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const example = `
+const structure = `
 int i = 1;
 
 while (i <= 10) {
@@ -25,14 +25,15 @@ export const paragraphs = [
   <>
     <p>Por exemplo, podemos usar o while para imprimir os números de 1 a 10:</p>
     <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-      {example.trim()}
+      {structure.trim()}
     </StyledSyntaxHighlighter>
   </>,
 
   <p>
-    Neste exemplo, a condição é {"i <= 10"}. O bloco de código dentro das chaves
-    será executado enquanto o valor de i for menor ou igual a 10. O programa
-    imprimirá os números de 1 a 10 na tela.
+    Neste exemplo, a condição é <strong>{"i <= 10"}</strong>. O bloco de código
+    dentro das chaves será executado enquanto o valor de <strong>i</strong> for
+    <strong> menor ou igual a 10</strong>. O programa imprimirá os números de 1
+    a 10 na tela.
   </p>,
 
   <p>

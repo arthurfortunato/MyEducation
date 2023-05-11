@@ -38,6 +38,10 @@ export const GlobalStyled = createGlobalStyle`
     background: ${({theme}) => theme.colors.backgroundHeaderContentCards};
   }
 
+  strong {
+    color: ${({theme}) => theme.colors.strongText};
+  }
+
   html,
   body {
     overflow-x: hidden;

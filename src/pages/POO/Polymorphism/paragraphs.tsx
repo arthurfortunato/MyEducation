@@ -40,16 +40,23 @@ const classMain = `
 `;
 
 export const paragraphs = [
-  `O Polimorfismo é uma técnica da Orientação a Objetos
-que permite tratar objetos de diferentes tipos de forma genérica, como
-se fossem do mesmo tipo. Isto é possível através do uso de interfaces
-e referências a objetos.`,
+  <p>
+    <strong>
+      O Polimorfismo é uma técnica da Orientação a Objetos que permite tratar
+      objetos de diferentes tipos de forma genérica, como se fossem do mesmo
+      tipo
+    </strong>
+    . Isto é possível através do uso de interfaces e referências a objetos.
+  </p>,
 
-  `Por exemplo, considera uma classe Animal e suas subclasses Gato e
-Cachorro. Se tivermos uma lista de animais, podemos chamar o método
-"fazerBarulho" de cada objeto da lista, sem importar se o objeto é do
-tipo Gato ou Cachorro. O método correto será chamado automaticamente,
-dependendo do tipo do objeto.`,
+  <p>
+    Por exemplo, considere uma <strong>classe Animal</strong> e suas{" "}
+    <strong>subclasses Gato e Cachorro</strong>. Se tivermos uma lista de
+    animais, podemos chamar o <strong>método "fazerBarulho"</strong> de cada
+    objeto da lista, sem importar se o objeto é do tipo <strong>Gato</strong> ou{" "}
+    <strong>Cachorro</strong>. O método correto será chamado automaticamente,
+    dependendo do tipo do objeto.
+  </p>,
 
   <StyledSyntaxHighlighter language="java" style={coldarkDark}>
     {classAnimal.trim()}

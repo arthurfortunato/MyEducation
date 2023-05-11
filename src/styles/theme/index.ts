@@ -14,6 +14,7 @@ const theme = {
       backgroundPreCode: "#2f2f2f",
       textPreCode: "#fff",
       backgroundTable: "#26262a",
+      strongText: "#0ba4ed",
 
       secondary: "#bbb",
       success: "#28a745",
@@ -42,6 +43,7 @@ const theme = {
       backgroundPreCode: "#A0A0A0",
       textPreCode: "#000",
       backgroundTable: "#A9CCE3",
+      strongText: "#0ba4ed",
 
       secondary: "#888",
       success: "#52c41a",

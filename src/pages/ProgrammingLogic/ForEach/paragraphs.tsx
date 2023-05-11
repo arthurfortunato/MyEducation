@@ -1,7 +1,7 @@
 import { StyledSyntaxHighlighter } from "../../../components/StyledSyntaxHighlighter/styles";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const estrutura = `
+const structure = `
 for (tipo elemento : coleção) {
   // bloco de código a ser executado para cada elemento
 }
@@ -38,7 +38,7 @@ export const paragraphs = [
   <>
     <p>A sintaxe do for each é a seguinte:</p>
     <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-      {estrutura.trim()}
+      {structure.trim()}
     </StyledSyntaxHighlighter>
   </>,
   <>
@@ -60,14 +60,12 @@ export const paragraphs = [
     queremos iterar (no nosso caso, int) e uma variável de iteração chamada
     numero.
   </p>,
-  <p>A coleção que estamos percorrendo é o array numeros.</p>,
   <p>
-    Para cada iteração do laço, a variável numero assume o valor do próximo
-    elemento do array.
-  </p>,
-  <p>
-    Dentro do bloco de código do <strong>for each</strong>, usamos
-    System.out.println(numero); para imprimir o valor atual de numero na tela.
+    A coleção que estamos percorrendo é o array numeros. Para cada iteração do
+    laço, a variável numero assume o valor do próximo elemento do array. Dentro
+    do bloco de código do <strong>for each</strong>, usamos
+    <strong> System.out.println(numero)</strong>; para imprimir o valor atual de
+    numero na tela.
   </p>,
   <>
     <p>No exemplo acima, a saída será:</p>
@@ -77,13 +75,11 @@ export const paragraphs = [
   </>,
   <p>
     O laço <strong>for each</strong> percorreu todos os elementos do array
-    numeros e imprimiu cada um deles na tela.
-  </p>,
-  <p>
-    Uma vantagem do laço <strong>for each</strong> é que ele é mais conciso e
-    elimina a necessidade de usar um índice separado para acessar os elementos
-    de uma coleção. Ele também é mais seguro em termos de evitar erros
-    relacionados a índices fora dos limites da coleção.
+    numeros e imprimiu cada um deles na tela. Uma vantagem do laço{" "}
+    <strong>for each</strong> é que ele é mais conciso e elimina a necessidade
+    de usar um índice separado para acessar os elementos de uma coleção. Ele
+    também é mais seguro em termos de evitar erros relacionados a índices fora
+    dos limites da coleção.
   </p>,
   <p>
     No entanto, o laço <strong>for each</strong> não permite acessar ou

@@ -11,7 +11,7 @@ export const paragraphs = [
     .
   </p>,
 
-  <strong>Os operadores lógicos são:</strong>,
+  <p>Os operadores lógicos são:</p>,
 
   <Table>
     <thead>
@@ -48,7 +48,7 @@ export const paragraphs = [
     </tbody>
   </Table>,
 
-  <strong>Os operados de comparação são:</strong>,
+  <p>Os operados de comparação são:</p>,
 
   <Table>
     <thead>
@@ -111,10 +111,10 @@ export const paragraphs = [
     </tbody>
   </Table>,
 
-  <p>
+  <strong>
     Os operadores de comparação retornam um booleano a depender do resultado da
     comparação. E os operados lógicos fazem operações sobre valores booleano.
-  </p>,
+  </strong>,
   <p>
     O operador <strong>&&</strong> só retorna verdadeiro se as duas condições
     forem verdadeira.
