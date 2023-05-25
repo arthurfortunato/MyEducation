@@ -7,6 +7,9 @@ import introductionImg from "../../assets/MySQL/INTRODUCTION.jpg";
 import databaseImg from "../../assets/MySQL/DATABASE.jpg";
 import tableImg from "../../assets/MySQL/TABLE.jpg";
 import insertImg from "../../assets/MySQL/INSERT.jpg";
+import selectImg from "../../assets/MySQL/SELECT.jpg";
+import whereImg from "../../assets/MySQL/WHERE.jpg";
+import wildcardsImg from "../../assets/MySQL/WILDCARDS.jpg";
 
 export const MySQL = () => {
   return (
@@ -36,6 +39,21 @@ export const MySQL = () => {
           <Link to="/mysql/insert" className="link">
             <Card width="330px" height="100px" backgroundImage={insertImg}>
               <p>4. INSERT</p>
+            </Card>
+          </Link>
+          <Link to="/mysql/select" className="link">
+            <Card width="330px" height="100px" backgroundImage={selectImg}>
+              <p>5. SELECT</p>
+            </Card>
+          </Link>
+          <Link to="/mysql/where" className="link">
+            <Card width="330px" height="100px" backgroundImage={whereImg}>
+              <p>6. WHERE</p>
+            </Card>
+          </Link>
+          <Link to="/mysql/wildcard" className="link">
+            <Card width="330px" height="100px" backgroundImage={wildcardsImg}>
+              <p>7. Wildcard</p>
             </Card>
           </Link>
         </div>

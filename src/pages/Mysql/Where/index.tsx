@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Insert = () => {
+export const Where = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const Insert = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/mysql/select");
+    navigate("/mysql/wildcard");
   };
 
   return (
@@ -51,7 +51,7 @@ export const Insert = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Inserir Dados">
+          <Section title="Where">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

@@ -5,6 +5,8 @@ export const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
     border-radius: 5px;
     font-size: 16px !important;
 
+    min-width: 300px;
+
     @media (max-width: 955px) {
         transition: 1.8s all;
         width: 100%;
