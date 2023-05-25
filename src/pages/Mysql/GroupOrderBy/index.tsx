@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Wildcard = () => {
+export const GroupByOrderBy = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const Wildcard = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/mysql/group-order-by");
+    navigate("/mysql");
   };
 
   return (
@@ -51,7 +51,7 @@ export const Wildcard = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Wildcard">
+          <Section title="Group By e Order By">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

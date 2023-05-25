@@ -10,6 +10,7 @@ import insertImg from "../../assets/MySQL/INSERT.jpg";
 import selectImg from "../../assets/MySQL/SELECT.jpg";
 import whereImg from "../../assets/MySQL/WHERE.jpg";
 import wildcardsImg from "../../assets/MySQL/WILDCARDS.jpg";
+import orderGroupByImg from "../../assets/MySQL/ORDERGROUPBY.jpg";
 
 export const MySQL = () => {
   return (
@@ -53,7 +54,12 @@ export const MySQL = () => {
           </Link>
           <Link to="/mysql/wildcard" className="link">
             <Card width="330px" height="100px" backgroundImage={wildcardsImg}>
-              <p>7. Wildcard</p>
+              <p>7. WILDCARD</p>
+            </Card>
+          </Link>
+          <Link to="/mysql/group-order-by" className="link">
+            <Card width="330px" height="100px" backgroundImage={orderGroupByImg}>
+              <p>8. GROUP BY ORDER BY</p>
             </Card>
           </Link>
         </div>
