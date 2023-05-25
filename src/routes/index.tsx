@@ -11,6 +11,7 @@ import { AnnotationsRoutes } from "./annotations";
 import { NewRelicRoutes } from "./newRelic";
 import { DockerRoutes } from "./dockerRoutes";
 import { DeployRoutes } from "./deployRoutes";
+import { MysqlRoutes } from "./mysqlRoutes";
 
 export const Routers: any = () => {
   return (
@@ -26,6 +27,7 @@ export const Routers: any = () => {
       <NewRelicRoutes />
       <DockerRoutes />
       <DeployRoutes />
+      <MysqlRoutes />
     </BrowserRouter>
   );
 };
