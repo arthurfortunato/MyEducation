@@ -33,7 +33,7 @@ export const MySQL = () => {
               <p>3. CRIAR TABELA</p>
             </Card>
           </Link>
-          <Link to="/mysql/create-table" className="link">
+          <Link to="/mysql/insert" className="link">
             <Card width="330px" height="100px" backgroundImage={insertImg}>
               <p>4. INSERT</p>
             </Card>
