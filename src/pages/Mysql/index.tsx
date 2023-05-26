@@ -11,6 +11,7 @@ import selectImg from "../../assets/MySQL/SELECT.jpg";
 import whereImg from "../../assets/MySQL/WHERE.jpg";
 import wildcardsImg from "../../assets/MySQL/WILDCARDS.jpg";
 import orderGroupByImg from "../../assets/MySQL/ORDERGROUPBY.jpg";
+import innerJoinImg from "../../assets/MySQL/INNERJOIN.jpg";
 
 export const MySQL = () => {
   return (
@@ -60,6 +61,11 @@ export const MySQL = () => {
           <Link to="group-order-by" className="link">
             <Card width="330px" height="100px" backgroundImage={orderGroupByImg}>
               <p>8. GROUP BY ORDER BY</p>
+            </Card>
+          </Link>
+          <Link to="inner-join" className="link">
+            <Card width="330px" height="100px" backgroundImage={innerJoinImg}>
+              <p>9. INNER JOIN</p>
             </Card>
           </Link>
         </div>

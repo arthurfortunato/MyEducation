@@ -8,6 +8,7 @@ import { Select } from "../pages/Mysql/Select";
 import { Where } from "../pages/Mysql/Where";
 import { Wildcard } from "../pages/Mysql/Wildcard";
 import { GroupByOrderBy } from "../pages/Mysql/GroupOrderBy";
+import { InnerJoin } from "../pages/Mysql/InnerJoin";
 
 export const MysqlRoutes = () => {
   return (
@@ -21,6 +22,7 @@ export const MysqlRoutes = () => {
       {<Route path="/mysql/where" element={<Where />} />}
       {<Route path="/mysql/wildcard" element={<Wildcard />} />}
       {<Route path="/mysql/group-order-by" element={<GroupByOrderBy />} />}
+      {<Route path="/mysql/inner-join" element={<InnerJoin />} />}
     </Routes>
   );
 };

@@ -10,7 +10,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const GroupByOrderBy = () => {
+export const InnerJoin = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -39,7 +39,7 @@ export const GroupByOrderBy = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/mysql/inner-join");
+    navigate("/mysql");
   };
 
   return (
@@ -51,7 +51,7 @@ export const GroupByOrderBy = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Group By e Order By">
+          <Section title="Inner Join">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (
