@@ -18,7 +18,7 @@ export const MySQL = () => {
       <HeaderCards title="MySQL" />
       <BodyContainerStyled>
         <div>
-          <Link to="/mysql/introduction" className="link">
+          <Link to="introduction" className="link">
             <Card
               width="330px"
               height="100px"
@@ -27,37 +27,37 @@ export const MySQL = () => {
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
-          <Link to="/mysql/create-database" className="link">
+          <Link to="create-database" className="link">
             <Card width="330px" height="100px" backgroundImage={databaseImg}>
               <p>2. CRIAR DATABASE</p>
             </Card>
           </Link>
-          <Link to="/mysql/create-table" className="link">
+          <Link to="create-table" className="link">
             <Card width="330px" height="100px" backgroundImage={tableImg}>
               <p>3. CRIAR TABELA</p>
             </Card>
           </Link>
-          <Link to="/mysql/insert" className="link">
+          <Link to="insert" className="link">
             <Card width="330px" height="100px" backgroundImage={insertImg}>
               <p>4. INSERT</p>
             </Card>
           </Link>
-          <Link to="/mysql/select" className="link">
+          <Link to="select" className="link">
             <Card width="330px" height="100px" backgroundImage={selectImg}>
               <p>5. SELECT</p>
             </Card>
           </Link>
-          <Link to="/mysql/where" className="link">
+          <Link to="where" className="link">
             <Card width="330px" height="100px" backgroundImage={whereImg}>
               <p>6. WHERE</p>
             </Card>
           </Link>
-          <Link to="/mysql/wildcard" className="link">
+          <Link to="wildcard" className="link">
             <Card width="330px" height="100px" backgroundImage={wildcardsImg}>
               <p>7. WILDCARD</p>
             </Card>
           </Link>
-          <Link to="/mysql/group-order-by" className="link">
+          <Link to="group-order-by" className="link">
             <Card width="330px" height="100px" backgroundImage={orderGroupByImg}>
               <p>8. GROUP BY ORDER BY</p>
             </Card>
