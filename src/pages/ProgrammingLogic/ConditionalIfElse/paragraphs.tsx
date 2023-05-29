@@ -57,8 +57,8 @@ export const paragraphs = [
   </StyledSyntaxHighlighter>,
 
   <p>
-    Neste exemplo, a condição é <strong>{"numero > 0"}</strong>. Se o número for
-    <strong>maior que 0</strong>, o bloco de código dentro das chaves após o
+    Neste exemplo, a condição é <strong>{"numero > 0"}</strong>. Se o número for{" "}
+    <strong>maior que 0</strong>, o bloco de código dentro das chaves após o{" "}
     <strong>"if"</strong> será executado e o programa imprimirá{" "}
     <strong>"O número é positivo."</strong>. Se o número for{" "}
     <strong>menor ou igual a 0 {"numero <= 0"}</strong>, o bloco de código
