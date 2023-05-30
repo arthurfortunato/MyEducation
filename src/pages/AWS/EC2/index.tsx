@@ -11,7 +11,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const DeploymentsModels = () => {
+export const EC2 = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -40,19 +40,16 @@ export const DeploymentsModels = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/aws/ec2");
+    navigate("/aws");
   };
 
   return (
     <Container>
-      <HeaderContentCards
-        loadingProgress={loadingProgress}
-        backRoute="/aws"
-      />
+      <HeaderContentCards loadingProgress={loadingProgress} backRoute="/aws" />
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Deployments Models">
+          <Section title="Amazon Elastic Compute Cloud (EC2)">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (

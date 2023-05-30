@@ -4,6 +4,7 @@ import { AWS } from "../pages/AWS";
 import { CloudComputing } from "../pages/AWS/CloudComputing";
 import { AWSCloudIntroduction } from "../pages/AWS/AWSCloudIntroduction";
 import { DeploymentsModels } from "../pages/AWS/DeploymentsModels";
+import { EC2 } from "../pages/AWS/EC2";
 
 export const AWSRoutes = () => {
   return (
@@ -15,6 +16,7 @@ export const AWSRoutes = () => {
         element={<AWSCloudIntroduction />}
       />
       <Route path="/aws/deployments-models" element={<DeploymentsModels />} />
+      <Route path="/aws/ec2" element={<EC2 />} />
     </Routes>
   );
 };
