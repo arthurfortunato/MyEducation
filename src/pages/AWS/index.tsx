@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import cloudComputingImg from "../../assets/AWS/CLOUDCOMPUTING.jpg";
 import awsCloudIntroductionImg from "../../assets/AWS/AWSCLOUDINTRODUCTION.jpg";
+import deploymentsModelsImg from "../../assets/AWS/DEPLOYMENTSMODELS.jpg";
 
 export const AWS = () => {
   return (
@@ -27,7 +28,16 @@ export const AWS = () => {
               height="100px"
               backgroundImage={awsCloudIntroductionImg}
             >
-              <p>1. AWS Cloud Introduction</p>
+              <p>2. AWS Cloud Introduction</p>
+            </Card>
+          </Link>
+          <Link to="deployments-models" className="link">
+            <Card
+              width="330px"
+              height="100px"
+              backgroundImage={deploymentsModelsImg}
+            >
+              <p>3. Deployments Models</p>
             </Card>
           </Link>
         </div>

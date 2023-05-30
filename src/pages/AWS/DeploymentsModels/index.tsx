@@ -11,7 +11,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const AWSCloudIntroduction = () => {
+export const DeploymentsModels = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -40,7 +40,7 @@ export const AWSCloudIntroduction = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/aws/deployments-models");
+    navigate("/aws");
   };
 
   return (
@@ -52,7 +52,7 @@ export const AWSCloudIntroduction = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="AWS Cloud Introduction">
+          <Section title="Deployments Models">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (
