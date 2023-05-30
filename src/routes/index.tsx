@@ -13,6 +13,7 @@ import { NewRelicRoutes } from "./newRelic";
 import { DockerRoutes } from "./dockerRoutes";
 import { DeployRoutes } from "./deployRoutes";
 import { MysqlRoutes } from "./mysqlRoutes";
+import { AWSRoutes } from "./awsRoutes";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ export const Routers: any = () => {
         <DockerRoutes />
         <DeployRoutes />
         <MysqlRoutes />
+        <AWSRoutes />
       </Router>
     </QueryClientProvider>
   );

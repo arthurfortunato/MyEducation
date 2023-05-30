@@ -12,6 +12,7 @@ import newRelic from "../../assets/HomeImages/NEWRELIC.png";
 import dockerImg from "../../assets/HomeImages/DOCKER.gif";
 import deploy from "../../assets/HomeImages/DEPLOY.jpg";
 import mysqlImg from "../../assets/HomeImages/MYSQL.jpg";
+import awsImg from "../../assets/HomeImages/AWS.jpg";
 
 import { Container, CardWrapper, TopCard, RightCard } from "./styles";
 import { useState } from "react";
@@ -131,6 +132,12 @@ export const Home = () => {
                 <ImageCard src={mysqlImg} />
               </Card>
               <p>10. MySQL</p>
+            </Link>
+            <Link to="/aws" className="top-bottom">
+              <Card>
+                <ImageCard src={awsImg} />
+              </Card>
+              <p>11. AWS</p>
             </Link>
           </TopCard>
         </div>
