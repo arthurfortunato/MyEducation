@@ -3,7 +3,8 @@ import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const structure = `
 for (tipo elemento : coleção) {
-  // bloco de código a ser executado para cada elemento
+  // bloco de código a ser executado 
+  // para cada elemento
 }
 `;
 
@@ -13,7 +14,6 @@ int[] numeros = {1, 2, 3, 4, 5};
 for (int numero : numeros) {
     System.out.println(numero);
 }
-
 `;
 
 const response = `
@@ -41,16 +41,14 @@ export const paragraphs = [
       {structure.trim()}
     </StyledSyntaxHighlighter>
   </>,
-  <>
-    <p>
-      Suponha que temos um array de números e queremos imprimir cada um deles na
-      tela. Usando o laço <strong>for each</strong>, podemos fazer isso de forma
-      simples.
-    </p>
-    <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-      {example.trim()}
-    </StyledSyntaxHighlighter>
-  </>,
+  <p>
+    Suponha que temos um array de números e queremos imprimir cada um deles na
+    tela. Usando o laço <strong>for each</strong>, podemos fazer isso de forma
+    simples.
+  </p>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {example.trim()}
+  </StyledSyntaxHighlighter>,
   <p>
     Declaramos um array de inteiros chamado numeros e inicializamos com alguns
     valores.
@@ -67,12 +65,10 @@ export const paragraphs = [
     <strong> System.out.println(numero)</strong>; para imprimir o valor atual de
     numero na tela.
   </p>,
-  <>
-    <p>No exemplo acima, a saída será:</p>
-    <StyledSyntaxHighlighter language="java" style={coldarkDark}>
-      {response.trim()}
-    </StyledSyntaxHighlighter>
-  </>,
+  <p>No exemplo acima, a saída será:</p>,
+  <StyledSyntaxHighlighter language="java" style={coldarkDark}>
+    {response.trim()}
+  </StyledSyntaxHighlighter>,
   <p>
     O laço <strong>for each</strong> percorreu todos os elementos do array
     numeros e imprimiu cada um deles na tela. Uma vantagem do laço{" "}
