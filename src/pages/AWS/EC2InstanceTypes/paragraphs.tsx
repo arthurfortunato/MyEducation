@@ -1,11 +1,10 @@
 export const paragraphs = [
   <p>
     No <strong>Amazon EC2</strong>, existem diferentes tipos de{" "}
-    <strong>instâncias</strong>
-    disponíveis para atender às diversas necessidades de computação. Cada tipo
-    de <strong>instância</strong> possui diferentes combinações de recursos,
-    como capacidade de processamento, memória, armazenamento e capacidade de
-    rede.
+    <strong>instâncias</strong> disponíveis para atender às diversas
+    necessidades de computação. Cada tipo de <strong>instância</strong> possui
+    diferentes combinações de recursos, como capacidade de processamento,
+    memória, armazenamento e capacidade de rede.
   </p>,
   <p>
     Principais tipos de <strong>instâncias do Amazon EC2</strong>:
@@ -47,7 +46,7 @@ export const paragraphs = [
     por nomes como "g4" e "p3".
   </p>,
   <p>
-    Em resumo, o <strong>Amazon EC2</strong> oferece uma variedade de tipos de
+    Em resumo, o <strong>Amazon EC2</strong> oferece uma variedade de tipos de{" "}
     <strong>instâncias</strong>, cada um otimizado para atender a diferentes
     casos de uso e requisitos de carga de trabalho. Esses tipos incluem
     instâncias de propósito geral, otimizadas para computação, otimizadas para
