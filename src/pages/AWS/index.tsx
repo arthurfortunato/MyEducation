@@ -7,6 +7,7 @@ import cloudComputingImg from "../../assets/AWS/CLOUDCOMPUTING.jpg";
 import awsCloudIntroductionImg from "../../assets/AWS/AWSCLOUDINTRODUCTION.jpg";
 import deploymentsModelsImg from "../../assets/AWS/DEPLOYMENTSMODELS.jpg";
 import ec2Img from "../../assets/AWS/EC2.jpg";
+import ec2InstanceImg from "../../assets/AWS/EC2INSTANCE.jpg";
 
 export const AWS = () => {
   return (
@@ -48,6 +49,15 @@ export const AWS = () => {
               backgroundImage={ec2Img}
             >
               <p>4. EC2</p>
+            </Card>
+          </Link>
+          <Link to="ec2-instance" className="link">
+            <Card
+              width="330px"
+              height="100px"
+              backgroundImage={ec2InstanceImg}
+            >
+              <p>5. EC2 INSTANCE TYPES</p>
             </Card>
           </Link>
         </div>
