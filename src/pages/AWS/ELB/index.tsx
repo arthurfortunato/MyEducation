@@ -11,7 +11,7 @@ import { paragraphs } from "./paragraphs";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const EC2InstanceTypes = () => {
+export const ELB = () => {
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [displayedParagraphs, setDisplayedParagraphs] = useState([0]);
   const [loadingProgress, setLoadingProgress] = useState(
@@ -40,7 +40,7 @@ export const EC2InstanceTypes = () => {
   });
 
   const handleNextContent = () => {
-    navigate("/aws/elb");
+    navigate("/aws");
   };
 
   return (
@@ -49,7 +49,7 @@ export const EC2InstanceTypes = () => {
 
       <BodyContainer>
         <div ref={paragraphsContainer}>
-          <Section title="Amazon EC2 Instance Types">
+          <Section title="Elastic Load Balance (ELB)">
             {paragraphs.map((paragraph, index) => {
               if (displayedParagraphs.includes(index)) {
                 return (
