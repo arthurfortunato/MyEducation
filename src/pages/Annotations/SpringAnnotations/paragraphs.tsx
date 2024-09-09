@@ -41,10 +41,12 @@ const CoreContext = `@Configuration
 
 export const paragraphs = [
   <p>
-    Para o Spring saber quais classes serão beans gerenciáveis por ele, é
-    necessário indicar por meio das annotations.
+    Para o <strong>Spring</strong> saber quais classes serão beans gerenciáveis
+    por ele, é necessário indicar por meio das <strong>annotations</strong>.
   </p>,
-  <p>As annotations mais utilizadas são:</p>,
+  <p>
+    As <strong>annotations</strong> mais utilizadas são:
+  </p>,
   <p>
     <h4>Boot</h4>
     <StyledSyntaxHighlighter language="javascript" style={vscDarkPlus}>
