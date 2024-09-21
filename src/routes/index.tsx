@@ -11,7 +11,6 @@ import { CollectionsRoutes } from "./collections";
 import { AnnotationsRoutes } from "./annotations";
 import { NewRelicRoutes } from "./newRelic";
 import { DockerRoutes } from "./dockerRoutes";
-import { DeployRoutes } from "./deployRoutes";
 import { MysqlRoutes } from "./mysqlRoutes";
 import { AWSRoutes } from "./awsRoutes";
 
@@ -31,7 +30,6 @@ export const Routers: any = () => {
         <AnnotationsRoutes />
         <NewRelicRoutes />
         <DockerRoutes />
-        <DeployRoutes />
         <MysqlRoutes />
         <AWSRoutes />
       </Router>

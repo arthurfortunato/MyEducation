@@ -10,7 +10,6 @@ import collections from "../../assets/HomeImages/COLLECTIONS.gif";
 import spring from "../../assets/HomeImages/spring.gif";
 import newRelic from "../../assets/HomeImages/NEWRELIC.png";
 import dockerImg from "../../assets/HomeImages/DOCKER.gif";
-import deploy from "../../assets/HomeImages/DEPLOY.jpg";
 import mysqlImg from "../../assets/HomeImages/MYSQL.jpg";
 import awsImg from "../../assets/HomeImages/AWS.jpg";
 
@@ -119,25 +118,19 @@ export const Home = () => {
             </Link>
           </TopCard>
           <RightCard>
-            <Link to="/deploy" className="middle">
-              <Card>
-                <ImageCard src={deploy} />
-              </Card>
-              <p>9. Deploy</p>
-            </Link>
-          </RightCard>
-          <TopCard>
-            <Link to="/mysql" className="top">
+            <Link to="/mysql" className="middle">
               <Card>
                 <ImageCard src={mysqlImg} />
               </Card>
-              <p>10. MySQL</p>
+              <p>9. MySQL</p>
             </Link>
-            <Link to="/aws" className="top-bottom">
+          </RightCard>
+          <TopCard>
+            <Link to="/aws" className="top">
               <Card>
                 <ImageCard src={awsImg} />
               </Card>
-              <p>11. AWS</p>
+              <p>10. AWS</p>
             </Link>
           </TopCard>
         </div>
