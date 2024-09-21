@@ -14,7 +14,6 @@ export const CardWrapper = styled.div`
   align-items:center;
   margin-left: 100px;
 
-
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   cursor: grab;

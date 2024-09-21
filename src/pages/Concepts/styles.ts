@@ -21,6 +21,7 @@ export const BodyContainerStyled = styled.body`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+   
 
     .link {
       text-decoration: none;
@@ -28,6 +29,7 @@ export const BodyContainerStyled = styled.body`
         color: #fff;
         font: 700 1rem "Lato", sans-serif;
         align-self: flex-start;
+        margin-left: 20px;
       }
     }
   }

@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import { Card } from "../../components/Card";
 import { ImageCard } from "../../components/ImageCard";
 
-import oop from "../../assets/HomeImages/OOP.gif";
-import logica from "../../assets/HomeImages/LOGICA.jpg";
-import java from "../../assets/HomeImages/JAVA.gif";
-import conceitos from "../../assets/HomeImages/CONCEITOS.gif";
-import collections from "../../assets/HomeImages/COLLECTIONS.gif";
-import spring from "../../assets/HomeImages/spring.gif";
+import oop from "../../assets/HomeImages/oop.jpeg";
+import logica from "../../assets/HomeImages/logica.png";
+import java from "../../assets/HomeImages/java.jpeg";
+import conceitos from "../../assets/HomeImages/conceitos.jpeg";
+import collections from "../../assets/HomeImages/collections.jpeg";
+import spring from "../../assets/HomeImages/spring.jpeg";
 import newRelic from "../../assets/HomeImages/NEWRELIC.png";
-import dockerImg from "../../assets/HomeImages/DOCKER.gif";
-import mysqlImg from "../../assets/HomeImages/MYSQL.jpg";
-import awsImg from "../../assets/HomeImages/AWS.jpg";
+import dockerImg from "../../assets/HomeImages/docker.jpeg";
+import mysqlImg from "../../assets/HomeImages/mysql.jpeg";
+import awsImg from "../../assets/HomeImages/aws.jpeg";
 
 import { Container, CardWrapper, TopCard, RightCard } from "./styles";
 import { useState } from "react";
@@ -67,7 +67,7 @@ export const Home = () => {
             </Link>
             <Link to="/programminglogic" className="top-bottom">
               <Card>
-                <ImageCard src={logica} />
+                <ImageCard width="100%" height="100%" src={logica} />
               </Card>
               <p>2. Lógica da Programação</p>
             </Link>

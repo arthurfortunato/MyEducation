@@ -20,11 +20,11 @@ export const ContainerStyled = styled.div<IContainer>`
       box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
     `}
   border-radius: 10px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  overflow: hidden;
   ${({ backgroundImage }) =>
     backgroundImage &&
     css`
@@ -34,5 +34,7 @@ export const ContainerStyled = styled.div<IContainer>`
       background-repeat: no-repeat;
       opacity: 1;
       z-index: -1;
+      border-radius: 10px;
+      overflow: hidden;
     `}
 `;

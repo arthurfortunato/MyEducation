@@ -10,7 +10,7 @@ const theme = {
       textButtonContinue: "#585f82",
       backgroundHeaderContentCards: "#fff",
       buttonHeaderContentCards: "#37373c",
-      backgroundGradiente: "linear-gradient(90deg, rgba(40,31,185,1) 24%, rgba(0,212,255,1) 100%)",
+      backgroundGradiente: "linear-gradient(135deg, rgba(128, 0, 255, 0.8), rgba(0, 0, 0, 0.8))",
       backgroundPreCode: "#2f2f2f",
       textPreCode: "#fff",
       backgroundTable: "#26262a",
