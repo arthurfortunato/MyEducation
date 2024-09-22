@@ -1,8 +1,9 @@
-import { Container, BodyContainerStyled } from "./styles";
 import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
+import { BodyContainer } from "../../components/BodyContainerStyled";
+import { Container } from "../../components/Container";
 import introductionImg from "../../assets/Docker/INTRODUCTION.jpg";
 import usageImg from "../../assets/Docker/USAGE.jpg";
 import commandsImg from "../../assets/Docker/COMMANDS.jpg";
@@ -12,7 +13,7 @@ export const Docker = () => {
   return (
     <Container>
       <HeaderCards title="Docker" />
-      <BodyContainerStyled>
+      <BodyContainer>
         <div>
           <Link to="/docker/introduction" className="link">
             <Card
@@ -39,7 +40,7 @@ export const Docker = () => {
             </Card>
           </Link>
         </div>
-      </BodyContainerStyled>
+      </BodyContainer>
     </Container>
   );
 };

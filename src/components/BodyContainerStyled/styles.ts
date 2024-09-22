@@ -1,20 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: ${({ theme }) => theme.colors.backgroundContainerContents};
-  font-family: Lato, Helvetica, sans-serif;
-`;
-
-export const BodyContainerStyled = styled.body`
+export const BodyContainerStyled = styled.div`
   max-width: 1050px;
-  margin: 40px;
+  margin: 40px auto; /* Centraliza o container */
   background: ${({ theme }) => theme.colors.backgroundContainerContents};
-  align-self: center;
+  display: flex; /* Adiciona display flex */
+  flex-direction: column; /* Alinha itens na coluna */
+  align-items: center; /* Centraliza horizontalmente */
 
   div {
     display: flex;
@@ -28,6 +20,7 @@ export const BodyContainerStyled = styled.body`
         color: #fff;
         font: 700 1rem "Lato", sans-serif;
         align-self: flex-start;
+        margin-left: 20px;
       }
     }
   }

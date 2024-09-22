@@ -60,13 +60,13 @@ export const Home = () => {
         >
           <TopCard>
             <Link to="/concepts" className="top">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={conceitos} />
               </Card>
               <p>1. Conceitos</p>
             </Link>
             <Link to="/programminglogic" className="top-bottom">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard width="100%" height="100%" src={logica} />
               </Card>
               <p>2. Lógica da Programação</p>
@@ -74,7 +74,7 @@ export const Home = () => {
           </TopCard>
           <RightCard>
             <Link to="/poo" className="middle">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={oop} />
               </Card>
               <p>3. Orientação a Objetos</p>
@@ -83,13 +83,13 @@ export const Home = () => {
 
           <TopCard>
             <Link to="/java" className="top">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={java} />
               </Card>
               <p>4. Java</p>
             </Link>
             <Link to="/collections" className="top-bottom">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={collections} />
               </Card>
               <p>5. Coleções</p>
@@ -97,7 +97,7 @@ export const Home = () => {
           </TopCard>
           <RightCard>
             <Link to="/annotations" className="middle">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={spring} />
               </Card>
               <p>6. Spring Annotations</p>
@@ -105,13 +105,13 @@ export const Home = () => {
           </RightCard>
           <TopCard>
             <Link to="/new-relic" className="top">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={newRelic} />
               </Card>
               <p>7. New Relic</p>
             </Link>
             <Link to="/docker" className="top-bottom">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={dockerImg} />
               </Card>
               <p>8. Docker</p>
@@ -119,7 +119,7 @@ export const Home = () => {
           </TopCard>
           <RightCard>
             <Link to="/mysql" className="middle">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={mysqlImg} />
               </Card>
               <p>9. MySQL</p>
@@ -127,7 +127,7 @@ export const Home = () => {
           </RightCard>
           <TopCard>
             <Link to="/aws" className="top">
-              <Card>
+              <Card width="150px" height="150px">
                 <ImageCard src={awsImg} />
               </Card>
               <p>10. AWS</p>

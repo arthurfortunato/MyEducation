@@ -1,8 +1,9 @@
-import { Container, BodyContainerStyled } from "./styles";
 import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
+import { BodyContainer } from "../../components/BodyContainerStyled";
+import { Container } from "../../components/Container";
 import cloudComputingImg from "../../assets/AWS/CLOUDCOMPUTING.jpg";
 import awsCloudIntroductionImg from "../../assets/AWS/AWSCLOUDINTRODUCTION.jpg";
 import deploymentsModelsImg from "../../assets/AWS/DEPLOYMENTSMODELS.jpg";
@@ -14,7 +15,7 @@ export const AWS = () => {
   return (
     <Container>
       <HeaderCards title="AWS" />
-      <BodyContainerStyled>
+      <BodyContainer>
         <div>
           <Link to="cloud-computing" className="link">
             <Card
@@ -44,34 +45,22 @@ export const AWS = () => {
             </Card>
           </Link>
           <Link to="ec2" className="link">
-            <Card
-              width="330px"
-              height="100px"
-              backgroundImage={ec2Img}
-            >
+            <Card width="330px" height="100px" backgroundImage={ec2Img}>
               <p>4. EC2</p>
             </Card>
           </Link>
           <Link to="ec2-instance" className="link">
-            <Card
-              width="330px"
-              height="100px"
-              backgroundImage={ec2InstanceImg}
-            >
+            <Card width="330px" height="100px" backgroundImage={ec2InstanceImg}>
               <p>5. EC2 INSTANCE TYPES</p>
             </Card>
           </Link>
           <Link to="elb" className="link">
-            <Card
-              width="330px"
-              height="100px"
-              backgroundImage={elbImg}
-            >
+            <Card width="330px" height="100px" backgroundImage={elbImg}>
               <p>6. ELB</p>
             </Card>
           </Link>
         </div>
-      </BodyContainerStyled>
+      </BodyContainer>
     </Container>
   );
 };

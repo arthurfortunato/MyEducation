@@ -1,9 +1,9 @@
-import { Container, BodyContainerStyled } from "./styles";
-
 import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
+import { BodyContainer } from "../../components/BodyContainerStyled";
+import { Container } from "../../components/Container";
 import api from "../../assets/ConceptsImages/API.jpg";
 import rest from "../../assets/ConceptsImages/REST.jpg";
 import restFul from "../../assets/ConceptsImages/RESTFUL.jpg";
@@ -15,7 +15,7 @@ export const Concepts = () => {
   return (
     <Container>
       <HeaderCards title="Conceitos" />
-      <BodyContainerStyled>
+      <BodyContainer>
         <div>
           <Link to="/concepts/api" className="link">
             <Card width="330px" height="100px" backgroundImage={api}>
@@ -48,7 +48,7 @@ export const Concepts = () => {
             </Card>
           </Link>
         </div>
-      </BodyContainerStyled>
+      </BodyContainer>
     </Container>
   );
 };

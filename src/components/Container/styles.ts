@@ -7,4 +7,5 @@ export const ContainerStyled = styled.main`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.colors.backgroundContainerContents};
+  font-family: Lato, Helvetica, sans-serif;
 `;

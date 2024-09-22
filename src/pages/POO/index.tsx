@@ -1,9 +1,9 @@
-import { Container, BodyContainerStyled } from "./styles";
-
 import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
 import { Link } from "react-router-dom";
 
+import { BodyContainer } from "../../components/BodyContainerStyled";
+import { Container } from "../../components/Container";
 import introducao from "../../assets/Poo/INTRODUCTION.jpg";
 import classe from "../../assets/Poo/CLASS.jpg";
 import heranca from "../../assets/Poo/INHERITANCE.jpg";
@@ -14,35 +14,35 @@ export const POO = () => {
   return (
     <Container>
       <HeaderCards title="Orientação a Objetos" />
-      <BodyContainerStyled>
+      <BodyContainer>
         <div>
           <Link to="/poo/introduction" className="link">
-            <Card width="330px" height="100px" backgroundImage={introducao}>
+            <Card backgroundImage={introducao}>
               <p>1. INTRODUÇÃO</p>
             </Card>
           </Link>
           <Link to="/poo/class" className="link">
-            <Card width="330px" height="100px" backgroundImage={classe}>
+            <Card backgroundImage={classe}>
               <p>2. CLASSE E OBJETO</p>
             </Card>
           </Link>
           <Link to="/poo/polymorphism" className="link">
-            <Card width="330px" height="100px" backgroundImage={polimorfismo}>
+            <Card backgroundImage={polimorfismo}>
               <p>3. POLIMORFISMO</p>
             </Card>
           </Link>
           <Link to="/poo/inheritance" className="link">
-            <Card width="330px" height="100px" backgroundImage={heranca}>
+            <Card backgroundImage={heranca}>
               <p>4. HERANÇA</p>
             </Card>
           </Link>
           <Link to="/poo/encapsulation" className="link">
-            <Card width="330px" height="100px" backgroundImage={encapsulamento}>
+            <Card backgroundImage={encapsulamento}>
               <p>5. ENCAPSULAMENTO</p>
             </Card>
           </Link>
         </div>
-      </BodyContainerStyled>
+      </BodyContainer>
     </Container>
   );
 };

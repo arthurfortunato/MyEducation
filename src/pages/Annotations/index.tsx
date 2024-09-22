@@ -1,7 +1,7 @@
-import { Container, BodyContainerStyled } from "./styles";
-
 import { Card } from "../../components/Card";
 import { HeaderCards } from "../../components/HeaderCards";
+import { BodyContainer } from "../../components/BodyContainerStyled";
+import { Container } from "../../components/Container";
 import { Link } from "react-router-dom";
 
 import introducao from "../../assets/Annotations/INTRODUCTION.jpg";
@@ -18,7 +18,7 @@ export const Annotations = () => {
   return (
     <Container>
       <HeaderCards title="Spring Annotations" />
-      <BodyContainerStyled>
+      <BodyContainer>
         <div>
           <Link to="/annotations/introduction" className="link">
             <Card width="330px" height="100px" backgroundImage={introducao}>
@@ -66,7 +66,7 @@ export const Annotations = () => {
             </Card>
           </Link>
         </div>
-      </BodyContainerStyled>
+      </BodyContainer>
     </Container>
   );
 };
