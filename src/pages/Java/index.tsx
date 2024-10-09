@@ -55,7 +55,12 @@ export const Java = () => {
           </Link>
           <Link to="/java/generics" className="link">
             <Card background="#000">
-              <p>7. GENERICS</p>
+              <p>8. GENERICS</p>
+            </Card>
+          </Link>
+          <Link to="/java/varargs" className="link">
+            <Card background="#000">
+              <p>9. VARARGS</p>
             </Card>
           </Link>
         </div>

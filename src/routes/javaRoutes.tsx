@@ -13,6 +13,7 @@ import { SpringBootJPA } from "../pages/Java/SpringBootJPA";
 import { SpringBootHibernate } from "../pages/Java/SpringBootHibernate";
 import { SpringFramework } from "../pages/Java/SpringFramework";
 import { Generics } from "../pages/Java/Generics";
+import { Varargs } from "../pages/Java/Varargs";
 
 export const JavaRoutes = () => {
   return (
@@ -31,6 +32,7 @@ export const JavaRoutes = () => {
       <Route path="/java/interface" element={<Interface />} />
       <Route path="/java/abstract-class" element={<AbstractClass />} />
       <Route path="/java/generics" element={<Generics />} />
+      <Route path="/java/varargs" element={<Varargs />} />
     </Routes>
   );
 };

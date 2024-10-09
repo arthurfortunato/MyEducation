@@ -1,12 +1,12 @@
 import { paragraphs } from "./paragraphs";
 import { ContentPage } from "../../../components/ContentPage";
 
-export const Generics = () => {
+export const Varargs = () => {
   return (
     <ContentPage
-      title="Generics"
+      title="Varargs"
       paragraphs={paragraphs}
-      nextRoute="/java/varargs"
+      nextRoute="/java"
       backRoute="/java"
     />
   );
