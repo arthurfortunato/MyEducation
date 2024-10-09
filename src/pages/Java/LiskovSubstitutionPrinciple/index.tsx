@@ -1,12 +1,12 @@
 import { paragraphs } from "./paragraphs";
 import { ContentPage } from "../../../components/ContentPage";
 
-export const Varargs = () => {
+export const LiskovSubstitutionPrincipal = () => {
   return (
     <ContentPage
-      title="Varargs"
+      title="Liskov Substitution Principle (LSP)"
       paragraphs={paragraphs}
-      nextRoute="/java/lsp"
+      nextRoute="/java"
       backRoute="/java"
     />
   );

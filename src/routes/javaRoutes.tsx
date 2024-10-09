@@ -14,6 +14,7 @@ import { SpringBootHibernate } from "../pages/Java/SpringBootHibernate";
 import { SpringFramework } from "../pages/Java/SpringFramework";
 import { Generics } from "../pages/Java/Generics";
 import { Varargs } from "../pages/Java/Varargs";
+import { LiskovSubstitutionPrincipal } from "../pages/Java/LiskovSubstitutionPrinciple";
 
 export const JavaRoutes = () => {
   return (
@@ -28,11 +29,15 @@ export const JavaRoutes = () => {
       <Route path="/java/maven" element={<Maven />} />
       <Route path="/java/springboot" element={<SpringBoot />} />
       <Route path="/java/springboot/jpa" element={<SpringBootJPA />} />
-      <Route path="/java/springboot/hibernate" element={<SpringBootHibernate />} />
+      <Route
+        path="/java/springboot/hibernate"
+        element={<SpringBootHibernate />}
+      />
       <Route path="/java/interface" element={<Interface />} />
       <Route path="/java/abstract-class" element={<AbstractClass />} />
       <Route path="/java/generics" element={<Generics />} />
       <Route path="/java/varargs" element={<Varargs />} />
+      <Route path="/java/lsp" element={<LiskovSubstitutionPrincipal />} />
     </Routes>
   );
 };

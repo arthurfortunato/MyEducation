@@ -73,6 +73,11 @@ export const Java = () => {
               <p>11. VARARGS</p>
             </Card>
           </Link>
+          <Link to="/java/lsp" className="link">
+            <Card background="#000">
+              <p>12. Liskov Substitution Principle</p>
+            </Card>
+          </Link>
         </div>
       </BodyContainer>
     </Container>
