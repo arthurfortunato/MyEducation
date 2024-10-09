@@ -6,7 +6,7 @@ export const SpringBootHibernate = () => {
     <ContentPage
       title="Hibernate"
       paragraphs={paragraphs}
-      nextRoute="/java/generics"
+      nextRoute="/java/interface"
       backRoute="/java"
     />
   );

@@ -82,9 +82,8 @@ export const paragraphs = [
     </li>
     <li>
       <strong>O varargs deve ser o último parâmetro:</strong> Se um método tem
-      múltiplos parâmetros, o varargs deve vir por último. <br></br>
-      <strong>Correto</strong>: public void exemplo(int x, String... y){" "}
-      <br></br>
+      múltiplos parâmetros, o varargs deve vir por último. <br />
+      <strong>Correto</strong>: public void exemplo(int x, String... y) <br />
       <strong>Errado</strong>: public void exemplo(String... y, int x)
     </li>
     <li>

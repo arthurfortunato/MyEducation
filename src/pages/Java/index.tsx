@@ -53,14 +53,24 @@ export const Java = () => {
               <p>7. SPRING BOOT</p>
             </Card>
           </Link>
+          <Link to="/java/interface" className="link">
+            <Card background="#000">
+              <p>8. INTERFACE</p>
+            </Card>
+          </Link>
+          <Link to="/java/abstract-class" className="link">
+            <Card background="#000">
+              <p>9. CLASSE ABSTRATA</p>
+            </Card>
+          </Link>
           <Link to="/java/generics" className="link">
             <Card background="#000">
-              <p>8. GENERICS</p>
+              <p>10. GENERICS</p>
             </Card>
           </Link>
           <Link to="/java/varargs" className="link">
             <Card background="#000">
-              <p>9. VARARGS</p>
+              <p>11. VARARGS</p>
             </Card>
           </Link>
         </div>
