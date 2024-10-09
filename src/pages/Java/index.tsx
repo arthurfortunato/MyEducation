@@ -53,6 +53,11 @@ export const Java = () => {
               <p>7. SPRING BOOT</p>
             </Card>
           </Link>
+          <Link to="/java/generics" className="link">
+            <Card background="#000">
+              <p>7. GENERICS</p>
+            </Card>
+          </Link>
         </div>
       </BodyContainer>
     </Container>

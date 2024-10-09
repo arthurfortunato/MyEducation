@@ -1,12 +1,12 @@
 import { paragraphs } from "./paragraphs";
 import { ContentPage } from "../../../components/ContentPage";
 
-export const SpringBootHibernate = () => {
+export const Generics = () => {
   return (
     <ContentPage
-      title="Hibernate"
+      title="Generics"
       paragraphs={paragraphs}
-      nextRoute="/java/generics"
+      nextRoute="/java"
       backRoute="/java"
     />
   );
