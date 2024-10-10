@@ -23,9 +23,13 @@ export const paragraphs = [
   <p>
     Em Java, a <strong>interface List</strong> é uma das interfaces da
     biblioteca de coleções do Java, que permite que as implementações forneçam
-    métodos para adicionar, remover e acessar elementos em uma lista. As
-    implementações mais comuns da interface List em Java são:
+    métodos para adicionar, remover e acessar elementos em uma lista.{" "}
+    <strong>
+      A principal característica da List é que ela permite elementos duplicados
+      e ela possui ordem específica.
+    </strong>
   </p>,
+  <p>As implementações mais comuns da interface List em Java são:</p>,
   <p>
     <strong>ArrayList</strong>: implementação de List baseada em um array
     dinâmico que cresce automaticamente à medida que novos elementos são

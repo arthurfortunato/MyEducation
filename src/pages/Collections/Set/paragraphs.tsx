@@ -27,9 +27,13 @@ export const paragraphs = [
   <p>
     Em Java, a <strong>interface Set</strong> é uma das interfaces da biblioteca
     de coleções do Java, que permite que as implementações forneçam métodos para
-    adicionar, remover e verificar se um elemento pertence a um conjunto. A
-    principal característica do Set é que ele não permite elementos duplicados.
-    As implementações mais comuns da interface Set em Java são:
+    <strong>adicionar, remover e verificar</strong> se um elemento pertence a um
+    conjunto.{" "}
+    <strong>
+      A principal característica do Set é que ele não permite elementos
+      duplicados e ele não possui ordem específica
+    </strong>{" "}
+    . As implementações mais comuns da interface Set em Java são:
   </p>,
   <p>
     <strong>HashSet</strong>: implementação de Set baseada em tabela de

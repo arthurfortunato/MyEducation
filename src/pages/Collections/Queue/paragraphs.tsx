@@ -53,10 +53,12 @@ export const paragraphs = [
   <p>
     Em Java, a <strong>interface Queue</strong> é uma das interfaces da
     biblioteca de coleções do Java, que permite que as implementações forneçam
-    métodos para inserir, remover e acessar elementos em uma fila. A principal
-    característica de uma fila é que ela segue o princípio "primeiro a entrar,
-    primeiro a sair" (FIFO - First In First Out). As implementações mais comuns
-    da interface Queue em Java são:
+    métodos para inserir, remover e acessar elementos em uma fila.{" "}
+    <strong>
+      A principal característica de uma fila é que ela segue o princípio
+      "primeiro a entrar, primeiro a sair" (FIFO - First In First Out)
+    </strong>
+    . As implementações mais comuns da interface Queue em Java são:
   </p>,
   <p>
     <strong>LinkedList</strong>: implementação de Queue baseada em uma lista
